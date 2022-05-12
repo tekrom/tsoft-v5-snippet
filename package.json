@@ -1,0 +1,22 @@
+{
+    "name": "tsoft-v5-snippet",
+    "displayName": "tsoft v5 snippet",
+    "description": "tsoft v5 snippet example",
+    "publisher": "huseyindasci",
+    "version": "0.0.1",
+    "license": "SEE LICENSE IN LICENSE or README.MD",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
