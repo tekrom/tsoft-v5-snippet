@@ -1,35 +1,30 @@
 {
-    "name": "tsoft-v5-snippet",
-    "displayName": "tsoft v5 snippet",
-    "description": "tsoft v5 snippet example",
-    "version": "0.0.1",
-    "publisher": "huseyindasci",
-    "license": "SEE LICENSE IN LICENSE or README.MD",
-    "homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
-    "icon": "images/icon.png",
-    "engines": {
-        "vscode": "^1.67.0"
-    },
-    "galleryBanner": {
+	"name": "tsoftv5javascriptsnippets",
+	"displayName": "Tsoft V5 javascript snippets",
+	"description": "tosft V5 javascript snippets",
+	"version": "0.0.1",
+	"publisher": "tsoft-v5-snippet",
+	"license": "SEE LICENSE IN LICENSE or README.MD",
+	"homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
+	"repository": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"galleryBanner": {
 		"color": "#ffffff",
 		"theme": "light"
 	},
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/snippets.code-snippets"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript.json"
-            }
-        ]
-    }
-
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			}
+		]
+	}
 
 }
-
