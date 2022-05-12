@@ -1,0 +1,8 @@
+{
+	"add event listener": {
+		"prefix": "testere vv5",
+		"body": [
+			"${1:selector}.addEventListener(\"${2|click,input,focus,blur,change,DOMContentLoaded,Load|}\",e=>{\n\tconsole.log($e)\n});",
+		]
+	}
+}

@@ -2,12 +2,18 @@
     "name": "tsoft-v5-snippet",
     "displayName": "tsoft v5 snippet",
     "description": "tsoft v5 snippet example",
-    "publisher": "huseyindasci",
     "version": "0.0.1",
+    "publisher": "huseyindasci",
     "license": "SEE LICENSE IN LICENSE or README.MD",
+    "homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.67.0"
     },
+    "galleryBanner": {
+		"color": "#ffffff",
+		"theme": "light"
+	},
     "categories": [
         "Snippets"
     ],
@@ -16,7 +22,14 @@
             {
                 "language": "javascript",
                 "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
             }
         ]
     }
+
+
 }
+

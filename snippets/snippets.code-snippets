@@ -1,1 +1,8 @@
-{}
+{
+	"add event listener": {
+		"prefix": "test snippets code snippets",
+		"body": [
+			"test snippets code snippets",
+		]
+	}
+}
