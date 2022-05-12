@@ -2,7 +2,7 @@
 	"name": "tsoftv5snippets",
 	"displayName": "Tsoft V5 snippets",
 	"description": "tosft V5 snippets",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "tsoft-v5-snippet",
 	"license": "SEE LICENSE IN LICENSE or README.MD",
 	"homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
@@ -23,11 +23,11 @@
 			{
 				"language": "javascript",
 				"path": "./snippets/javascript.json"
-			}
+			},
 			{
 				"language": "scss",
 				"path": "./snippets/scss.json"
-			}
+			},
 			{
 				"language": "smarty",
 				"path": "./snippets/smarty.json"
