@@ -1,14 +1,466 @@
 {
-
-
-
-	"add event listener": {
-		"prefix": "test test test v5",
+	"kkk generals add event listener": {
+		"prefix": ["ael","addevent",  "el"],
 		"body": [
 			"${1:selector}.addEventListener(\"${2|click,input,focus,blur,change,DOMContentLoaded,Load|}\",e=>{\n\tconsole.log($e)\n});"
-		
-		]
+		],
+		"description": "add event listener"
+	},
+	"domcontentLoaded": {
+		"prefix": ["load", "domcontentloaded", "docready"],
+		"body": [
+			"${1:document}.addEventListener(\"${2|DOMContentLoaded,Load|}\",e=>{\n\tconsole.log($e)\n});"
+		],
+		"description": "add event listener"
+	},
+	"Vue CreateApp": {
+		"prefix": ["createApp","vuecreateapp"],
+		"body": [
+			"Vue.createApp(${1:appName}).mount('#appSelector');"
+		],
+		"description": "Vue CreateApp"
+	},
+	"Vue Create script": {
+		"prefix": ["vueapp","newvue","createVue","createVuescript","vuecreateappscript", ],
+		"body": [
+			"window['${1:appName}'] = {",
+				"\tdata() {",
+					"\t\treturn {",
+						"\t\t\tP:``,",
+					"\t\t}",
+				"\t},",
+			"}",
+			"Vue.creatApp(${1:appName}).mount(`${2:#app-selector}`);"
+		],
+		"description": "Vue Create script"
+	},
+	"tsoft formsubmit": {
+		"prefix": ["formsubmit","tformsubmit","submitform", "tsubmitform"],
+		"body": [
+			"(`${1:#selector}`).on('submit', e => {",
+			"\te.stopPropagation();",
+			"\te.preventDefault();",
+			"\tconst formEl = e.target;",
+			"\tif(!T.checkValidity(formEl))",
+			"\t\treturn;",
+			"\tvar data = new FormData(formEl);",
+			"\taxios.post('/srv/service/${2:servicepath}', data).then(response => {",
+			"\t\tconst result = response.data;",
+			"\t\tconsole.log('result:', result);",
+			"\t\tformEl.reset();",
+			"\t\tT.notify({",
+			"\t\t\ttext:\"${3:element}\",",
+			"\t\t\tclassName: '${4|success,danger|}',",
+			"\t\t\tduration: ${5:3200}",
+			"\t\t});",
+			"\t});",
+			"});"
+		],
+		"description": "formsubmit"
+	},
+	"new swiper": {
+		"prefix": ["swiper","newswiper"],
+		"body": [
+			"new Swiper(${1:selector}, {",
+			"\tslidesPerView: 2,",
+			"\tspaceBetween: T.isMobile() ? 8 : 15,",
+			"\tnavigation: {",
+			"\t\tnextEl: `${2:#swiper-next-${BLOCK.ID}}`,",
+			"\t\tprevEl:`${3:#swiper-prev-${BLOCK.ID}}`,",
+			"\t},",
+			"\tpagination: {",
+			"\t\tel: '.swiper-pagination',",
+			"\t\tclickable: true",
+			"\t},",
+			"\tbreakpoints: {",
+			"\t\t576: {",
+			"\t\t\tslidesPerView: 3",
+			"\t\t},",
+			"\t\t768: {",
+			"\t\t\tslidesPerView: 4",
+			"\t\t}",
+			"\t}",
+			"});"
+		],
+		"description": "new swiper"
+	},
+	"axios get": {
+		"prefix": ["axiosget","axios","getaxios"],
+		"body": [
+			"axios.get(\"${url}\").then((res)=> {",
+			"\tconsole.log(res.data);",
+			"})",
+			".catch((error)=> {",
+			"\tconsole.log(error);",
+			"})"
+		],
+		"description": "axios get"
+	},
+	"axios post": {
+		"prefix": ["axiospost", "axios","postaxios"],
+		"body": [
+			"axios.post(\"${url}\", formData).then((res)=> {",
+			"\tconsole.log(res.data);",
+			"})",
+			".catch((error)=> {",
+			"\tconsole.log(error);",
+			"})"
+		],
+		"description": "axios get"
+	},
+	"fetch get": {
+		"prefix": ["fetch","getfetch","fetchget"],
+		"body": [
+			"fetch(\"users.json\").then(res=> res.json())",
+			".then(data=> {",
+			"\t\tdata.forEach(el => {",
+			"\t\tconsole.log(${el});",
+			"\t});",
+			"})",
+			".catch(err => console.log(err))"
+		],
+		"description": "fetch get"
+	},
+	"Print to console": {
+		"prefix": ["con","cl","console"],
+		"body": [
+			"console.log($1);",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"Print to console varianble": {
+		"prefix": ["cv"],
+		"body": [
+			"console.log('$1',$1);",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+	"tsoft cart.callbacks": {
+		"prefix": ["cart.callback", "cartcallback","tcartcallback"],
+		"body": [
+			"Cart.callback.add.push((res)=>{",
+				"\t\tconsole.log(res) $1",
+		  "})"
+		],
+		"description": "Works after cart is updated"
+	},
+	"tsoft ready": {
+		"prefix": ["tready", "ready"],
+		"body": [
+			"T.ready(function(){", ​
+			"\t$1",
+			"})"
+		],
+		"description": "tsoft ready"
+	},
+	"tsoft isEmptyObject": {
+		"prefix": ["isEmptyObject", "tisEmptyObject"],
+		"body": [
+			"T.isEmptyObject(${1:obj})"
+		],
+		"description": "tsoft isEmptyObject"
+	},
+	"tsoft each": {
+		"prefix": ["teach", "each"],
+		"body": [
+			"T.each(T(`${1:div}`),(i, el)=>{",
+			"\tconsole.log(${2:i}, ${3:el});",
+			"});"
+		],
+		"description": "tsoft each iterator"
+	},
+	"tsoft setCookie": {
+		"prefix": ["setCookie", "tsetCookie","cookieset"],
+		"body": [
+			"T.setCookie(${1:cookieName}, ${2:cookieValue}, ${3:exdays}) "
+		],
+		"description": "setCookie"
+	},
+	"tsoft getCookie": {
+		"prefix": ["getCookie", "tgetCookie", "cookieget"],
+		"body": [
+			"T.getCookie(${1:cookieName}) "
+		],
+		"description": "getCookie"
+	},
+	"Tsoft block id": {
+		"prefix": ["BLOCK", "block", "tblock","bid", "tbid","tblockid", "blockid", "tparentid", "parentid", "pageid", "tpageid"],
+		"body": [
+			"BLOCK.${1|ID,PAGE_ID,PARENT_ID|}"
+		],
+		"description": "block id"
+	},
+	"Tsoft setting": {
+		"prefix": ["SETTING","setting", "tsetting"],
+		"body": [
+			"SETTING.${1|DELAY,EFFECT,IMAGES,MARGIN,PERVIEW,IS_RESIZE,DISPLAY_TITLE,DISPLAY_THUMBNAIL,DISPLAY_NAVIGATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL,PAGINATION_TYPE|}"
+		],
+		"description": "block id"
+	},
+	"Tsoft IMAGE": {
+		"prefix": ["IMAGE","image", "timage"],
+		"body": [
+			"IMAGE.${1|URL,TITLE,DATA1,DATA2,DATA3,CONTENT,IMG_BIG,IMG_SMALL,KEY,INDEX,OPERATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL|}"
+		],
+		"description": "block id"
+	},
+	"Tsoft getlink": {
+		"prefix": ["tgetlink", "getlink"],
+		"body": [
+			"T.getLink(`${1:param}`,'${2:value}','${3:link}');"
+		],
+		"description": "Tsoft getlink"
+	},
+	"popoverAlertshow": {
+		"prefix": ["tpopshow","popoverAlertshow", "tpopovershowalert"],
+		"body": [
+			"popoverAlert.show(",
+			"\tT(`${1:selector}`)[0], ${2:msg}, false, `btn btn-danger text-left`, true, `inline`",
+			");"
+		],
+		"description": "item,message,duration=3e3,classes=``,scrollable=true,type=`inline`"
+	},
+	"popoverAlerthide": {
+		"prefix": ["tpophide","popoverAlerthide", "tpopoverhidealert"],
+		"body": [
+			"popoverAlert.hide(item, [`btn`, `btn-outline-danger`, `text-left`]);"
+		],
+		"description": "item,removeclasses"
+	},
+	"popoverAlert.hideAll()": {
+		"prefix": ["tpophideall","popoverAlerthideall", "tpopoverhidealertall"],
+		"body": [
+			"popoverAlert.hideAll();"
+		],
+		"description": "item,removeclasses"
+	},
+	"kkk selectors tsoft selector": {
+		"prefix": ["T","t", "tselector", "ts"],
+		"body": [
+			"T(`${1:selector}`);"
+		],
+		"description": "tsoft selector"
+	},
+	"tsoft wrap": {
+		"prefix": ["wrap", "twrap"],
+		"body": [
+			"T.wrap(T(`${1:toWrapSelector}`)[0],'','${2:classname}');"
+		],
+		"description": "add event listener"
+	},
+	"Tsoft AddClass": {
+		"prefix": ["taddclass", "addclass"],
+		"body": [
+			"T(`${1:selector}`).addClass('${2|active,active text-primary|}');"
+		],
+		"description": "Tsoft AddClass"
+	},
+	"Tsoft RemoveClass": {
+		"prefix": ["tremoveclass", "removeclass"],
+		"body": [
+			"T(`${1:selector}`).removeClass('${2|active,active text-primary|}');"
+		],
+		"description": "Tsoft remove Class"
+	},
+	"Tsoft ToggleClass": {
+		"prefix": ["ttoggleclass", "toggleclass"],
+		"body": [
+			"T(`${1:selector}`).toggleClass('${2|active,active text-primary|}');"
+		],
+		"description": "Tsoft toggle Class"
+	},
+	"Tsoft if hasClass": {
+		"prefix": ["thasclass", "hasclass"],
+		"body": [
+			"T(`${1:selector}`).hasClass('${2:active}');"
+		],
+		"description": "Tsoft checks if element has teh class "
+	},
+	"Tsoft index": {
+		"prefix": ["tindex"],
+		"body": [
+			"T(`${1:selector}`).index();"
+		],
+		"description": "Tsoft retruns the index of element"
+	},
+	"Tsoft Click": {
+		"prefix": ["tclick", "click","tevent","tonclick","ton","tonfocus"],
+		"body": [
+			"T(`#${1:selector}`).on(`${2|click,change,input,focus,blur|}`, e => {",
+			"\te.stopPropagation();",
+			"\te.preventDefault();",
+			"\tconst el = e.target;",
+			"\t$3",
+			"});"
+		],
+		"description": "Tsoft Click, input, change, blur ckick events"
+	},
+	"Tsoft off Click": {
+		"prefix": ["toffclick", "offclick","tevent","toff"],
+		"body": [
+			"T(`#${1:selector}`).off(`${2|click,change,input,focus,blur|}`, e => {",
+			"\te.stopPropagation();",
+			"\te.preventDefault();",
+			"\tconst el = e.target;",
+			"\t$3",
+			"});"
+		],
+		"description": "Tsoft Click, input, change, blur off click events"
+	},
+	"Tsoft one Click": {
+		"prefix": ["toneclick", "tonceclick", "onceclick","teventone","tone"],
+		"body": [
+			"T(`#${1:selector}`).one(`${2|click,change,input,focus,blur|}`, e => {",
+			"\te.stopPropagation();",
+			"\te.preventDefault();",
+			"\tconst el = e.target;",
+			"\t$3",
+			"});"
+		],
+		"description": "Tsoft Click, input, change, blur click events only once"
+	},
+	"Tsoft trigger": {
+		"prefix": ["ttrigger", "trigger"],
+		"body": [
+			"T(`${1:selector}`).trigger('${2|click,change,input,focus,blur|}');"
+		],
+		"description": "Tsoft trigger event"
+	},
+	"Tsoft html": {
+		"prefix": ["thtml"],
+		"body": [
+			"T(`${1:selector}`).html('${2:element}');"
+		],
+		"description": "Tsoft html"
+	},
+	"Tsoft text": {
+		"prefix": ["ttext"],
+		"body": [
+			"T(`${1:selector}`).text('${2:text}');"
+		],
+		"description": "Tsoft text"
+	},
+	"Tsoft height set": {
+		"prefix": ["theightset", "heightset"],
+		"body": [
+			"T(`${1:selector}`).height(${2:400});"
+		],
+		"description": "Tsoft sets height"
+	},
+	"Tsoft height get": {
+		"prefix": ["theightget", "heightget"],
+		"body": [
+			"T(`${1:selector}`).height();"
+		],
+		"description": "Tsoft gets height"
+	},
+	"Tsoft show ": {
+		"prefix": ["tshow"],
+		"body": [
+			"T(`${1:selector}`).show(${2|`flex`,`block`|});"
+		],
+		"description": "Tsoft show element  can be empty as well"
+	},
+	"Tsoft hide ": {
+		"prefix": ["thide"],
+		"body": [
+			"T(`${1:selector}`).hide();"
+		],
+		"description": "Tsoft hides element"
+	},
+	"tsoft notify": {
+		"prefix": ["notify", "tnotify"],
+		"body": [
+			"T.notify({",
+			"\ttext:`messageandtext`,",
+			"\tclassName: `${2|success,danger|}`,",
+			"\tduration: ${3:3200},",
+			"\tstopOnFocus: ${4|true,false|},",
+			"\tclose: ${5|true,false|},",
+			"\tgravity:`${6|top,bottom|}`,",
+			"\tposition: `${7|left,right|}`,",
+			"\ticonClass: `${8|ti-thumbs-up,ti-thumbs-down|}`,",
+			"});"
+		],
+		"description": "tsoft notify"
+	},
+	"modal": {
+		"prefix": ["modal","tmodal"],
+		"body": [
+			"T.modal({",
+			"\tid: '${1:new-modal}',",
+			"\tclass: `${2:classname}`,",
+			"\twidth: `${3:480px}`,",
+			"\ttitle: `${4:ModalTitle}`,",
+			"\thtml: ${5:result.statusText},",
+			"\tclose: ${6|true,false|},",
+			"\topenCallback: () => {\n\t},",
+			"\tcloseCallback: () => {\n\t}"
+,			"});"
+		],
+		"description": "tsoft modal opens a modal"
+	},
+	"publishingPopupCallback": {
+		"prefix": ["tpublishingPopupCallback","publishingPopupCallback"],
+		"body": [
+		"window.publishingPopupCallback=function(){",
+			"\t$1",
+		"}"
+		],
+		"description": "tsoft calls after publishing popup"
+	},
+	"tsoft tooltip": {
+		"prefix": ["ttooltip","tooltip"],
+		"body": [
+		"T.tooltip(T(`${1:selector`})[0], {\n\tplacement:`${2|top,bottom,left,right|}`\n});"
+		],
+		"description": "tsoft tooltip with js"
+	},
+	"tsoft checkValidity": {
+		"prefix": ["tcheckvalidity","checkValidity"],
+		"body": [
+		 "if(!T.checkValidity(e.target)) return;"
+		],
+		"description": "tsoft checks validity of email, phone, required, etc of data-validate " 
+	},
+	"Tsoft vat": {
+		"prefix": ["tvat", "vat"],
+		"body": [
+			"T.vat(${1:price}, ${2:vat});"
+		],
+		"description": "Tsoft vat"
+	},
+	"Tsoft format": {
+		"prefix": ["tformat", "format"],
+		"body": [
+			"T.format(${1:number});"
+		],
+		"description": "Tsoft format for currency"
+	},
+	"tsoft timeconverter": {
+		"prefix": ["timeconverter","ttimeconverter"],
+		"body": [
+			"T.timeConverter(1652702396000, ${2|`d.m.y`, `d.m.y h:i:s`, format = `d.m.y`|});"
+		],
+		"description": "tsoft timeconverter y=year m=month d=day, h=hour, i=minute, s=second"
+	},
+	"tsoft lockbuttons": {
+		"prefix": ["buttonlock","tbuttonlock", 	"btnlock","tbtnlock", "lockbuttons", "tlockbuttons"],
+		"body": [
+			"const button = T(`${1:#form_submit_button}`)[0];",
+			"T.buttonLock.dom = button;",
+			"T.buttonLock.tmp = button.innerHTML;",
+			"T.buttonLock.lock();"
+		],
+		"description": "tsoft prevents multiple click event after submit"
+	},
+	"tsoft unlockbuttons": {
+		"prefix": ["buttonunlock","tbuttonunlock", 	"btnunlock","tbtnunlock", "unlockbuttons", "tlockbuttons"],
+		"body": [
+			"T.buttonLock.unlock();"
+		],
+		"description": "tsoft unlocks button after submit"
 	}
-					
-
 }
