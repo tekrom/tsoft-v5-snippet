@@ -21,7 +21,7 @@
 		"description": "Vue CreateApp"
 	},
 	"Vue Create script": {
-		"prefix": ["vueapp","newvue","createVue","createVuescript","vuecreateappscript", ],
+		"prefix": ["vueapp","newvue","createVue","createVuescript","vuecreateappscript" ],
 		"body": [
 			"window['${1:appName}'] = {",
 				"\tdata() {",
@@ -37,7 +37,7 @@
 	"tsoft formsubmit": {
 		"prefix": ["formsubmit","tformsubmit","submitform", "tsubmitform"],
 		"body": [
-			"(`${1:#selector}`).on('submit', e => {",
+			"T(`${1:#selector}`).on('submit', e => {",
 			"\te.stopPropagation();",
 			"\te.preventDefault();",
 			"\tconst formEl = e.target;",

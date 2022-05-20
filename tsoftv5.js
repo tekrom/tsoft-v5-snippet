@@ -34,6 +34,8 @@ Vue.creatApp(appName).mount(`#app-selector`);
     });
 });
 
+
+
 new Swiper(selector, {
     slidesPerView: 2,
     spaceBetween: T.isMobile() ? 8 : 15,
@@ -203,7 +205,45 @@ loadSubFolder({
 });
 T.isMobile()
 
+$.each(collection, function (i, val) { 
+     
+});
+
 
 
 ////
 
+`/srv/service/order-v4/order-return/${product_id}`
+`/srv/service/gallery/video-detail/${product_id}`
+`/srv/service/product-detail/view/606`
+`/srv/service/language/change/${tr}`
+`/srv/shopping/shopping/set-currency/${tl}`
+`/srv/service/content/get-block/1003/category/${catID}`
+`/srv/service/category/get/${catID}`
+`/srv/service/product/filter/category/${catID}?pg=1`
+`/srv/service/category/getTree/${catID}`
+`/srv/service/content/get-block/1018/content/${içerik_id}`
+`/srv/service/product-detail/credit-card-installment-list/${product_id}/${product_id}`
+`/srv/campaign-v2/campaign/get-list-by-type/cart`
+`/srv/campaign-v2/campaign/get-list-by-type/category/${id}`
+`/srv/service/cart/load?link=sepet`
+`/srv/service/product-detail/comments/${product_id}`
+`/srv/service/product-detail/comment-average/${product_id}`
+`/srv/service/filter/get/brands`
+`/srv/service/content/getBlock/1070/product/${product_id}`
+`/srv/service/product/get-related-products/${product_id}/1`
+`/srv/service/product/get-related-products/${product_id}/2`
+`/srv/service/product/get-related-products/${product_id}/3`
+`/srv/service/product/get-related-products/${product_id}/4`
+
+
+
+
+getUrlParam('param')
+scrollToElm(`[href='#product-comments']`);
+scrollToElm(`[href='#product-comments']`);
+LocalApi.get(`key`);
+LocalApi.set(`key`, val, timeout);
+LocalApi.remove(`key`);
+
+evalScripts(content);

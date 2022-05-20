@@ -2,13 +2,7 @@
 
 
 
-	"add event listener": {
-		"prefix": "test smarty  v5",
-		"body": [
-			"${1:selector}.addEventListener(\"${2|click,input,focus,blur,change,DOMContentLoaded,Load|}\",e=>{\n\tconsole.log($e)\n});"
-		
-		]
-	}
+	<a onclick="location.href=T.getLink('stock',getUrlParam('stock')?'':1, location.href)" >{#in_stocks#}</a>
 					
 
 }
