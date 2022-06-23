@@ -1,10 +1,20 @@
+console.log();
+
+console.log('variable',variable);
+
+
+
 selector.addEventListener("click",e=>{
     console.log(e)
-}); 
+});
+
 
 document.addEventListener("DOMContentLoaded",e=>{
     console.log(e)
 });
+
+Vue.createApp(appName).mount('#appSelector');
+
 
 window['appName'] = {
     data() {
@@ -15,7 +25,7 @@ window['appName'] = {
 }
 Vue.creatApp(appName).mount(`#app-selector`);
 
-(`#selector`).on('submit', e => {
+T(`#selector`).on('submit', e => {
     e.stopPropagation();
     e.preventDefault();
     const formEl = e.target;
@@ -33,8 +43,6 @@ Vue.creatApp(appName).mount(`#app-selector`);
         });
     });
 });
-
-
 
 new Swiper(selector, {
     slidesPerView: 2,
@@ -63,6 +71,7 @@ axios.get("url").then((res)=> {
 .catch((error)=> {
     console.log(error);
 })
+
 axios.post("url", formData).then((res)=> {
     console.log(res.data);
 })
@@ -78,34 +87,56 @@ fetch("users.json").then(res=> res.json())
 })
 .catch(err => console.log(err))
 
-console.log();
-console.log('hey',hey);
 
 Cart.callback.add.push((res)=>{
         console.log(res) 
 })
-
 T.ready(function(){
     
 })
+T.isEmptyObject(obj)
+
 T.each(T(`div`),(i, el)=>{
     console.log(i, el);
 });
 
 T.setCookie(cookieName, cookieValue, exdays) 
 
-T.getCookie(cookieName)
+T.getCookie(cookieName) 
 
-BLOCK.ID
-SETTING.DELAY
+BLOCK.PAGE_ID
+SETTING.PERVIEW
+
 IMAGE.URL
 
 T.getLink(`param`,'value','link');
 
 popoverAlert.show(
     T(`selector`)[0], msg, false, `btn btn-danger text-left`, true, `inline`
-);  
+);
+popoverAlert.hide(item, [`btn`, `btn-outline-danger`, `text-left`]);
 
+popoverAlert.hideAll();
+
+loadSubFolder({
+    pageId: 1,
+    blockParentId: 1000,
+    subFolder: 'subfoldername',
+    params: { oneparam: oneparam, twoparam: twoparam },
+    success:  function(loadRes){
+        T.modal({ html: loadRes, width:'480px' });
+        evalScripts(loadRes)
+    }
+});
+T.isMobile()
+
+getUrlParam('param')
+
+scrollToElm(`[href='#id']`);
+
+LocalApi.get(`key`);
+
+evalScripts(content);
 T(`selector`);
 
 T.wrap(T(`toWrapSelector`)[0],'','classname');
@@ -114,14 +145,18 @@ T(`selector`).addClass('active');
 
 T(`selector`).removeClass('active');
 T(`selector`).toggleClass('active');
+
 T(`selector`).hasClass('active');
+
 T(`selector`).index();
+
 T(`#selector`).on(`click`, e => {
     e.stopPropagation();
     e.preventDefault();
     const el = e.target;
     
 });
+
 T(`#selector`).off(`click`, e => {
     e.stopPropagation();
     e.preventDefault();
@@ -138,15 +173,17 @@ T(`#selector`).one(`click`, e => {
 
 T(`selector`).trigger('click');
 
-
 T(`selector`).html('element');
 
 T(`selector`).text('text');
-T(`selector`).height();
-T(`selector`).height(400);
-T(`selector`).show(`flex`);
-T(`selector`).hide();
 
+T(`selector`).height(400);
+
+T(`selector`).height();
+
+T(`selector`).show(`flex`);
+
+T(`selector`).hide();
 T.notify({
     text:`messageandtext`,
     className: `success`,
@@ -157,6 +194,7 @@ T.notify({
     position: `left`,
     iconClass: `ti-thumbs-up`,
 });
+
 
 T.modal({
     id: 'new-modal',
@@ -171,14 +209,19 @@ T.modal({
     }
 });
 
+
 window.publishingPopupCallback=function(){
     
 }
+
+
 T.tooltip(T(`selector`)[0], {
     placement:`top`
 });
 
-if(!T.checkValidity(e.target)) return;  
+
+
+if(!T.checkValidity(e.target)) return;
 
 T.vat(price, vat);
 
@@ -194,56 +237,34 @@ T.buttonLock.lock();
 
 T.buttonLock.unlock();
 
-loadSubFolder({
-    pageId: 1,
-    blockParentId: 1000,
-    subFolder: 'subfoldername',
-    params: { oneparam: oneparam, twoparam: twoparam },
-    success:  function(loadRes){
-        T.modal({ html: loadRes, width:'801px' });
-    }
-});
-T.isMobile()
 
-$.each(collection, function (i, val) { 
-     
-});
+/// services
 
-
-
-////
 
 `/srv/service/order-v4/order-return/${product_id}`
 `/srv/service/gallery/video-detail/${product_id}`
 `/srv/service/product-detail/view/606`
+`/srv/service/content/get/${BLOCK.ID}/folder_name`
 `/srv/service/language/change/${tr}`
 `/srv/shopping/shopping/set-currency/${tl}`
+`/srv/shopping/shopping/set-country/${TR}`
 `/srv/service/content/get-block/1003/category/${catID}`
 `/srv/service/category/get/${catID}`
 `/srv/service/product/filter/category/${catID}?pg=1`
 `/srv/service/category/getTree/${catID}`
 `/srv/service/content/get-block/1018/content/${içerik_id}`
-`/srv/service/product-detail/credit-card-installment-list/${product_id}/${product_id}`
+`/srv/service/product-detail/credit-card-installment-list/${product_id}/${sub_product_id}`
+`/srv/service/product-detail/payment-options/${product_id}/${sub_product_id}`
+`/srv/campaign-v2/campaign/get-list-by-type/product/${product_id}`
 `/srv/campaign-v2/campaign/get-list-by-type/cart`
 `/srv/campaign-v2/campaign/get-list-by-type/category/${id}`
 `/srv/service/cart/load?link=sepet`
 `/srv/service/product-detail/comments/${product_id}`
 `/srv/service/product-detail/comment-average/${product_id}`
+// TODO: endpointelri de ekle erp store
 `/srv/service/filter/get/brands`
 `/srv/service/content/getBlock/1070/product/${product_id}`
 `/srv/service/product/get-related-products/${product_id}/1`
 `/srv/service/product/get-related-products/${product_id}/2`
 `/srv/service/product/get-related-products/${product_id}/3`
 `/srv/service/product/get-related-products/${product_id}/4`
-
-
-
-
-getUrlParam('param')
-scrollToElm(`[href='#product-comments']`);
-scrollToElm(`[href='#product-comments']`);
-LocalApi.get(`key`);
-LocalApi.set(`key`, val, timeout);
-LocalApi.remove(`key`);
-
-evalScripts(content);
