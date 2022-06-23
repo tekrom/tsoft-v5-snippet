@@ -502,7 +502,9 @@ T.buttonLock.unlock();
 
 <details>
   <summary>SMARTY</summary>
-  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+  <p>
+  Here is Smarty code snippets for tsoftecommerce.com V5.
+
   
 #### `border- ⇥` 
 ```html title="Örnek kullanım" 
@@ -1077,14 +1079,6 @@ IMAGE.options
 /srv/service/product/get-related-products/${$P.ID}/4
 ```
 
-
-  
-  
-  
-  
-  
-  
-  
   </p>
 
 </details>
