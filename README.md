@@ -9,7 +9,7 @@ TSoft V5 Javascripti smarty (.tpl) and scss snippets
 - [JAVASCRIP](#JAVASCRIP)
 - [SMARTY](#SMARTY)
 - [SCSS](#SCSS)
-### JAVASCRIP
+## JAVASCRIP
 
 
 <details>
@@ -498,7 +498,7 @@ T.buttonLock.unlock();
 
 
 
-### SMARTY
+## SMARTY
 
 <details>
   <summary>SMARTY</summary>
@@ -1084,211 +1084,284 @@ IMAGE.options
 </details>
 
 
-
-```javascript
-selector.addEventListener("click",e=>{
-    console.log(e)
-}); 
-
-document.addEventListener("DOMContentLoaded",e=>{
-    console.log(e)
-});
-
-window['appName'] = {
-    data() {
-        return {
-            P:``,
-        }
-    },
-}
-Vue.creatApp(appName).mount(`#app-selector`);
-
-(`#selector`).on('submit', e => {
-    e.stopPropagation();
-    e.preventDefault();
-    const formEl = e.target;
-    if(!T.checkValidity(formEl))
-        return;
-    var data = new FormData(formEl);
-    axios.post('/srv/service/servicepath', data).then(response => {
-        const result = response.data;
-        console.log('result:', result);
-        formEl.reset();
-        T.notify({
-            text:"element",
-            className: 'success',
-            duration: 3200
-        });
-    });
-});
-
-new Swiper(selector, {
-    slidesPerView: 2,
-    spaceBetween: T.isMobile() ? 8 : 15,
-    navigation: {
-        nextEl: `#swiper-next-${BLOCK.ID}`,
-        prevEl:`#swiper-prev-${BLOCK.ID}`,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    },
-    breakpoints: {
-        576: {
-            slidesPerView: 3
-        },
-        768: {
-            slidesPerView: 4
-        }
-    }
-});
-
-axios.get("url").then((res)=> {
-    console.log(res.data);
-})
-.catch((error)=> {
-    console.log(error);
-})
-axios.post("url", formData).then((res)=> {
-    console.log(res.data);
-})
-.catch((error)=> {
-    console.log(error);
-})
-
-fetch("users.json").then(res=> res.json())
-.then(data=> {
-        data.forEach(el => {
-        console.log(el);
-    });
-})
-.catch(err => console.log(err))
-
-console.log();
-console.log('hey',hey);
-
-Cart.callback.add.push((res)=>{
-        console.log(res) 
-})
-
-T.ready(function(){
-    
-})
-T.each(T(`div`),(i, el)=>{
-    console.log(i, el);
-});
-
-T.setCookie(cookieName, cookieValue, exdays) 
-
-T.getCookie(cookieName)
-
-BLOCK.ID
-SETTING.DELAY
-IMAGE.URL
-
-T.getLink(`param`,'value','link');
-
-popoverAlert.show(
-    T(`selector`)[0], msg, false, `btn btn-danger text-left`, true, `inline`
-);  
-
-T(`selector`);
-
-T.wrap(T(`toWrapSelector`)[0],'','classname');
-
-T(`selector`).addClass('active');
-
-T(`selector`).removeClass('active');
-T(`selector`).toggleClass('active');
-T(`selector`).hasClass('active');
-T(`selector`).index();
-T(`#selector`).on(`click`, e => {
-    e.stopPropagation();
-    e.preventDefault();
-    const el = e.target;
-    
-});
-T(`#selector`).off(`click`, e => {
-    e.stopPropagation();
-    e.preventDefault();
-    const el = e.target;
-    
-});
-
-T(`#selector`).one(`click`, e => {
-    e.stopPropagation();
-    e.preventDefault();
-    const el = e.target;
-    
-});
-
-T(`selector`).trigger('click');
+## SCSS
+<details>
+  <summary>SCSS V5</summary>
+  <p>Here is Scss code snippets for tsoftecommerce.com V5.
 
 
-T(`selector`).html('element');
-
-T(`selector`).text('text');
-T(`selector`).height();
-T(`selector`).height(400);
-T(`selector`).show(`flex`);
-T(`selector`).hide();
-
-T.notify({
-    text:`messageandtext`,
-    className: `success`,
-    duration: 3200,
-    stopOnFocus: true,
-    close: true,
-    gravity:`top`,
-    position: `left`,
-    iconClass: `ti-thumbs-up`,
-});
-
-T.modal({
-    id: 'new-modal',
-    class: `classname`,
-    width: `480px`,
-    title: `ModalTitle`,
-    html: result.statusText,
-    close: true,
-    openCallback: () => {
-    },
-    closeCallback: () => {
-    }
-});
-
-window.publishingPopupCallback=function(){
-    
-}
-T.tooltip(T(`selector`)[0], {
-    placement:`top`
-});
-
-if(!T.checkValidity(e.target)) return;  
-
-T.vat(price, vat);
-
-T.format(number);
-
-T.timeConverter(1652702396000, `d.m.y`);
-
-const button = T(`#form_submit_button`)[0];
-T.buttonLock.dom = button;
-T.buttonLock.tmp = button.innerHTML;
-T.buttonLock.lock();
+#### `transparentize ⇥`  
+```scss title="Örnek kullanım" 
+transparentize($bgPrimary, 0.5);
+```
+#### `darken ⇥`  
+```scss title="Örnek kullanım" 
+darken($bgPrimary, 10%)
+```
+#### `lighten ⇥`  
+```scss title="Örnek kullanım" 
+lighten($bgPrimary, 10%)
+```
+#### `$gridColumns ⇥`  
+```scss title="Örnek kullanım" 
+$gridColumns
+```
+#### `$gridPadding ⇥`  
+```scss title="Örnek kullanım" 
+$gridPadding
+```
+#### `$mobileGridPadding ⇥`  
+```scss title="Örnek kullanım" 
+$mobileGridPadding
+```
+#### `$xxlScreen ⇥`  
+```scss title="Örnek kullanım" 
+$xxlScreen
+```
+#### `$xlScreen ⇥`  
+```scss title="Örnek kullanım" 
+$xlScreen
+```
+#### `$lgScreen ⇥`  
+```scss title="Örnek kullanım" 
+$lgScreen
+```
+#### `$mdScreen ⇥`  
+```scss title="Örnek kullanım" 
+$mdScreen
+```
+#### `$smScreen ⇥`  
+```scss title="Örnek kullanım" 
+$smScreen
+```
 
 
-T.buttonLock.unlock();
-
-loadSubFolder({
-    pageId: 1,
-    blockParentId: 1000,
-    subFolder: 'subfoldername',
-    params: { oneparam: oneparam, twoparam: twoparam },
-    success:  function(loadRes){
-        T.modal({ html: loadRes, width:'801px' });
-    }
-});
-T.isMobile()
+#### `$bg ⇥`  
+```scss title="Örnek kullanım" 
+$bgoptions
+$bgBody
+$bgPrimary
+$bgSecondary
+$bgWhite
+$bgBlack
+$bgGray
+$bgLight
+$bgDarkGray
+$bgSuccess
+$bgInfo
+$bgWarning
+$bgDanger
+```
+#### `$border ⇥`  
+```scss title="Örnek kullanım" 
+$borderoptions
+$borderBody
+$borderPrimary
+$borderSecondary
+$borderWhite
+$borderBlack
+$borderGray
+$borderLight
+$borderDarkGray
+$borderSuccess
+$borderInfo
+$borderWarning
+$borderDanger
+$borderRadius
 
 ```
+#### `$button ⇥`  
+```scss title="Örnek kullanım" 
+$buttonoptions
+$buttonPrimary
+$buttonSecondary
+$buttonWhite
+$buttonBlack
+$buttonGray
+$buttonLight
+$buttonDarkGray
+$buttonSuccess
+$buttonInfo
+$buttonWarning
+$buttonDanger
+
+```
+#### `$text ⇥`  
+```scss title="Örnek kullanım" 
+$textoptions
+$textPrimary
+$textSecondary
+$textWhite
+$textBlack
+$textGray
+$textLight
+$textDarkGray
+$textSuccess
+$textInfo
+$textWarning
+$textDanger
+$textColor
+
+```
+#### `$headingColor ⇥`  
+```scss title="Örnek kullanım" 
+$headingColor
+
+```
+#### `$font ⇥`  
+```scss title="Örnek kullanım" 
+$fontoptions
+$fontH1
+$fontH2
+$fontH3
+$fontText
+$fontMaster
+
+
+```
+#### `clamp ⇥`  
+```scss title="Örnek kullanım" 
+clamp(13px,1vw,20px)
+
+```
+#### `importsetting ⇥`  
+```scss title="Örnek kullanım" 
+@import "setting.scss";
+@import "mixin.scss";
+
+```
+#### `i-scrollbar ⇥`  
+```scss title="Örnek kullanım" 
+ @include scrollbar(5, 5, $bgPrimary);
+
+```
+#### `i-lineclamp ⇥`  
+```scss title="Örnek kullanım" 
+ @include line-clamp(2);
+
+```
+#### `i-j-evenly ⇥`  
+```scss title="Örnek kullanım" 
+  @include justify-content-evenly;
+
+```
+#### `i-j-center ⇥`  
+```scss title="Örnek kullanım" 
+  @include justify-content-center;
+
+```
+#### `i-j-start ⇥`  
+```scss title="Örnek kullanım" 
+ @include justify-content-flex-start;
+
+```
+#### `i-j-end ⇥`  
+```scss title="Örnek kullanım" 
+  @include justify-content-flex-end;
+
+```
+#### `i-j-between ⇥`  
+```scss title="Örnek kullanım" 
+  @include justify-content-between;
+
+```
+#### `i-j-around ⇥`  
+```scss title="Örnek kullanım" 
+   @include justify-content-around;
+
+```
+#### `i-a-end ⇥`  
+```scss title="Örnek kullanım" 
+  @include align-items-flex-end;
+
+```
+#### `i-a-start ⇥`  
+```scss title="Örnek kullanım" 
+  @include align-items-flex-start;
+
+```
+#### `i-row ⇥`  
+```scss title="Örnek kullanım" 
+   @include flex-direction-row;
+
+```
+#### `i-column ⇥`  
+```scss title="Örnek kullanım" 
+   @include flex-direction-column;
+
+```
+#### `i-wrap ⇥`  
+```scss title="Örnek kullanım" 
+   @include flex-wrap;
+
+```
+#### `i-flex ⇥`  
+```scss title="Örnek kullanım" 
+ @include d-flex;
+
+```
+#### `i-inlineflex ⇥`  
+```scss title="Örnek kullanım" 
+ @include d-inline-flex;
+
+```
+#### `i-allcenter ⇥`  
+```scss title="Örnek kullanım" 
+  @include d-flex;
+  @include align-items-center;
+  @include justify-content-center;
+
+```
+#### `i-block ⇥`  
+```scss title="Örnek kullanım" 
+  @include BLOCK {
+  
+  }
+
+```
+#### `boxshadow ⇥`  
+```scss title="Örnek kullanım" 
+box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);
+
+```
+#### `textshadow ⇥`  
+```scss title="Örnek kullanım" 
+text-shadow: 1px 1px 2px $bgBlack, 0 0 1em $bgBlack, 0 0 0.2em $bgBlack;
+
+```
+#### `lineclamp ⇥`  
+```scss title="Örnek kullanım" 
+display: -webkit-box !important;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+
+```
+#### `mediamin ⇥`  
+```scss title="Örnek kullanım" 
+@media (min-width: $mdScreen){
+
+}
+
+```
+#### `mediamax ⇥`  
+```scss title="Örnek kullanım" 
+@media (max-width: $mdScreen - 1){
+
+}
+
+```
+#### `keyframes ⇥`  
+```scss title="Örnek kullanım" 
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+```
+
+
+
+  </p>
+
+</details>

@@ -29,6 +29,12 @@ justify-content-evenly
 justify-content-flex-start
 justify-content-flex-end
 container
+
+
+
+
+
+
 {format price=($P.PRICE_SELL - ($P.PRICE_SELL * $P.NUMERIC1/100))}
 {vat price=($P.PRICE_SELL - ($P.PRICE_SELL * $P.NUMERIC1/100)) vat=$P.VAT}
 
@@ -129,3 +135,4 @@ SETTING
 /srv/service/product/get-related-products/${$P.ID}/2
 /srv/service/product/get-related-products/${$P.ID}/3
 /srv/service/product/get-related-products/${$P.ID}/4
+
