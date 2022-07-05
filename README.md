@@ -9,10 +9,35 @@ TSoft V5 Javascripti smarty (.tpl) and scss snippets
 - [JAVASCRIP](#JAVASCRIP)
 - [SMARTY](#SMARTY)
 - [SCSS](#SCSS)
-## JAVASCRIP
+
+To have a better syntax highligting in .tpl files,  it is adviced to install [Smarty Template Support](https://marketplace.visualstudio.com/items?itemName=aswinkumar863.smarty-template-support) beforehand.
+
+For Emmet Abbreviations you can paste the following into your settings.json file (to get setting json press <code>F1</code>, then search <code>open settings (json)</code>)
+
+  #### `F1 + > Open Setting (JSON) ⇥`  
+```jsonc title="Örnek kullanım" 
+"emmet.includeLanguages": {
+  "smarty": "html"
+}
+```
+or you can write in setting field <code> includeLanguages </code> and add item "smarty" and value "html"
+
+![Settings](images/setting.png)
 
 
-<details>
+### what it looks like
+![Settings](images/js.gif)
+
+![Settings](images/smarty.gif)
+
+![Settings](images/scss.gif)
+
+
+
+
+## SNIPPET PREFIXES
+
+<details id="JAVASCRIP">
   <summary>JAVASCRIPT V5</summary>
   <p>Here is Javascript code snippets for tsoftecommerce.com V5.
 
@@ -498,9 +523,8 @@ T.buttonLock.unlock();
 
 
 
-## SMARTY
 
-<details>
+<details id="SMARTY">
   <summary>SMARTY</summary>
   <p>
   Here is Smarty code snippets for tsoftecommerce.com V5.
@@ -1084,8 +1108,7 @@ IMAGE.options
 </details>
 
 
-## SCSS
-<details>
+<details id="SCSS">
   <summary>SCSS V5</summary>
   <p>Here is Scss code snippets for tsoftecommerce.com V5.
 
