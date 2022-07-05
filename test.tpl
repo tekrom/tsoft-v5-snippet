@@ -136,3 +136,5 @@ SETTING
 /srv/service/product/get-related-products/${$P.ID}/3
 /srv/service/product/get-related-products/${$P.ID}/4
 
+
+

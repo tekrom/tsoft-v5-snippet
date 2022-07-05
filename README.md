@@ -1,5 +1,7 @@
 # Tsoft E-commerce V5 snippets
 TSoft V5 Javascripti smarty (.tpl) and scss snippets
+The aim of this extention is to help  [tsoft.com.tr](https://www.tsoft.com.tr/) and [tsoftecommerce.com](https://www.tsoftecommerce.com/) frontend developers.
+
 ## Source
 [MIT](https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md)
 ## License
@@ -10,7 +12,8 @@ TSoft V5 Javascripti smarty (.tpl) and scss snippets
 - [SMARTY](#SMARTY)
 - [SCSS](#SCSS)
 
-To have a better syntax highligting in .tpl files,  it is adviced to install [Smarty Template Support](https://marketplace.visualstudio.com/items?itemName=aswinkumar863.smarty-template-support) beforehand.
+## ADVICES TO BE DONE BEFOREHAND
+To have a better syntax highligting in <code> .tpl </code> files,  it is adviced to install [Smarty Template Support](https://marketplace.visualstudio.com/items?itemName=aswinkumar863.smarty-template-support) beforehand.
 
 For Emmet Abbreviations you can paste the following into your settings.json file (to get setting json press <code>F1</code>, then search <code>open settings (json)</code>)
 
@@ -20,17 +23,12 @@ For Emmet Abbreviations you can paste the following into your settings.json file
   "smarty": "html"
 }
 ```
+==
 or you can write in setting field <code> includeLanguages </code> and add item "smarty" and value "html"
 
 ![Settings](images/setting.png)
 
 
-### what it looks like
-![Settings](images/js.gif)
-
-![Settings](images/smarty.gif)
-
-![Settings](images/scss.gif)
 
 
 
@@ -1388,3 +1386,12 @@ overflow: hidden;
   </p>
 
 </details>
+
+
+## WHAT IT LOOKS LIKE
+![Settings](images/js.gif)
+
+![Settings](images/smarty.gif)
+
+![Settings](images/scss.gif)
+
