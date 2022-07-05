@@ -1,21 +1,12 @@
 # Tsoft E-commerce V5 snippets
-TSoft V5 Javascripti smarty (.tpl) and scss snippets
+Javascript, smarty (.tpl) and scss snippets
 The aim of this extention is to help  [tsoft.com.tr](https://www.tsoft.com.tr/) and [tsoftecommerce.com](https://www.tsoftecommerce.com/) frontend developers.
 
-## Source
-[MIT](https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md)
-## License
-[MIT](https://github.com/gitorhub/tsoft-v5-snippet/blob/main/LICENCE)
-
-
-- [JAVASCRIP](#JAVASCRIP)
-- [SMARTY](#SMARTY)
-- [SCSS](#SCSS)
 
 ## ADVICES TO BE DONE BEFOREHAND
-To have a better syntax highligting in <code> .tpl </code> files,  it is adviced to install [Smarty Template Support](https://marketplace.visualstudio.com/items?itemName=aswinkumar863.smarty-template-support) beforehand.
+1. To have a better syntax highligting in <code> .tpl </code> files,  it is adviced to install [Smarty Template Support](https://marketplace.visualstudio.com/items?itemName=aswinkumar863.smarty-template-support) beforehand.
 
-For Emmet Abbreviations you can paste the following into your settings.json file (to get setting json press <code>F1</code>, then search <code>open settings (json)</code>)
+2. For Emmet Abbreviations you can paste the following into your settings.json file (press <code>F1</code>, then search <code>Open Settings (JSON)</code>)
 
   #### `F1 + > Open Setting (JSON) ⇥`  
 ```jsonc title="Örnek kullanım" 
@@ -24,7 +15,7 @@ For Emmet Abbreviations you can paste the following into your settings.json file
 }
 ```
 ==
-or you can write in setting field <code> includeLanguages </code> and add item "smarty" and value "html"
+or you can write <code> includeLanguages </code> in the setting input field and add item => "smarty" and value =>"html". 
 
 ![Settings](images/setting.png)
 
@@ -1394,4 +1385,15 @@ overflow: hidden;
 ![Settings](images/smarty.gif)
 
 ![Settings](images/scss.gif)
+
+
+## Source
+[MIT](https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md)
+## License
+[MIT](https://github.com/gitorhub/tsoft-v5-snippet/blob/main/LICENCE)
+
+
+- [JAVASCRIP](#JAVASCRIP)
+- [SMARTY](#SMARTY)
+- [SCSS](#SCSS)
 
