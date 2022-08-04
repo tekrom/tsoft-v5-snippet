@@ -493,9 +493,9 @@
 		]
 	},
 	"tsoft assets": {
-		"prefix": ["ASSETS","tassets","assets"],
+		"prefix": ["ASSETS","tassets","$ASSETS"],
 		"body": [
-			"ASSETS"
+			"{\\$ASSETS}"
 		]
 	},
 	"tsoft tabs": {
@@ -878,7 +878,7 @@
 	"tsoft scrollToElm": {
 		"prefix": ["scrollToElm", "tscrollToElm"],
 		"body": [
-			"scrollToElm('[href='${1:#idToScroll}']');"	
+			"scrollToElm('[href=\\'${1:#idToScroll}\\']', ${2:200});"	
 		]
 	},
 		"kkkk div": {

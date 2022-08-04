@@ -30,33 +30,24 @@ justify-content-flex-start
 justify-content-flex-end
 container
 
+scrollToElm('[href=\'#idToScroll\']', 200);
 
-
-
-
-
+<div class="dic" scrollToElm(`[href='#idToScroll']`);></div>
 {format price=($P.PRICE_SELL - ($P.PRICE_SELL * $P.NUMERIC1/100))}
 {vat price=($P.PRICE_SELL - ($P.PRICE_SELL * $P.NUMERIC1/100)) vat=$P.VAT}
-
 <div id="selector" class="row" v-cloak>
 </div>
-
-
 <script>
     const appName = {
         data() {
             return {
-                
             }
         }
     };
     Vue.createApp(appName).mount('selector');
 </script>
-
 /srv/service/content-v5/sub-folder/{$PAGE_ID/{$BLOCK.PARENT_ID}/subfoldername/?product={$P.ID}&variant={$P.VARIANT_ID}
-
 {vat price=$P.PRICE_SELL vat=$P.VAT}
-
 {format price=$P.PRICE_SELL}
 |string_format:'%.1f'
 |date_format:'Y,m,d,H,i,s'
@@ -72,28 +63,18 @@ $smarty.foreach.name.iteration
 $smarty.foreach.first.last
 RELATED_PRODUCTS_IDS1_COUNT
 SYMBOL_DATA
-
 <pre>{$smarty.server|@debug_print_var}</pre>
-
 {assign var="CATARRAY" value=","|explode:$P.CATEGORY_IDS}
 {math assign="SEPETTUTARI" equation="x*((100+v)/100)*((100-y)/100)" x=$P.PRICE_SELL y=$P.ADDITIONAL_FIELD_1 v=$P.VAT}
-
-
 https://api.whatsapp.com/send?phone=9{$WHATSAPP_NO}&text=
-
 json_decode($P.VARIANT_DATA, true)
-
 {$P.ID}
 BLOCK.ID
 javascript:void(0)
-
 |substr:0:5
 |substr:0:5
 <pre>{arr|@debug_print_var}</pre>
-
 {url type='page' id='68'}
-
-
 <pre>{$arr|@var_dump}</pre>
 /Data/EditorFiles/v5images/
 data-toggle="dropdown"
@@ -104,7 +85,6 @@ BLOCK.TITLE
 BLOCK.TITLE
 SETTING
 /srv/service/order-v4/order-return/${$P.ID}
-
 /srv/service/product/searchAll/test
 /srv/service/gallery/video-detail/${$P.ID}
 /srv/service/product-detail/view/606
@@ -135,6 +115,3 @@ SETTING
 /srv/service/product/get-related-products/${$P.ID}/2
 /srv/service/product/get-related-products/${$P.ID}/3
 /srv/service/product/get-related-products/${$P.ID}/4
-
-
-

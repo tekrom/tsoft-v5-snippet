@@ -468,6 +468,17 @@
 		],
 		"description": "import setting.scss"
 	},
+	"include transitionEase": {
+        "prefix": [
+            "i-transitionEase",
+            "includetransitionEase",
+            "@includetransitionEase"
+        ],
+        "body": [
+            "@include transitionEase;"
+        ],
+        "description": "import mixin.scss required "
+    },
 	"include scrollbar": {
 		"prefix": [
 			"i-scrollbar",
