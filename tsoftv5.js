@@ -128,6 +128,9 @@ loadSubFolder({
         evalScripts(loadRes)
     }
 });
+
+
+
 T.isMobile()
 
 getUrlParam('param')
