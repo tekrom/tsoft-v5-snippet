@@ -140,6 +140,8 @@ loadSubFolder({
     }
 });
 
+T.priceToFloat(strPrice);
+
 
 T.isMobile()
 

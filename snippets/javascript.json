@@ -461,6 +461,13 @@
 		],
 		"description": "Tsoft format for currency"
 	},
+	"Tsoft priceToFloat": {
+		"prefix": ["tpriceToFloat", "priceToFloat"],
+		"body": [
+			"T.priceToFloat(${1:strPrice});"
+		],
+		"description": "Tsoft vat"
+	},
 	"tsoft timeconverter": {
 		"prefix": ["timeconverter","ttimeconverter"],
 		"body": [
