@@ -34,6 +34,12 @@
   @include d-flex;
   @include align-items-center;
   @include justify-content-center;
+// mask:url(#{assets}/image_path);
+// -webkit-mask:url(#{assets}/image_path);
+// -webkit-mask-repeat: no-repeat;
+// -webkit-mask-position: center;
+// -webkit-mask-size: cover;
+// background-color:$bgPrimary
 
   @include BLOCK {
   
