@@ -478,7 +478,7 @@
             "-webkit-mask-repeat: no-repeat;",
             "-webkit-mask-position: center;",
             "-webkit-mask-size: ${2|cover,contain|};",
-            "background-color:\\$bg${3|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|}"
+            "background-color:\\$bg${3|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|};"
         ],
         "description": "import mixin.scss required "
     },

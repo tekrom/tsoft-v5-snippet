@@ -145,8 +145,8 @@ T.priceToFloat(strPrice);
 T(`selector`).attr(`attr_name`, null);
 
 
-
 T.isMobile()
+
 
 getUrlParam('param')
 
