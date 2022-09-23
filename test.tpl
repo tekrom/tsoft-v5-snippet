@@ -32,6 +32,7 @@ container
 
 
 
+
 scrollToElm('[href=\'#idToScroll\']', 200);
 
 <div class="dic" scrollToElm(`[href='#idToScroll']`);></div>

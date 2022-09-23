@@ -1,750 +1,510 @@
 {
+  "clamp transparentize": {
+    "prefix": "transparentize",
+    "body": ["transparentize(${1:\\$bgPrimary}, ${2:0.5})"],
+    "description": "color and amount"
+  },
+  "clamp darken": {
+    "prefix": "darken",
+    "body": ["darken(${1:\\$bgPrimary}, ${2:10}%)"],
+    "description": "color and percent"
+  },
+  "clamp lighten": {
+    "prefix": "lighten",
+    "body": ["lighten(${1:\\$bgPrimary}, ${2:10}%)"],
+    "description": "color and percent"
+  },
+  "clamp gridColumns": {
+    "prefix": "$gridColumns",
+    "body": ["\\$gridColumns"],
+    "description": "defaults"
+  },
+  "clamp gridPadding": {
+    "prefix": "$gridPadding",
+    "body": ["\\$gridPadding"],
+    "description": "defaults"
+  },
+  "clamp mobileGridPadding": {
+    "prefix": "$mobileGridPadding",
+    "body": ["\\$mobileGridPadding"],
+    "description": "defaults"
+  },
+  "clamp xxlScreen": {
+    "prefix": "$xxlScreen",
+    "body": ["\\$xxlScreen"],
+    "description": "defaults"
+  },
+  "clamp xlScreen": {
+    "prefix": "$xlScreen",
+    "body": ["\\$xlScreen"],
+    "description": "defaults"
+  },
+  "clamp lgScreen": {
+    "prefix": "$lgScreen",
+    "body": ["\\$lgScreen"],
+    "description": "defaults"
+  },
+  "clamp mdScreen": {
+    "prefix": "$mdScreen",
+    "body": ["\\$mdScreen"],
+    "description": "defaults"
+  },
+  "clamp smScreen": {
+    "prefix": "$smScreen",
+    "body": ["\\$smScreen"],
+    "description": "defaults"
+  },
+  "clamp bgBody": {
+    "prefix": "$bgBody",
+    "body": ["\\$bgBody"],
+    "description": "defaults"
+  },
+  "clamp bgPrimary": {
+    "prefix": "$bgPrimary",
+    "body": ["\\$bgPrimary"],
+    "description": "defaults"
+  },
+  "clamp bgSecondary": {
+    "prefix": "$bgSecondary",
+    "body": ["\\$bgSecondary"],
+    "description": "defaults"
+  },
+  "clamp bgWhite": {
+    "prefix": "$bgWhite",
+    "body": ["\\$bgWhite"],
+    "description": "defaults"
+  },
+  "clamp bgBlack": {
+    "prefix": "$bgBlack",
+    "body": ["\\$bgBlack"],
+    "description": "defaults"
+  },
+  "clamp bgGray": {
+    "prefix": "$bgGray",
+    "body": ["\\$bgGray"],
+    "description": "defaults"
+  },
+  "clamp bgLight": {
+    "prefix": "$bgLight",
+    "body": ["\\$bgLight"],
+    "description": "defaults"
+  },
+  "clamp bgDarkGray": {
+    "prefix": "$bgDarkGray",
+    "body": ["\\$bgDarkGray"],
+    "description": "defaults"
+  },
+  "clamp bgSuccess": {
+    "prefix": "$bgSuccess",
+    "body": ["\\$bgSuccess"],
+    "description": "defaults"
+  },
+  "clamp bgInfo": {
+    "prefix": "$bgInfo",
+    "body": ["\\$bgInfo"],
+    "description": "defaults"
+  },
+  "clamp bgWarning": {
+    "prefix": "$bgWarning",
+    "body": ["\\$bgWarning"],
+    "description": "defaults"
+  },
+  "clamp bgDanger": {
+    "prefix": "$bgDanger",
+    "body": ["\\$bgDanger"],
+    "description": "defaults"
+  },
+  "clamp bg": {
+    "prefix": "$bg",
+    "body": [
+      "\\$bg${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|}"
+    ],
+    "description": "defaults"
+  },
+  "clamp borderPrimary": {
+    "prefix": "$borderPrimary",
+    "body": ["\\$borderPrimary"],
+    "description": "defaults"
+  },
+  "clamp borderSecondary": {
+    "prefix": "$borderSecondary",
+    "body": ["\\$borderSecondary"],
+    "description": "defaults"
+  },
+  "clamp borderWhite": {
+    "prefix": "$borderWhite",
+    "body": ["\\$borderWhite"],
+    "description": "defaults"
+  },
+  "clamp borderBlack": {
+    "prefix": "$borderBlack",
+    "body": ["\\$borderBlack"],
+    "description": "defaults"
+  },
+  "clamp borderGray": {
+    "prefix": "$borderGray",
+    "body": ["\\$borderGray"],
+    "description": "defaults"
+  },
+  "clamp borderLight": {
+    "prefix": "$borderLight",
+    "body": ["\\$borderLight"],
+    "description": "defaults"
+  },
+  "clamp borderDarkGray": {
+    "prefix": "$borderDarkGray",
+    "body": ["\\$borderDarkGray"],
+    "description": "defaults"
+  },
+  "clamp borderSuccess": {
+    "prefix": "$borderSuccess",
+    "body": ["\\$borderSuccess"],
+    "description": "defaults"
+  },
+  "clamp borderInfo": {
+    "prefix": "$borderInfo",
+    "body": ["\\$borderInfo"],
+    "description": "defaults"
+  },
+  "clamp borderWarning": {
+    "prefix": "$borderWarning",
+    "body": ["\\$borderWarning"],
+    "description": "defaults"
+  },
+  "clamp borderDanger": {
+    "prefix": "$borderDanger",
+    "body": ["\\$borderDanger"],
+    "description": "defaults"
+  },
+  "clamp borderRadius": {
+    "prefix": "$borderRadius",
+    "body": ["\\$borderRadius"],
+    "description": "defaults"
+  },
+  "clamp border": {
+    "prefix": "$border",
+    "body": [
+      "\\$border${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Radius|}"
+    ],
+    "description": "defaults"
+  },
+  "clamp buttonSecondary": {
+    "prefix": "$buttonSecondary",
+    "body": ["\\$buttonSecondary"],
+    "description": "defaults"
+  },
+  "clamp buttonPrimary": {
+    "prefix": "$buttonPrimary",
+    "body": ["\\$buttonPrimary"],
+    "description": "defaults"
+  },
+  "clamp buttonWhite": {
+    "prefix": "$buttonWhite",
+    "body": ["\\$buttonWhite"],
+    "description": "defaults"
+  },
+  "clamp buttonBlack": {
+    "prefix": "$buttonBlack",
+    "body": ["\\$buttonBlack"],
+    "description": "defaults"
+  },
+  "clamp buttonGray": {
+    "prefix": "$buttonGray",
+    "body": ["\\$buttonGray"],
+    "description": "defaults"
+  },
+  "clamp buttonLight": {
+    "prefix": "$buttonLight",
+    "body": ["\\$buttonLight"],
+    "description": "defaults"
+  },
+  "clamp buttonDarkGray": {
+    "prefix": "$buttonDarkGray",
+    "body": ["\\$buttonDarkGray"],
+    "description": "defaults"
+  },
+  "clamp buttonSuccess": {
+    "prefix": "$buttonSuccess",
+    "body": ["\\$buttonSuccess"],
+    "description": "defaults"
+  },
+  "clamp buttonInfo": {
+    "prefix": "$buttonInfo",
+    "body": ["\\$buttonInfo"],
+    "description": "defaults"
+  },
+  "clamp buttonWarning": {
+    "prefix": "$buttonWarning",
+    "body": ["\\$buttonWarning"],
+    "description": "defaults"
+  },
+  "clamp buttonDanger": {
+    "prefix": "$buttonDanger",
+    "body": ["\\$buttonDanger"],
+    "description": "defaults"
+  },
+  "clamp button": {
+    "prefix": ["$button", "btn"],
+    "body": [
+      "\\$button${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger|}"
+    ],
+    "description": "defaults"
+  },
+  "clamp font": {
+    "prefix": "$font",
+    "body": ["\\$font${1|H1,H2,H3,Text,Master|}"],
+    "description": "defaults"
+  },
+  "clamp textPrimary": {
+    "prefix": "$textPrimary",
+    "body": ["\\$textPrimary"],
+    "description": "defaults"
+  },
+  "clamp textSecondary": {
+    "prefix": "$textSecondary",
+    "body": ["\\$textSecondary"],
+    "description": "defaults"
+  },
+  "clamp textWhite": {
+    "prefix": "$textWhite",
+    "body": ["\\$textWhite"],
+    "description": "defaults"
+  },
+  "clamp textBlack": {
+    "prefix": "$textBlack",
+    "body": ["\\$textBlack"],
+    "description": "defaults"
+  },
+  "clamp textGray": {
+    "prefix": "$textGray",
+    "body": ["\\$textGray"],
+    "description": "defaults"
+  },
+  "clamp textLight": {
+    "prefix": "$textLight",
+    "body": ["\\$textLight"],
+    "description": "defaults"
+  },
+  "clamp textDarkGray": {
+    "prefix": "$textDarkGray",
+    "body": ["\\$textDarkGray"],
+    "description": "defaults"
+  },
+  "clamp textSuccess": {
+    "prefix": "$textSuccess",
+    "body": ["\\$textSuccess"],
+    "description": "defaults"
+  },
+  "clamp textInfo": {
+    "prefix": "$textInfo",
+    "body": ["\\$textInfo"],
+    "description": "defaults"
+  },
+  "clamp textWarning": {
+    "prefix": "$textWarning",
+    "body": ["\\$textWarning"],
+    "description": "defaults"
+  },
+  "clamp textDanger": {
+    "prefix": "$textDanger",
+    "body": ["\\$textDanger"],
+    "description": "defaults"
+  },
 
-	"clamp transparentize": {
-		"prefix": "transparentize",
-		"body": [
-			"transparentize(${1:\\$bgPrimary}, ${2:0.5})"
-		],
-		"description": "color and amount"
-	},
-	"clamp darken": {
-		"prefix": "darken",
-		"body": [
-			"darken(${1:\\$bgPrimary}, ${2:10}%)"
-		],
-		"description": "color and percent"
-	},
-	"clamp lighten": {
-		"prefix": "lighten",
-		"body": [
-			"lighten(${1:\\$bgPrimary}, ${2:10}%)"
-		],
-		"description": "color and percent"
-	},
-	"clamp gridColumns": {
-		"prefix": "$gridColumns",
-		"body": [
-			"\\$gridColumns"
-		],
-		"description": "defaults"
-	},
-	"clamp gridPadding": {
-		"prefix": "$gridPadding",
-		"body": [
-			"\\$gridPadding"
-		],
-		"description": "defaults"
-	},
-	"clamp mobileGridPadding": {
-		"prefix": "$mobileGridPadding",
-		"body": [
-			"\\$mobileGridPadding"
-		],
-		"description": "defaults"
-	},
-	"clamp xxlScreen": {
-		"prefix": "$xxlScreen",
-		"body": [
-			"\\$xxlScreen"
-		],
-		"description": "defaults"
-	},
-	"clamp xlScreen": {
-		"prefix": "$xlScreen",
-		"body": [
-			"\\$xlScreen"
-		],
-		"description": "defaults"
-	},
-	"clamp lgScreen": {
-		"prefix": "$lgScreen",
-		"body": [
-			"\\$lgScreen"
-		],
-		"description": "defaults"
-	},
-	"clamp mdScreen": {
-		"prefix": "$mdScreen",
-		"body": [
-			"\\$mdScreen"
-		],
-		"description": "defaults"
-	},
-	"clamp smScreen": {
-		"prefix": "$smScreen",
-		"body": [
-			"\\$smScreen"
-		],
-		"description": "defaults"
-	},
-	"clamp bgBody": {
-		"prefix": "$bgBody",
-		"body": [
-			"\\$bgBody"
-		],
-		"description": "defaults"
-	},
-	"clamp bgPrimary": {
-		"prefix": "$bgPrimary",
-		"body": [
-			"\\$bgPrimary"
-		],
-		"description": "defaults"
-	},
-	"clamp bgSecondary": {
-		"prefix": "$bgSecondary",
-		"body": [
-			"\\$bgSecondary"
-		],
-		"description": "defaults"
-	},
-	"clamp bgWhite": {
-		"prefix": "$bgWhite",
-		"body": [
-			"\\$bgWhite"
-		],
-		"description": "defaults"
-	},
-	"clamp bgBlack": {
-		"prefix": "$bgBlack",
-		"body": [
-			"\\$bgBlack"
-		],
-		"description": "defaults"
-	},
-	"clamp bgGray": {
-		"prefix": "$bgGray",
-		"body": [
-			"\\$bgGray"
-		],
-		"description": "defaults"
-	},
-	"clamp bgLight": {
-		"prefix": "$bgLight",
-		"body": [
-			"\\$bgLight"
-		],
-		"description": "defaults"
-	},
-	"clamp bgDarkGray": {
-		"prefix": "$bgDarkGray",
-		"body": [
-			"\\$bgDarkGray"
-		],
-		"description": "defaults"
-	},
-	"clamp bgSuccess": {
-		"prefix": "$bgSuccess",
-		"body": [
-			"\\$bgSuccess"
-		],
-		"description": "defaults"
-	},
-	"clamp bgInfo": {
-		"prefix": "$bgInfo",
-		"body": [
-			"\\$bgInfo"
-		],
-		"description": "defaults"
-	},
-	"clamp bgWarning": {
-		"prefix": "$bgWarning",
-		"body": [
-			"\\$bgWarning"
-		],
-		"description": "defaults"
-	},
-	"clamp bgDanger": {
-		"prefix": "$bgDanger",
-		"body": [
-			"\\$bgDanger"
-		],
-		"description": "defaults"
-	},
-	"clamp bg": {
-		"prefix": "$bg",
-		"body": [
-			"\\$bg${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|}"
-		],
-		"description": "defaults"
-	},
-	"clamp borderPrimary": {
-		"prefix": "$borderPrimary",
-		"body": [
-			"\\$borderPrimary"
-		],
-		"description": "defaults"
-	},
-	"clamp borderSecondary": {
-		"prefix": "$borderSecondary",
-		"body": [
-			"\\$borderSecondary"
-		],
-		"description": "defaults"
-	},
-	"clamp borderWhite": {
-		"prefix": "$borderWhite",
-		"body": [
-			"\\$borderWhite"
-		],
-		"description": "defaults"
-	},
-	"clamp borderBlack": {
-		"prefix": "$borderBlack",
-		"body": [
-			"\\$borderBlack"
-		],
-		"description": "defaults"
-	},
-	"clamp borderGray": {
-		"prefix": "$borderGray",
-		"body": [
-			"\\$borderGray"
-		],
-		"description": "defaults"
-	},
-	"clamp borderLight": {
-		"prefix": "$borderLight",
-		"body": [
-			"\\$borderLight"
-		],
-		"description": "defaults"
-	},
-	"clamp borderDarkGray": {
-		"prefix": "$borderDarkGray",
-		"body": [
-			"\\$borderDarkGray"
-		],
-		"description": "defaults"
-	},
-	"clamp borderSuccess": {
-		"prefix": "$borderSuccess",
-		"body": [
-			"\\$borderSuccess"
-		],
-		"description": "defaults"
-	},
-	"clamp borderInfo": {
-		"prefix": "$borderInfo",
-		"body": [
-			"\\$borderInfo"
-		],
-		"description": "defaults"
-	},
-	"clamp borderWarning": {
-		"prefix": "$borderWarning",
-		"body": [
-			"\\$borderWarning"
-		],
-		"description": "defaults"
-	},
-	"clamp borderDanger": {
-		"prefix": "$borderDanger",
-		"body": [
-			"\\$borderDanger"
-		],
-		"description": "defaults"
-	},
-	"clamp borderRadius": {
-		"prefix": "$borderRadius",
-		"body": [
-			"\\$borderRadius"
-		],
-		"description": "defaults"
-	},
-	"clamp border": {
-		"prefix": "$border",
-		"body": [
-			"\\$border${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Radius|}"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonSecondary": {
-		"prefix": "$buttonSecondary",
-		"body": [
-			"\\$buttonSecondary"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonPrimary": {
-		"prefix": "$buttonPrimary",
-		"body": [
-			"\\$buttonPrimary"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonWhite": {
-		"prefix": "$buttonWhite",
-		"body": [
-			"\\$buttonWhite"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonBlack": {
-		"prefix": "$buttonBlack",
-		"body": [
-			"\\$buttonBlack"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonGray": {
-		"prefix": "$buttonGray",
-		"body": [
-			"\\$buttonGray"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonLight": {
-		"prefix": "$buttonLight",
-		"body": [
-			"\\$buttonLight"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonDarkGray": {
-		"prefix": "$buttonDarkGray",
-		"body": [
-			"\\$buttonDarkGray"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonSuccess": {
-		"prefix": "$buttonSuccess",
-		"body": [
-			"\\$buttonSuccess"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonInfo": {
-		"prefix": "$buttonInfo",
-		"body": [
-			"\\$buttonInfo"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonWarning": {
-		"prefix": "$buttonWarning",
-		"body": [
-			"\\$buttonWarning"
-		],
-		"description": "defaults"
-	},
-	"clamp buttonDanger": {
-		"prefix": "$buttonDanger",
-		"body": [
-			"\\$buttonDanger"
-		],
-		"description": "defaults"
-	},
-	"clamp button": {
-		"prefix": ["$button", "btn"],
-		"body": [
-			"\\$button${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger|}"
-		],
-		"description": "defaults"
-	},
-	"clamp font": {
-		"prefix": "$font",
-		"body": [
-			"\\$font${1|H1,H2,H3,Text,Master|}"
-		],
-		"description": "defaults"
-	},
-	"clamp textPrimary": {
-		"prefix": "$textPrimary",
-		"body": [
-			"\\$textPrimary"
-		],
-		"description": "defaults"
-	},
-	"clamp textSecondary": {
-		"prefix": "$textSecondary",
-		"body": [
-			"\\$textSecondary"
-		],
-		"description": "defaults"
-	},
-	"clamp textWhite": {
-		"prefix": "$textWhite",
-		"body": [
-			"\\$textWhite"
-		],
-		"description": "defaults"
-	},
-	"clamp textBlack": {
-		"prefix": "$textBlack",
-		"body": [
-			"\\$textBlack"
-		],
-		"description": "defaults"
-	},
-	"clamp textGray": {
-		"prefix": "$textGray",
-		"body": [
-			"\\$textGray"
-		],
-		"description": "defaults"
-	},
-	"clamp textLight": {
-		"prefix": "$textLight",
-		"body": [
-			"\\$textLight"
-		],
-		"description": "defaults"
-	},
-	"clamp textDarkGray": {
-		"prefix": "$textDarkGray",
-		"body": [
-			"\\$textDarkGray"
-		],
-		"description": "defaults"
-	},
-	"clamp textSuccess": {
-		"prefix": "$textSuccess",
-		"body": [
-			"\\$textSuccess"
-		],
-		"description": "defaults"
-	},
-	"clamp textInfo": {
-		"prefix": "$textInfo",
-		"body": [
-			"\\$textInfo"
-		],
-		"description": "defaults"
-	},
-	"clamp textWarning": {
-		"prefix": "$textWarning",
-		"body": [
-			"\\$textWarning"
-		],
-		"description": "defaults"
-	},
-	"clamp textDanger": {
-		"prefix": "$textDanger",
-		"body": [
-			"\\$textDanger"
-		],
-		"description": "defaults"
-	},
+  "clamp textColor": {
+    "prefix": "$textColor",
+    "body": ["\\$textColor"],
+    "description": "defaults"
+  },
+  "clamp headingColor": {
+    "prefix": "$headingColor",
+    "body": ["\\$headingColor"],
+    "description": "defaults"
+  },
 
-	"clamp textColor": {
-		"prefix": "$textColor",
-		"body": [
-			"\\$textColor"
-		],
-		"description": "defaults"
-	},
-	"clamp headingColor": {
-		"prefix": "$headingColor",
-		"body": [
-			"\\$headingColor"
-		],
-		"description": "defaults"
-	},
-
-	"clamptext": {
-		"prefix": ["$text","text"],
-		"body": [
-			"\\$text${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Color|}"
-		],
-		"description": "defaults"
-	},
-	"clamp size": {
-		"prefix": "clamp",
-		"body": [
-			"clamp(${1:13}px,${2:1}vw,${3:20}px)"
-		],
-		"description": "min, normal, max"
-	},
-	"import setting": {
-		"prefix": [
-			"importsetting",
-			"@importsettng"
-		],
-		"body": [
-			"@import \"setting.scss\";",
-			"@import \"mixin.scss\";"
-		],
-		"description": "import setting.scss"
-	},
-	"include mask": {
-        "prefix": [
-            "i-mask"
-        ],
-        "body": [
-            "mask:url(#{$assets}/${1:image_path});",
-            "-webkit-mask:url(#{$assets}/${1:image_path});",
-            "-webkit-mask-repeat: no-repeat;",
-            "-webkit-mask-position: center;",
-            "-webkit-mask-size: ${2|cover,contain|};",
-            "background-color:\\$bg${3|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|};"
-        ],
-        "description": "import mixin.scss required "
-    },
-	"include transitionEase": {
-        "prefix": [
-            "i-transitionEase",
-            "includetransitionEase",
-            "@includetransitionEase"
-        ],
-        "body": [
-            "@include transitionEase;"
-        ],
-        "description": "import mixin.scss required "
-    },
-	"include scrollbar": {
-		"prefix": [
-			"i-scrollbar",
-			"includescrollbar",
-			"@includescrollbar"
-		],
-		"body": [
-			"@include scrollbar(${1:5}, ${2:5}, ${3:\\$bgPrimary});"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include line-clamp": {
-		"prefix": [
-			"i-lineclamp",
-			"includelineclamp",
-			"@includelineclamp"
-		],
-		"body": [
-			"@include line-clamp(${1:2});"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include justify-content-evenly": {
-		"prefix": [
-			"i-j-evenly",
-			"includej-evenly",
-			"@includej-evenly"
-		],
-		"body": [
-			"@include justify-content-evenly;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include justify-content-center": {
-		"prefix": [
-			"i-j-center",
-			"includej-center",
-			"@includej-center"
-		],
-		"body": [
-			"@include justify-content-center;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include justify-content-flex-start": {
-		"prefix": [
-			"i-j-start",
-			"includej-start",
-			"@includej-start"
-		],
-		"body": [
-			"@include justify-content-flex-start;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include justify-content-flex-end": {
-		"prefix": [
-			"i-j-end",
-			"includej-end",
-			"@includej-end"
-		],
-		"body": [
-			"@include justify-content-flex-end;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include justify-content-between": {
-		"prefix": [
-			"i-j-between",
-			"includej-between",
-			"@includej-between"
-		],
-		"body": [
-			"@include justify-content-between;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include justify-content-around": {
-		"prefix": [
-			"i-j-around",
-			"includej-around",
-			"@includej-around"
-		],
-		"body": [
-			"@include justify-content-around;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include align-items-center": {
-		"prefix": [
-			"i-a-center",
-			"includea-center",
-			"@includea-center"
-		],
-		"body": [
-			"@include align-items-center;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include align-items-end": {
-		"prefix": [
-			"i-a-end",
-			"includea-end",
-			"@includea-end"
-		],
-		"body": [
-			"@include align-items-flex-end;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include align-items-flex-start": {
-		"prefix": [
-			"i-a-start",
-			"includea-start",
-			"@includea-start"
-		],
-		"body": [
-			"@include align-items-flex-start;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include flex-direction-row": {
-		"prefix": [
-			"i-row",
-			"includerow",
-			"@includerow"
-		],
-		"body": [
-			"@include flex-direction-row;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include flex-direction-column": {
-		"prefix": [
-			"i-column",
-			"includecolumn",
-			"@includecolumn"
-		],
-		"body": [
-			"@include flex-direction-column;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include  flex-wrap": {
-		"prefix": [
-			"i-wrap",
-			"includewrap",
-			"@includewrap"
-		],
-		"body": [
-			"@include flex-wrap;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include d-flex": {
-		"prefix": [
-			"i-flex",
-			"includeflex",
-			"@includeflex"
-		],
-		"body": [
-			"@include d-flex;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include d-inline-flex": {
-		"prefix": [
-			"i-inlineflex",
-			"includeinlineflex",
-			"@includeinlineflex"
-		],
-		"body": [
-			"@include d-inline-flex;"
-		],
-		"description": "import mixin.scss required "
-	},
-	"include mixins": {
-		"prefix": [
-			"i-allcenter",
-			"includeallcenter",
-			"@includeallcenter"
-		],
-		"body": [
-			"@include d-flex;",
-			"@include align-items-center;",
-			"@include justify-content-center;"
-		],
-		"description": "import mixin.scss required"
-	},
-	"include block": {
-		"prefix": [
-			"i-block",
-			"includeblock",
-			"@includeblock"
-		],
-		"body": [
-			"@include BLOCK {",
-			"\t$1",
-			"}"
-		],
-		"description": "import setting.scss"
-	},
-	"Print to boxshadow": {
-		"prefix": ["box-shadow","boxshadow"],
-		"body": [
-			"box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);"
-		],
-		"description": "offset-x | offset-y | blur-radius | spread-radius | color"
-	},
-	"Print to textshadow": {
-		"prefix": ["text-shadow", "textshadow"],
-		"body": [
-			"text-shadow: 1px 1px 2px \\$bgBlack, 0 0 1em \\$bgBlack, 0 0 0.2em \\$bgBlack;"
-		],
-		"description": "offset-x | offset-y | blur-radius | color"
-	},
-	"Print to lineclamp": {
-		"prefix": "lineclamp",
-		"body": [
-			"display: -webkit-box !important;",
-			"-webkit-line-clamp: 2;",
-			"-webkit-box-orient: vertical;",
-			"overflow: hidden;"
-		],
-		"description": "lineclamp"
-	},
-	"media min width": {
-		"prefix": ["mediamin", "minmedia"],
-		"body": [
-			"@media (min-width: \\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|}){",
-			"\t$2",
-			"}"
-		],
-		"description": "media screen  \n $xxlScreen: 1400px; \n $xlScreen: 1170px; \n $lgScreen: 992px; \n $mdScreen: 768px; \n smScreen: 576px;"
-	},
-	"media max": {
-		"prefix": ["mediamax","maxmedia"],
-		"body": [
-			"@media (max-width: \\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|} - 1){",
-			"\t$2",
-			"}"
-		],
-		"description": "media screen  \n $xxlScreen: 1400px; \n $xlScreen: 1170px; \n $lgScreen: 992px; \n $mdScreen: 768px; \n smScreen: 576px;"
-	},
-	"keyframes ": {
-		"prefix": "keyframes",
-		"body": [
-			"@keyframes ${1:mymove} {",
-			"\tfrom {top: 0px;}",
-			"\tto {top: 200px;}",
-			"}"
-		],
-		"description": "keyframes"
-	}
+  "clamptext": {
+    "prefix": ["$text", "text"],
+    "body": [
+      "\\$text${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Color|}"
+    ],
+    "description": "defaults"
+  },
+  "clamp size": {
+    "prefix": "clamp",
+    "body": ["clamp(${1:13}px,${2:1}vw,${3:20}px)"],
+    "description": "min, normal, max"
+  },
+  "import setting": {
+    "prefix": ["importsetting", "@importsettng"],
+    "body": ["@import \"setting.scss\";", "@import \"mixin.scss\";"],
+    "description": "import setting.scss"
+  },
+  "include mask": {
+    "prefix": ["i-mask"],
+    "body": [
+      "mask:url(#{\\$assets}/${1:image_path});",
+      "mask-repeat: no-repeat;",
+      "mask-position: center;",
+      "mask-size: cover;",
+      "-webkit-mask:url(#{\\$assets}/${1:image_path});",
+      "-webkit-mask-repeat: no-repeat;",
+      "-webkit-mask-position: center;",
+      "-webkit-mask-size: ${2|cover,contain|};",
+      "background-color:\\$bg${3|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|};"
+    ],
+    "description": "import mixin.scss required "
+  },
+  "include transitionEase": {
+    "prefix": [
+      "i-transitionEase",
+      "includetransitionEase",
+      "@includetransitionEase"
+    ],
+    "body": ["@include transitionEase;"],
+    "description": "import mixin.scss required "
+  },
+  "include scrollbar": {
+    "prefix": ["i-scrollbar", "includescrollbar", "@includescrollbar"],
+    "body": ["@include scrollbar(${1:5}, ${2:5}, ${3:\\$bgPrimary});"],
+    "description": "import mixin.scss required "
+  },
+  "include line-clamp": {
+    "prefix": ["i-lineclamp", "includelineclamp", "@includelineclamp"],
+    "body": ["@include line-clamp(${1:2});"],
+    "description": "import mixin.scss required "
+  },
+  "include justify-content-evenly": {
+    "prefix": ["i-j-evenly", "includej-evenly", "@includej-evenly"],
+    "body": ["@include justify-content-evenly;"],
+    "description": "import mixin.scss required "
+  },
+  "include justify-content-center": {
+    "prefix": ["i-j-center", "includej-center", "@includej-center"],
+    "body": ["@include justify-content-center;"],
+    "description": "import mixin.scss required "
+  },
+  "include justify-content-flex-start": {
+    "prefix": ["i-j-start", "includej-start", "@includej-start"],
+    "body": ["@include justify-content-flex-start;"],
+    "description": "import mixin.scss required "
+  },
+  "include justify-content-flex-end": {
+    "prefix": ["i-j-end", "includej-end", "@includej-end"],
+    "body": ["@include justify-content-flex-end;"],
+    "description": "import mixin.scss required "
+  },
+  "include justify-content-between": {
+    "prefix": ["i-j-between", "includej-between", "@includej-between"],
+    "body": ["@include justify-content-between;"],
+    "description": "import mixin.scss required "
+  },
+  "include justify-content-around": {
+    "prefix": ["i-j-around", "includej-around", "@includej-around"],
+    "body": ["@include justify-content-around;"],
+    "description": "import mixin.scss required "
+  },
+  "include align-items-center": {
+    "prefix": ["i-a-center", "includea-center", "@includea-center"],
+    "body": ["@include align-items-center;"],
+    "description": "import mixin.scss required "
+  },
+  "include align-items-end": {
+    "prefix": ["i-a-end", "includea-end", "@includea-end"],
+    "body": ["@include align-items-flex-end;"],
+    "description": "import mixin.scss required "
+  },
+  "include align-items-flex-start": {
+    "prefix": ["i-a-start", "includea-start", "@includea-start"],
+    "body": ["@include align-items-flex-start;"],
+    "description": "import mixin.scss required "
+  },
+  "include flex-direction-row": {
+    "prefix": ["i-row", "includerow", "@includerow"],
+    "body": ["@include flex-direction-row;"],
+    "description": "import mixin.scss required "
+  },
+  "include flex-direction-column": {
+    "prefix": ["i-column", "includecolumn", "@includecolumn"],
+    "body": ["@include flex-direction-column;"],
+    "description": "import mixin.scss required "
+  },
+  "include  flex-wrap": {
+    "prefix": ["i-wrap", "includewrap", "@includewrap"],
+    "body": ["@include flex-wrap;"],
+    "description": "import mixin.scss required "
+  },
+  "include d-flex": {
+    "prefix": ["i-flex", "includeflex", "@includeflex"],
+    "body": ["@include d-flex;"],
+    "description": "import mixin.scss required "
+  },
+  "include d-inline-flex": {
+    "prefix": ["i-inlineflex", "includeinlineflex", "@includeinlineflex"],
+    "body": ["@include d-inline-flex;"],
+    "description": "import mixin.scss required "
+  },
+  "include mixins": {
+    "prefix": ["i-allcenter", "includeallcenter", "@includeallcenter"],
+    "body": [
+      "@include d-flex;",
+      "@include align-items-center;",
+      "@include justify-content-center;"
+    ],
+    "description": "import mixin.scss required"
+  },
+  "include block": {
+    "prefix": ["i-block", "includeblock", "@includeblock"],
+    "body": ["@include BLOCK {", "\t$1", "}"],
+    "description": "import setting.scss"
+  },
+  "Print to boxshadow": {
+    "prefix": ["box-shadow", "boxshadow"],
+    "body": ["box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);"],
+    "description": "offset-x | offset-y | blur-radius | spread-radius | color"
+  },
+  "Print to textshadow": {
+    "prefix": ["text-shadow", "textshadow"],
+    "body": [
+      "text-shadow: 1px 1px 2px \\$bgBlack, 0 0 1em \\$bgBlack, 0 0 0.2em \\$bgBlack;"
+    ],
+    "description": "offset-x | offset-y | blur-radius | color"
+  },
+  "Print to lineclamp": {
+    "prefix": "lineclamp",
+    "body": [
+      "display: -webkit-box !important;",
+      "-webkit-line-clamp: 2;",
+      "-webkit-box-orient: vertical;",
+      "overflow: hidden;"
+    ],
+    "description": "lineclamp"
+  },
+  "media min width": {
+    "prefix": ["mediamin", "minmedia"],
+    "body": [
+      "@media (min-width: \\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|}){",
+      "\t$2",
+      "}"
+    ],
+    "description": "media screen  \n $xxlScreen: 1400px; \n $xlScreen: 1170px; \n $lgScreen: 992px; \n $mdScreen: 768px; \n smScreen: 576px;"
+  },
+  "media max": {
+    "prefix": ["mediamax", "maxmedia"],
+    "body": [
+      "@media (max-width: \\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|} - 1){",
+      "\t$2",
+      "}"
+    ],
+    "description": "media screen  \n $xxlScreen: 1400px; \n $xlScreen: 1170px; \n $lgScreen: 992px; \n $mdScreen: 768px; \n smScreen: 576px;"
+  },
+  "keyframes ": {
+    "prefix": "keyframes",
+    "body": [
+      "@keyframes ${1:mymove} {",
+      "\tfrom {top: 0px;}",
+      "\tto {top: 200px;}",
+      "}"
+    ],
+    "description": "keyframes"
+  }
 }

@@ -364,6 +364,10 @@ T.tooltip(T(`selector`)[0], {
 ```javascript title="Örnek kullanım" 
 if(!T.checkValidity(e.target)) return;
 ```
+#### `tpriceToFloat ⇥` 
+```javascript title="Örnek kullanım" 
+T.priceToFloat(strPrice);
+```
 #### `tvat ⇥` 
 ```javascript title="Örnek kullanım" 
 T.vat(price, vat);
@@ -1240,6 +1244,19 @@ clamp(13px,1vw,20px)
 ```scss title="Örnek kullanım" 
 @import "setting.scss";
 @import "mixin.scss";
+
+```
+#### `i-mask ⇥`  
+```scss title="Örnek kullanım" 
+mask:url(#{$assets}/image_path);
+mask-repeat: no-repeat;
+mask-position: center;
+mask-size: cover;
+-webkit-mask:url(#{$assets}/image_path);
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-position: center;
+-webkit-mask-size: cover;
+background-color:$bgPrimary;
 
 ```
 #### `i-scrollbar ⇥`  
