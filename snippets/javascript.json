@@ -416,28 +416,22 @@
 		],
 		"description": "tsoft modal opens a modal"
 	},
-	"loadSubFolder": {
+    "loadSubFolder": {
 		"prefix": ["tloadSubFolder","loadSubFolder"],
 		"body": [
 			"loadSubFolder({",
-				"pageId: ${1:1,",
-				"blockParentId: ${2:1000},",
-				"subFolder: '${3:subfoldername}',",
-				"params: { ${4:oneparam}: ${4:oneparam}, ${5:twoparam}: ${5:twoparam} },",
-				"success:  function(loadRes){",
-					"T.modal({ html: loadRes, width:'480px' });",
-					"evalScripts(loadRes)",
-				"}",
+				"\tpageId: ${1:1,",
+				"\tblockParentId: ${2:1000},",
+				"\tsubFolder: '${3:subfoldername}',",
+				"\tparams: { ${4:oneparam}: ${4:oneparam}, ${5:twoparam}: ${5:twoparam} }},",
+				"\tsuccess:  function(loadRes){",
+					"\t\tT.modal({ html: loadRes, width:'480px' });",
+					"\t\tevalScripts(loadRes)",
+				"\t}",
 			"});"
 		],
 		"description": "tsoft tloadSubFolder loads the other folders"
 	},
-
-
-
-
-
-
 	"publishingPopupCallback": {
 		"prefix": ["tpublishingPopupCallback","publishingPopupCallback"],
 		"body": [

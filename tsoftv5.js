@@ -151,6 +151,8 @@ loadSubFolder({
     }
 });
 
+loadsub
+
 T.priceToFloat(strPrice);
 
 T(`selector`).attr(`attr_name`, null);
