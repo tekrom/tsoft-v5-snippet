@@ -695,6 +695,10 @@ IS_LAZY_LOAD_ACTIVE
 ```html title="Örnek kullanım" 
 IS_MEMBER_LOGGED_IN
 ```
+#### `IS_MOBILE ⇥` 
+```html title="Örnek kullanım" 
+IS_MOBILE
+```
 #### `IS_VENDOR ⇥` 
 ```html title="Örnek kullanım" 
 IS_VENDOR
