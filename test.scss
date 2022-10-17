@@ -32,6 +32,8 @@
   @include d-flex;
   @include align-items-center;
   @include justify-content-center;
+  
+  
 
   mask:url(#{$assets}/image_path);
   mask-repeat: no-repeat;

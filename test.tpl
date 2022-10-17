@@ -31,6 +31,9 @@ justify-content-flex-end
 container
 hover-scale
 
+
+overflow-auto
+
 {product id="{$P.ID}" assign="MY_PRODUCT"}
 
 {category id="{$TABLE_ID}" assign="MY_CATEGORY"} 

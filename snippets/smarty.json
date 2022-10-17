@@ -701,6 +701,175 @@
 			"hover-none"
 		]
 	},
+  "tsoft inset": {
+    "prefix": "inset",
+    "body": [
+        "inset"
+    ]
+  },
+"tsoft top-0": {
+    "prefix": "top-0",
+    "body": [
+        "top-0"
+    ]
+  },
+"tsoft top-50": {
+    "prefix": "top-50",
+    "body": [
+        "top-50"
+    ]
+  },
+"tsoft top-100": {
+    "prefix": "top-100",
+    "body": [
+        "top-100"
+    ]
+  },
+"tsoft bottom-0": {
+    "prefix": "bottom-0",
+    "body": [
+        "bottom-0"
+    ]
+  },
+"tsoft bottom-50": {
+    "prefix": "bottom-50",
+    "body": [
+        "bottom-50"
+    ]
+  },
+"tsoft bottom-100": {
+    "prefix": "bottom-100",
+    "body": [
+        "bottom-100"
+    ]
+  },
+"tsoft left-0": {
+    "prefix": "left-0",
+    "body": [
+        "left-0"
+    ]
+  },
+"tsoft left-50": {
+    "prefix": "left-50",
+    "body": [
+        "left-50"
+    ]
+  },
+"tsoft left-100": {
+    "prefix": "left-100",
+    "body": [
+        "left-100"
+    ]
+  },
+"tsoft right-0": {
+    "prefix": "right-0",
+    "body": [
+        "right-0"
+    ]
+  },
+"tsoft right-50": {
+    "prefix": "right-50",
+    "body": [
+        "right-50"
+    ]
+  },
+"tsoft right-100": {
+    "prefix": "right-100",
+    "body": [
+        "right-100"
+    ]
+  },
+"tsoft translate-middle": {
+    "prefix": "translate-middle",
+    "body": [
+        "translate-middle"
+    ]
+  },
+"tsoft translate-middle-x": {
+    "prefix": "translate-middle-x",
+    "body": [
+        "translate-middle-x"
+    ]
+  },
+"tsoft translate-middle-y": {
+    "prefix": "translate-middle-y",
+    "body": [
+        "translate-middle-y"
+    ]
+  },
+
+"tsoft overflow-auto": {
+    "prefix": "overflow-auto",
+    "body": [
+        "overflow-auto"
+    ]
+  },
+"tsoft overflow-visible": {
+    "prefix": "overflow-visible",
+    "body": [
+        "overflow-visible"
+    ]
+  },
+"tsoft overflow-hidden": {
+    "prefix": "overflow-hidden",
+    "body": [
+        "overflow-hidden"
+    ]
+  },
+"tsoft overflow-scroll": {
+    "prefix": "overflow-scroll",
+    "body": [
+        "overflow-scroll"
+    ]
+  },
+"tsoft overflow-x-auto": {
+    "prefix": "overflow-x-auto",
+    "body": [
+        "overflow-x-auto"
+    ]
+  },
+"tsoft overflow-x-visible": {
+    "prefix": "overflow-x-visible",
+    "body": [
+        "overflow-x-visible"
+    ]
+  },
+"tsoft overflow-x-hidden": {
+    "prefix": "overflow-x-hidden",
+    "body": [
+        "overflow-x-hidden"
+    ]
+  },
+"tsoft overflow-x-scroll": {
+    "prefix": "overflow-x-scroll",
+    "body": [
+        "overflow-x-scroll"
+    ]
+  },
+"tsoft overflow-y-auto": {
+    "prefix": "overflow-y-auto",
+    "body": [
+        "overflow-y-auto"
+    ]
+  },
+"tsoft overflow-y-visible": {
+    "prefix": "overflow-y-visible",
+    "body": [
+        "overflow-y-visible"
+    ]
+  },
+"tsoft overflow-y-hidden": {
+    "prefix": "overflow-y-hidden",
+    "body": [
+        "overflow-y-hidden"
+    ]
+  },
+"tsoft overflow-y-scroll": {
+    "prefix": "overflow-y-scroll",
+    "body": [
+        "overflow-y-scroll"
+    ]
+  },
 
 
 
