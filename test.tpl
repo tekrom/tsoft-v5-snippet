@@ -30,7 +30,7 @@ justify-content-flex-start
 justify-content-flex-end
 container
 
-
+{$ASSETS}
 
 
 scrollToElm('[href=\'#idToScroll\']', 200);

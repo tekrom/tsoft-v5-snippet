@@ -1,1234 +1,1203 @@
 {
-	"kkk tsoft border": {
-		"prefix": ["border-"],
-		"body": [
-			"border-${1|round,rounded,circle,primary,secondary,white,black,success,info,warning,danger,light,dark,gray,1,2,3,4,5|}"		
-		]
-	},
-	"tsoft fw": {
-		"prefix": ["fw-"],
-		"body": [
-			"fw-${1|light,regular,medium,semibold,bold,extrabold,black|}"
-		]
-	},
-	"tsoft text": {
-		"prefix": ["text-"],
-		"body": [
-			"text-${1|underline,lowercase,uppercase,nowrap,delete,link,content,primary,secondary,white,black,success,info,warning,danger,light,dark,gray,body|}"
-		]
-	},
-	"tsoft btn-colors": {
-		"prefix": ["btn-"],
-		"body": [
-			"btn-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"	
-		]
-	},
-	"tsoft btn-outline-colors": {
-		"prefix": ["btn-outline-"],
-		"body": [
-			"btn-outline-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"	
-		]
-	},
-	"tsoft bg-colors": {
-		"prefix": ["bg-", "bg"],
-		"body": [
-			"bg-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"	
-		]
-	},
-	"tsoft position-desktop-relative": {
-		"prefix": ["pos-rd","position-desktop-relative"],
-		"body": [
-			"position-desktop-relative"
-		]
-	},
-	"tsoft position-desktop-sticky": {
-		"prefix": ["pos-sd","position-desktop-sticky"],
-		"body": [
-			"position-desktop-sticky"
-		]
-	},
-	"tsoft position-desktop-absolute": {
-		"prefix": ["pos-ad","position-desktop-absolute"],
-		"body": [
-			"position-desktop-absolute"
-		]
-	},
-	"tsoft position-desktop-fixed": {
-		"prefix": ["pos-fd","position-desktop-fixed"],
-		"body": [
-			"position-desktop-fixed"
-		]
-	},
-	"tsoft position-relative": {
-		"prefix": ["pos-r","position-relative"],
-		"body": [
-			"position-relative"
-		]
-	},
-	"tsoft position-sticky": {
-		"prefix": ["pos-s","position-sticky"],
-		"body": [
-			"position-sticky"
-		]
-	},
-	"tsoft position-absolute": {
-		"prefix": ["pos-a","position-absolute"],
-		"body": [
-			"position-absolute"
-		]
-	},
-	"tsoft position-fixed": {
-		"prefix": ["pos-f","position-fixed"],
-		"body": [
-			"position-fixed"
-		]
-	},
-	"tsoft flex-direction-column": {
-		"prefix": ["column","flex-direction-column"],
-		"body": [
-			"flex-direction-column"
-		]
-	},
-	"tsoft flex-direction-column-reverse": {
-		"prefix": ["column-r","flex-direction-column-reverse"],
-		"body": [
-			"flex-direction-column-reverse"
-		]
-	},
-	"tsoft flex-direction-row": {
-		"prefix": ["f-row","flex-direction-row"],
-		"body": [
-			"flex-direction-row"
-		]
-	},
-	"tsoft flex-direction-row-reverse": {
-		"prefix": ["row-r","flex-direction-row-reverse"],
-		"body": [
-			"flex-direction-row-reverse"
-		]
-	},
-	"tsoft flex-wrap": {
-		"prefix": ["wrap","flex-wrap"],
-		"body": [
-			"flex-wrap"
-		]
-	},
-	"tsoft flex-wrap-reverse": {
-		"prefix": ["wrap-r","flex-wrap-reverse"],
-		"body": [
-			"flex-wrap-reverse"
-		]
-	},
-	"tsoft flex-shrink-0": {
-		"prefix": ["shrink","flex-shrink"],
-		"body": [
-			"flex-shrink-${1|0,1,2|}"
-		]
-	},
-	"tsoft align-items-center": {
-		"prefix": ["a-center","align-items-center"],
-		"body": [
-			"align-items-center"
-		]
-	},
-	"tsoft align-items-flex-end": {
-		"prefix": ["a-end","align-items-flex-end"],
-		"body": [
-			"align-items-flex-end"
-		]
-	},
-	"tsoft align-items-flex-start": {
-		"prefix": ["a-start", "align-items-flex-start"],
-		"body": [
-			"align-items-flex-start"	
-		]
-	},
-	"tsoft justify-content-center": {
-		"prefix": ["j-center","justify-content-center"],
-		"body": [
-			"justify-content-center"	
-		]
-	},
-	"tsoft justify-content-between": {
-		"prefix": ["j-between","justify-content-between"],
-		"body": [
-			"justify-content-between"
-		]
-	},
-	"tsoft justify-content-around": {
-		"prefix": ["j-around","justify-content-around"],
-		"body": [
-			"justify-content-around"
-		]
-	},
-	"tsoft justify-content-evenly": {
-		"prefix": ["j-evenly", "justify-content-evenly"],
-		"body": [
-			"justify-content-evenly"
-		]
-	},
-	"tsoft justify-content-flex-start": {
-		"prefix": ["j-start", "justify-content-flex-start"],
-		"body": [
-			"justify-content-flex-start"
-		]
-	},
-	"tsoft justify-content-flex-end": {
-		"prefix": ["j-end", "justify-content-flex-end"],
-		"body": [
-			"justify-content-flex-end"
-		]
-	},
-	"tsoft container": {
-		"prefix": ["container"],
-		"body": [
-			"${1|container,container-fluid|}"
-		]
-	},
-	"tsoft extra format": {
-		"prefix": ["extraformat", "cartformat", "basketformat","formatextra", "formatcart", "formatbasket"],
-		"body": [
-			"{format price=(\\$P.${1:PRICE_SELL} - (\\$P.${1:PRICE_SELL} * \\$P.${2:NUMERIC1}/100))}"	
-		]
-	},
-	"tsoft extra vat": {
-		"prefix": ["extravat", "cartvat", "basketvat","vatextra", "vatcart", "vatbasket"],
-		"body": [
-			"{vat price=(\\$P.${1:PRICE_SELL} - (\\$P.${1:PRICE_SELL} * \\$P.${2:NUMERIC1}/100)) vat=\\$P.VAT}"	
-		]
-	},
-	"tsoft vuetemplate": {
-		"prefix": ["vuetemplate", "tvuetemplate"],
-		"body": [
-			"<div id=\"${1:selector}\" class=\"row\" v-cloak>",
-			"</div>",
-			"\n\n<script>",
-				"\tconst ${2:appName} = {",
-					"\t\tdata() {",
-						"\t\t\treturn {",
-							"\t\t\t\t$3",
-						"\t\t\t}",
-					"\t\t}",
-				"\t};",
-				"\tVue.createApp(${2:appName}).mount('${1:#selector}');",
-			"</script>"	
-		]
-	},
-	"tsoft IS_MOBILE": {
-		"prefix": ["IS_MOBILE", "tismobile", "ismobile"],
-		"body": [
-			"IS_MOBILE"	
-		]
-	},
-	"tsoft IS_ADMIN_LOGGED": {
-		"prefix": ["IS_ADMIN_LOGGED", "tisadminloggedin", "isadminloggedin"],
-		"body": [
-			"IS_ADMIN_LOGGED"	
-		]
-	},
-	"tsoft IS_LAZY_LOAD_ACTIVE": {
-		"prefix": ["IS_LAZY_LOAD_ACTIVE", "tislazyloadactive", "islazyloadactive"],
-		"body": [
-			"IS_LAZY_LOAD_ACTIVE"		
-		]
-	},
-	"tsoft IS_MEMBER_LOGGED_IN": {
-		"prefix": ["IS_MEMBER_LOGGED_IN","tismemberloggedin", "ismemberloggedin"],
-		"body": [
-			"IS_MEMBER_LOGGED_IN"		
-		]
-	},
-	"tsoft IS_VENDOR": {
-		"prefix": ["IS_VENDOR","isvendor", "isvendor"],
-		"body": [
-			"IS_VENDOR"	
-		]
-	},
-	"tsoft LANGUAGE": {
-		"prefix": ["LANGUAGE"],
-		"body": [
-			"LANGUAGE"	
-		]
-	},
-	"tsoft LANGUAGE_SELECTED": {
-		"prefix": ["LANGUAGE_SELECTED", "tlanguageselected", "languageselected"],
-		"body": [
-			"LANGUAGE_SELECTED"		
-		]
-	},
-	"tsoft LANGUAGE_LIST": {
-		"prefix": ["LANGUAGE_LIST", "tlanguagelist", "languagelist"],
-		"body": [
-			"LANGUAGE_LIST"	
-		]
-	},
-	"tsoft IS_HTTPS_ACTIVE": {
-		"prefix": ["IS_HTTPS_ACTIVE", "tishttps", "ishttpsactive", "httpsactive"],
-		"body": [
-			"IS_HTTPS_ACTIVE"	
-		]
-	},
-	"tsoft FILTER_PROPERTY_LIST": {
-		"prefix": ["FILTER_PROPERTY_LIST", "tfilterpropertylist", "filterpropertylist"],
-		"body": [
-			"FILTER_PROPERTY_LIST"	
-		]
-	},
-	"tsoft IS_RECOMMENDATION_ACTIVE": {
-		"prefix": ["IS_RECOMMENDATION_ACTIVE", "tisrecommendactive", "isrecoomendactive"],
-		"body": [
-			"IS_RECOMMENDATION_ACTIVE"
-		]
-	},
-	"tsoft SYMBOL_": {
-		"prefix": ["SYMBOL_", "tsymbol", "symbol"],
-		"body": [
-			"${1|SYMBOL_TAG1,SYMBOL_TAG2,SYMBOL_TAG3,SYMBOL_TAG4,SYMBOL_TAG5,SYMBOL_TAG6,SYMBOL_TAG7,SYMBOL_TAG8,SYMBOL_TAG9,SYMBOL_TAG10,SYMBOL_DATA1,SYMBOL_DATA2,SYMBOL_DATA3,SYMBOL_DATA4,SYMBOL_DATA5,SYMBOL_DATA6,SYMBOL_DATA7,SYMBOL_DATA8,SYMBOL_DATA9,SYMBOL_DATA10,|}"	
-		]
-	},
-	"tsoft LAZY_LOAD_LOADING_IMAGE": {
-		"prefix": ["LAZY_LOAD_LOADING_IMAGE", "Tlazyloadimage", "lazyloadimage", "lazyimg"],
-		"body": [
-			"LAZY_LOAD_LOADING_IMAGE"	
-		]
-	},
-	"tsoft DISPLAY_FAVOURITE_BUTTON": {
-		"prefix": ["DISPLAY_FAVOURITE_BUTTON", "tdisplayfavoruritebutton", "displayfavoruritebutton", "favoritebutton"],
-		"body": [
-			"DISPLAY_FAVOURITE_BUTTON"	
-		]
-	},
-	"tsoft DISPLAY_COMPARISON_BUTTON": {
-		"prefix": ["DISPLAY_COMPARISON_BUTTON", "tdisplaycomparison", "displaycomparison", "comparisonbtn"],
-		"body": [
-			"DISPLAY_COMPARISON_BUTTON"		
-		]
-	},
-	"tsoft DISPLAY_CART_BUTTON": {
-		"prefix": ["DISPLAY_CART_BUTTON", "tdisplaycartbutton", "displaycartbutton"],
-		"body": [
-			"DISPLAY_CART_BUTTON"		
-		]
-	},
-	"tsoft DISPLAY_LANGUAGES": {
-		"prefix": ["DISPLAY_LANGUAGES", "tdisplaylanguage", "displaylanguage"],
-		"body": [
-			"DISPLAY_LANGUAGES"		
-		]
-	},
-	"tsoft CAMPAIGN_LIST": {
-		"prefix": ["CAMPAIGN_LIST", "tcampaignlist", "campaigntlist"],
-		"body": [
-			"CAMPAIGN_LIST"		
-		]
-	},
-	"tsoft CURRENCY_LIST": {
-		"prefix": ["CURRENCY_LIST", "tcurrencylist", "currencylist"],
-		"body": [
-			"CURRENCY_LIST"	
-		]
-	},
-	"tsoft data-toggle": {
-		"prefix": ["data-toggle", "tdatatoggle", "datatoggle"],
-		"body": [
-			"data-toggle=\"${1|dropdown,tab,accordion,placeholder,mask,zoom-image,modal,tooltip,drawer,qty,login-form,language,currency,variant,affix,sticky,input-file,equalHeight,subscribe,popconfirm,count-down,snap-scroll,signin-google|}\""	
-		]
-	},
-	"tsoft CURRENCY": {
-		"prefix": ["CURRENCY", "tcurrency", "currency"],
-		"body": [
-			"CURRENCY"	
-		]
-	},
-	"tsoft CHILDREN": {
-		"prefix": ["CHILDREN", "tchildren", "children"],
-		"body": [
-			"CHILDREN"	
-		]
-	},
-	"tsoft CHILDREN|@count": {
-		"prefix": ["CHILDREN|@count", "tchildrencount", "tcount"],
-		"body": [
-			"CHILDREN|@count"	
-		]
-	},
-	"tsoft MEDIUM_WEBP_JPG": {
-		"prefix": ["MEDIUM_WEBP_JPG", "tmediumwebp", "mediumwebp"],
-		"body": [
-			"MEDIUM_WEBP_JPG"		
-		]
-	},
-	"tsoft VARIANT_TYPE_ID": {
-		"prefix": ["VARIANT_TYPE_ID", "tvarianttypeid", "vti","varianttypeid"],
-		"body": [
-			"SMALL"		
-		]
-	},
-	"tsoft VARIANT_IDS": {
-		"prefix": ["VARIANT_IDS", "tvariantids", "variantids"],
-		"body": [
-			"VARIANT_IDS"		
-		]
-	},
-	"tsoft TITLE": {
-		"prefix": ["ttitle","TITLE"],
-		"body": [
-			"TITLE"	
-		]
-	},
-	"tsoft SMALL": {
-		"prefix": ["SMALL", "tsmall", "small"],
-		"body": [
-			"SMALL"		
-		]
-	},
-	"tsoft MEDIUM": {
-		"prefix": ["MEDIUM ", "tmedium", "medium"],
-		"body": [
-			"MEDIUM"	
-		]
-	},
-	"tsoft BIG ": {
-		"prefix": ["BIG", "tbig", "big"],
-		"body": [
-			"BIG"
-		]
-	},
-	"tsoft P Product infos": {
-		"prefix": ["P","tP", "tp", "$P"],
-		"body": [
-			"\\$P.${1|ID,IN_STOCK,STOCK,STOCK_INCREMENT,STOCK_UNIT,IMAGE_LIST,SUPPLIER_PRODUCT_CODE,IS_DISPLAY_PRODUCT,SHORT_DESCRIPTION,DOCUMENT_INFO,HAS_VARIANT,BARCODE,VARIANT_FEATURE1_LIST,VARIANT_FEATURE2_LIST,VARIANT_FEATURE1_TITLE,VARIANT_FEATURE2_TITLE,VARIANT_FEATURE1_SELECTED,VARIANT_FEATURE2_SELECTED,IS_PERSONALIZATION_ACTIVE,PERSONALIZATION_ID,NEGATIVE_STOCK,DELIVERY_DAY,DELIVERY_TIME,S1,SYMBOL_TAG1,SYMBOL_DATA1,DETAIL,VARIANT_ID,TARGET_CURRENCY,PRICE_SELL,PRICE_VISITOR,PRICE_BUY,PRICE_NOT_DISCOUNTED,VAT,DISCOUNT_PERCENT,TITLE,IS_NEW_PRODUCT,IS_ACTIVE,CATEGORY_ID,NUMERIC1,CATEGORY_ID_PATH,CATEGORY_IDS,PRICE_SELL,PRICE_VISITOR,HAS_IMAGE,DISPLAY_VAT,BRAND,BRAND_ID,BRAND_URL,BRAND_IMAGE,MODEL,MODEL_ID,CBM,ADDITIONAL_FIELD_1,ADDITIONAL_FIELD_2,ADDITIONAL_FIELD_3,STORE_ID,IS_DISCOUNT_ACTIVE,IS_DISPLAY_DISCOUNTED_ACTIVE,DISCOUNT_PERCENT_RAW,CARGO_FREE,CARGO_FREE_MEMBER,CARGO_FREE_VENDOR,CARGO_FREE_THIS,DELIVERY_TIME,REGISTRATION_DATE,MIN_SALE_COUNT,MAX_SALE_COUNT,IS_CARGO_FREE,MAX_ORDER_COUNT,CATEGORY_URL,CATEGORY_NAME,CATEGORY_PATH,FILTER_CATEGORY_ID,URL,MODEL_URL,VARIANT_NAME,VARIANT_FEATURE1_TITLE,VARIANT_FEATURE2_TITLE,SHOW_VENDOR,SHOW_PROMOTION,ACTIVE_ON_GROUPS,IS_MULTIPLE_DISCOUNT_ACTIVE,COMMENT_RANK,COMMENT_COUNT,SUBSCRIBE,SUBSCRIBE_FREQUENCY_LIST,SUBSCRIBE_DISCOUNT_RATE,VARIANT_CODE,SUB_PRODUCT_CODE,DEAL,DEAL_START_DATE,DEAL_END_DATE,PRICE_GUEST,IMAGE_COUNT,IMAGE_RATIO,PRICE_CREDIT_CART,PRICE_MONEY_ORDER,MONEY_ORDER_PERCENT,IS_MONEY_ORDER_ACTIVE,CURRENCY,PRICE_SELL_DEFAULT,PRICE_RAW,TARGET_CURRENCY_ORIGINAL,COMBINATION_ID,NEWEST_SORT,HAS_MAGNIFIER,SUPPLIER_ID,GENDER,MULTIPLE_DISCOUNT,CAN_ADD_CART_IN_LIST,WARRANTY_INFO,DELIVERY_INFO,WAREHOUSE,IS_VIDEO_ACTIVE,NOTES,TAGS,IS_ORDER_NOTE_ACTIVE,IS_CASH_POINT_ACTIVE,CASH_POINT,RELATED_PRODUCTS_IDS1,RELATED_PRODUCTS_IDS2,RELATED_PRODUCTS_IDS3,RELATED_PRODUCTS_IDS1_COUNT,RELATED_PRODUCTS_IDS2_COUNT,RELATED_PRODUCTS_IDS3_COUNT,IS_POPUP_PHOTO_ACTIVE,MIN_ORDER_COUNT,PAYMENT_OPTIONS,CREDIT_CARD_INSTALLMENTS,DISPLAY_GAIN,RANK_TOTAL,RANK1_COUNT,RANK2_COUNT,RANK3_COUNT,RANK4_COUNT,RANK5_COUNT,REVIEWS|}"
-		]
-	},
-	"tsoft SUB": {
-		"prefix": ["SUB","SUB", "tsub", "sub","$SUB"],
-		"body": [
-			"\\$SUB.${1|ID,LIST_NUMBER,TYPE,TYPE_ID,TYPE_COLOR_CODE,CODE,WS_CODE,PRICE,IN_STOCK,STOCK,BARCODE,IMAGE.SMALL,IMAGE.MEDIUM,IMAGE.BIG,MONEY_ORDER_PERCENT,VAT,PRICE_NOT_DISCOUNTED,PRICE_WITH_VAT|}"
-		]
-	},
-	"tsoft VARIANT_FEATURE1_LIST": {
-		"prefix": ["VARIANT_FEATURE1_LIST", "tvariant", "variant"],
-		"body": [
-			"${1|VARIANT_FEATURE1_LIST,VARIANT_FEATURE2_LIST|}"	
-		]
-	},
-	"tsoft subfolder": {
-		"prefix": ["tsubfolder", "subfolder"],
-		"body": [
-			"/srv/service/content-v5/sub-folder/{${1:\\$PAGE_ID}/{${2:\\$BLOCK.PARENT_ID}}/${3:subfoldername}/?product={${4:\\$P.ID}}&variant={${5:\\$P.VARIANT_ID}}"
-		]
-	},
-	"tsoft for": {
-		"prefix": ["tfor", "for"],
-		"body": [
-			"{for \\$${1:i}=1 to \\$${2:P.STOCK}}",
-				"\\$${1:i}",
-			"{/for}"
-		]
-	},
-	"tsoft vat money": {
-		"prefix": ["tvat", "vat"],
-		"body": [
-			"{vat price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|} vat=\\$P.${2:VAT}}"
-		]
-	},
-	"tsoft format money": {
-		"prefix": ["tformat", "format"],
-		"body": [
-			"{format price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|}}"
-		]
-	},
-	"tsoft |string_format:'%.1f'": {
-		"prefix": ["|string_format:'%.1f'"],
-		"body": [
-			"|string_format:'%.1f'"
-		]
-	},
-	"tsoft |date_format:'Y,m,d,H,i,s'": {
-		"prefix": ["|date_format:'Y,m,d,H,i,s'"],
-		"body": [
-			"|date_format:'Y,m,d,H,i,s'"
-		]
-	},
-	"tsoft |strip_tags|escape:'html'": {
-		"prefix": ["|strip_tags|escape:'html'"],
-		"body": [
-			"|strip_tags|escape:'html'"
-		]
-	},
-	"tsoft strpos": {
-		"prefix": ["|strpos"],
-		"body": [
-			"|strpos:'$1'"
-		]
-	},
-	"tsoft default": {
-		"prefix": ["|default"],
-		"body": [
-			"|default:'$1'"
-		]
-	},
-	"tsoft replace": {
-		"prefix": ["|replace"],
-		"body": [
-			"|replace:'$1':'$2'"
-		]
-	},
-	"tsoft count": {
-		"prefix": ["|@count","|count"],
-		"body": [
-			"|@count"
-		]
-	},
-	"tsoft modifiers": {
-		"prefix": ["|"],
-		"body": [
-			"|${1|escape,@count,abs,var_dump,strpos,date,substr,format,explode,in_array,array_reverse,json_encode,json_decode,strip_tags,replace,ucfirst,mb_substr,default|}"
-		]
-	},
-	"tsoft exchange": {
-		"prefix": ["texchange","exchange"],
-		"body": [
-			"{exchange price=\\$P.${1:PRICE_SELL} from=\\$P.TARGET_CURRENCY to='${2:USD}'}"
-		]
-	},
-	"tsoft theme": {
-		"prefix": ["THEME_FOLDER","tthemefolder","folder"],
-		"body": [
-			"THEME_FOLDER"
-		]
-	},
-	"tsoft assets": {
-		"prefix": ["ASSETS","tassets","$ASSETS"],
-		"body": [
-			"{\\$ASSETS}"
-		]
-	},
-	"tsoft tabs": {
-		"prefix": ["TABS","tabs","ttabs"],
-		"body": [
-			"TABS"
-		]
-	},
-	"tsoft menus": {
-		"prefix": ["tmenu","menu","MENU"],
-		"body": [
-			"${1|MENU1,MENU2,MENU3|}"
-		]
-	},
-	"kkkk foreach iteration": {
-		"prefix": ["iteration","titeration","tforeach"],
-		"body": [
-			"\\$smarty.foreach.${1:name}.${2|iteration,first,last|}"
-		]
-	},
-	"related products": {
-		"prefix": ["RELATED_PRODUCTS","relatedproduct","trelatedproducts","tcountrealatedproducts","trelatedproduct","trelatedproductcount"],
-		"body": [
-			"${1|RELATED_PRODUCTS_IDS1,RELATED_PRODUCTS_IDS1_COUNT,RELATED_PRODUCTS_IDS2,RELATED_PRODUCTS_IDS2_COUNT,RELATED_PRODUCTS_IDS3,RELATED_PRODUCTS_IDS3_COUNT|}"
-		]
-	},
-	"symbols": {
-		"prefix": ["SYMBOL_","symbol","tsymbol","sembol","tsembol"],
-		"body": [
-			"${1|SYMBOL_DATA1,SYMBOL_TAG1|}"
-		]
-	},
-	"additional field": {
-		"prefix": ["ADDITIONAL_FIELD","additional","tadditional","tadditionalfield"],
-		"body": [
-			"${2|ADDITIONAL_FIELD_1,ADDITIONAL_FIELD_2,ADDITIONAL_FIELD_3|}"
-		]
-	},
-	"numeric": {
-		"prefix": ["NUMERIC1","numeric","tnumeric","sayısal","tsayısal"],
-		"body": [
-			"NUMERIC1"
-		]
-	},
-	"counter": {
-		"prefix": ["COUNTER","counter","tcounter"],
-		"body": [
-			"COUNTER"
-		]
-	},
-	"debug server smarty": {
-		"prefix": ["debugserver","tdebugserver","tsmartydebug"],
-		"body": [
-			"<pre>{\\$smarty.server|@debug_print_var}</pre>"
+  "kkk tsoft border": {
+    "prefix": ["border-"],
+    "body": [
+      "border-${1|round,rounded,circle,primary,secondary,white,black,success,info,warning,danger,light,dark,gray,1,2,3,4,5|}"
+    ]
+  },
+  "tsoft fw": {
+    "prefix": ["fw-"],
+    "body": ["fw-${1|light,regular,medium,semibold,bold,extrabold,black|}"]
+  },
+  "tsoft text": {
+    "prefix": ["text-"],
+    "body": [
+      "text-${1|underline,lowercase,uppercase,nowrap,delete,link,content,primary,secondary,white,black,success,info,warning,danger,light,dark,gray,body|}"
+    ]
+  },
+  "tsoft btn-colors": {
+    "prefix": ["btn-"],
+    "body": [
+      "btn-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"
+    ]
+  },
+  "tsoft btn-outline-colors": {
+    "prefix": ["btn-outline-"],
+    "body": [
+      "btn-outline-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"
+    ]
+  },
+  "tsoft bg-colors": {
+    "prefix": ["bg-", "bg"],
+    "body": [
+      "bg-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"
+    ]
+  },
+  "tsoft position-desktop-relative": {
+    "prefix": ["pos-rd", "position-desktop-relative"],
+    "body": ["position-desktop-relative"]
+  },
+  "tsoft position-desktop-sticky": {
+    "prefix": ["pos-sd", "position-desktop-sticky"],
+    "body": ["position-desktop-sticky"]
+  },
+  "tsoft position-desktop-absolute": {
+    "prefix": ["pos-ad", "position-desktop-absolute"],
+    "body": ["position-desktop-absolute"]
+  },
+  "tsoft position-desktop-fixed": {
+    "prefix": ["pos-fd", "position-desktop-fixed"],
+    "body": ["position-desktop-fixed"]
+  },
+  "tsoft position-relative": {
+    "prefix": ["pos-r", "position-relative"],
+    "body": ["position-relative"]
+  },
+  "tsoft position-sticky": {
+    "prefix": ["pos-s", "position-sticky"],
+    "body": ["position-sticky"]
+  },
+  "tsoft position-absolute": {
+    "prefix": ["pos-a", "position-absolute"],
+    "body": ["position-absolute"]
+  },
+  "tsoft position-fixed": {
+    "prefix": ["pos-f", "position-fixed"],
+    "body": ["position-fixed"]
+  },
+  "tsoft flex-direction-column": {
+    "prefix": ["column", "flex-direction-column"],
+    "body": ["flex-direction-column"]
+  },
+  "tsoft flex-direction-column-reverse": {
+    "prefix": ["column-r", "flex-direction-column-reverse"],
+    "body": ["flex-direction-column-reverse"]
+  },
+  "tsoft flex-direction-row": {
+    "prefix": ["f-row", "flex-direction-row"],
+    "body": ["flex-direction-row"]
+  },
+  "tsoft flex-direction-row-reverse": {
+    "prefix": ["row-r", "flex-direction-row-reverse"],
+    "body": ["flex-direction-row-reverse"]
+  },
+  "tsoft flex-wrap": {
+    "prefix": ["wrap", "flex-wrap"],
+    "body": ["flex-wrap"]
+  },
+  "tsoft flex-wrap-reverse": {
+    "prefix": ["wrap-r", "flex-wrap-reverse"],
+    "body": ["flex-wrap-reverse"]
+  },
+  "tsoft flex-shrink-0": {
+    "prefix": ["shrink", "flex-shrink"],
+    "body": ["flex-shrink-${1|0,1,2|}"]
+  },
+  "tsoft align-items-center": {
+    "prefix": ["a-center", "align-items-center"],
+    "body": ["align-items-center"]
+  },
+  "tsoft align-items-flex-end": {
+    "prefix": ["a-end", "align-items-flex-end"],
+    "body": ["align-items-flex-end"]
+  },
+  "tsoft align-items-flex-start": {
+    "prefix": ["a-start", "align-items-flex-start"],
+    "body": ["align-items-flex-start"]
+  },
+  "tsoft justify-content-center": {
+    "prefix": ["j-center", "justify-content-center"],
+    "body": ["justify-content-center"]
+  },
+  "tsoft justify-content-between": {
+    "prefix": ["j-between", "justify-content-between"],
+    "body": ["justify-content-between"]
+  },
+  "tsoft justify-content-around": {
+    "prefix": ["j-around", "justify-content-around"],
+    "body": ["justify-content-around"]
+  },
+  "tsoft justify-content-evenly": {
+    "prefix": ["j-evenly", "justify-content-evenly"],
+    "body": ["justify-content-evenly"]
+  },
+  "tsoft justify-content-flex-start": {
+    "prefix": ["j-start", "justify-content-flex-start"],
+    "body": ["justify-content-flex-start"]
+  },
+  "tsoft justify-content-flex-end": {
+    "prefix": ["j-end", "justify-content-flex-end"],
+    "body": ["justify-content-flex-end"]
+  },
+  "tsoft container": {
+    "prefix": ["container"],
+    "body": ["${1|container,container-fluid|}"]
+  },
+  "tsoft extra format": {
+    "prefix": [
+      "extraformat",
+      "cartformat",
+      "basketformat",
+      "formatextra",
+      "formatcart",
+      "formatbasket"
+    ],
+    "body": [
+      "{format price=(\\$P.${1:PRICE_SELL} - (\\$P.${1:PRICE_SELL} * \\$P.${2:NUMERIC1}/100))}"
+    ]
+  },
+  "tsoft extra vat": {
+    "prefix": [
+      "extravat",
+      "cartvat",
+      "basketvat",
+      "vatextra",
+      "vatcart",
+      "vatbasket"
+    ],
+    "body": [
+      "{vat price=(\\$P.${1:PRICE_SELL} - (\\$P.${1:PRICE_SELL} * \\$P.${2:NUMERIC1}/100)) vat=\\$P.VAT}"
+    ]
+  },
+  "tsoft vuetemplate": {
+    "prefix": ["vuetemplate", "tvuetemplate"],
+    "body": [
+      "<div id=\"${1:selector}\" class=\"row\" v-cloak>",
+      "</div>",
+      "\n\n<script>",
+      "\tconst ${2:appName} = {",
+      "\t\tdata() {",
+      "\t\t\treturn {",
+      "\t\t\t\t$3",
+      "\t\t\t}",
+      "\t\t}",
+      "\t};",
+      "\tVue.createApp(${2:appName}).mount('${1:#selector}');",
+      "</script>"
+    ]
+  },
+  "tsoft IS_MOBILE": {
+    "prefix": ["IS_MOBILE", "tismobile", "ismobile"],
+    "body": ["IS_MOBILE"]
+  },
+  "tsoft IS_ADMIN_LOGGED": {
+    "prefix": ["IS_ADMIN_LOGGED", "tisadminloggedin", "isadminloggedin"],
+    "body": ["IS_ADMIN_LOGGED"]
+  },
+  "tsoft IS_LAZY_LOAD_ACTIVE": {
+    "prefix": ["IS_LAZY_LOAD_ACTIVE", "tislazyloadactive", "islazyloadactive"],
+    "body": ["IS_LAZY_LOAD_ACTIVE"]
+  },
+  "tsoft IS_MEMBER_LOGGED_IN": {
+    "prefix": ["IS_MEMBER_LOGGED_IN", "tismemberloggedin", "ismemberloggedin"],
+    "body": ["IS_MEMBER_LOGGED_IN"]
+  },
+  "tsoft IS_VENDOR": {
+    "prefix": ["IS_VENDOR", "isvendor", "isvendor"],
+    "body": ["IS_VENDOR"]
+  },
+  "tsoft LANGUAGE": {
+    "prefix": ["LANGUAGE"],
+    "body": ["LANGUAGE"]
+  },
+  "tsoft LANGUAGE_SELECTED": {
+    "prefix": ["LANGUAGE_SELECTED", "tlanguageselected", "languageselected"],
+    "body": ["LANGUAGE_SELECTED"]
+  },
+  "tsoft LANGUAGE_LIST": {
+    "prefix": ["LANGUAGE_LIST", "tlanguagelist", "languagelist"],
+    "body": ["LANGUAGE_LIST"]
+  },
+  "tsoft IS_HTTPS_ACTIVE": {
+    "prefix": ["IS_HTTPS_ACTIVE", "tishttps", "ishttpsactive", "httpsactive"],
+    "body": ["IS_HTTPS_ACTIVE"]
+  },
+  "tsoft FILTER_PROPERTY_LIST": {
+    "prefix": [
+      "FILTER_PROPERTY_LIST",
+      "tfilterpropertylist",
+      "filterpropertylist"
+    ],
+    "body": ["FILTER_PROPERTY_LIST"]
+  },
+  "tsoft IS_RECOMMENDATION_ACTIVE": {
+    "prefix": [
+      "IS_RECOMMENDATION_ACTIVE",
+      "tisrecommendactive",
+      "isrecoomendactive"
+    ],
+    "body": ["IS_RECOMMENDATION_ACTIVE"]
+  },
+  "tsoft SYMBOL_": {
+    "prefix": ["SYMBOL_", "tsymbol", "symbol"],
+    "body": [
+      "${1|SYMBOL_TAG1,SYMBOL_TAG2,SYMBOL_TAG3,SYMBOL_TAG4,SYMBOL_TAG5,SYMBOL_TAG6,SYMBOL_TAG7,SYMBOL_TAG8,SYMBOL_TAG9,SYMBOL_TAG10,SYMBOL_DATA1,SYMBOL_DATA2,SYMBOL_DATA3,SYMBOL_DATA4,SYMBOL_DATA5,SYMBOL_DATA6,SYMBOL_DATA7,SYMBOL_DATA8,SYMBOL_DATA9,SYMBOL_DATA10,|}"
+    ]
+  },
+  "tsoft LAZY_LOAD_LOADING_IMAGE": {
+    "prefix": [
+      "LAZY_LOAD_LOADING_IMAGE",
+      "Tlazyloadimage",
+      "lazyloadimage",
+      "lazyimg"
+    ],
+    "body": ["LAZY_LOAD_LOADING_IMAGE"]
+  },
+  "tsoft DISPLAY_FAVOURITE_BUTTON": {
+    "prefix": [
+      "DISPLAY_FAVOURITE_BUTTON",
+      "tdisplayfavoruritebutton",
+      "displayfavoruritebutton",
+      "favoritebutton"
+    ],
+    "body": ["DISPLAY_FAVOURITE_BUTTON"]
+  },
+  "tsoft DISPLAY_COMPARISON_BUTTON": {
+    "prefix": [
+      "DISPLAY_COMPARISON_BUTTON",
+      "tdisplaycomparison",
+      "displaycomparison",
+      "comparisonbtn"
+    ],
+    "body": ["DISPLAY_COMPARISON_BUTTON"]
+  },
+  "tsoft DISPLAY_CART_BUTTON": {
+    "prefix": [
+      "DISPLAY_CART_BUTTON",
+      "tdisplaycartbutton",
+      "displaycartbutton"
+    ],
+    "body": ["DISPLAY_CART_BUTTON"]
+  },
+  "tsoft DISPLAY_LANGUAGES": {
+    "prefix": ["DISPLAY_LANGUAGES", "tdisplaylanguage", "displaylanguage"],
+    "body": ["DISPLAY_LANGUAGES"]
+  },
+  "tsoft CAMPAIGN_LIST": {
+    "prefix": ["CAMPAIGN_LIST", "tcampaignlist", "campaigntlist"],
+    "body": ["CAMPAIGN_LIST"]
+  },
+  "tsoft CURRENCY_LIST": {
+    "prefix": ["CURRENCY_LIST", "tcurrencylist", "currencylist"],
+    "body": ["CURRENCY_LIST"]
+  },
+  "tsoft data-toggle": {
+    "prefix": ["data-toggle", "tdatatoggle", "datatoggle"],
+    "body": [
+      "data-toggle=\"${1|dropdown,tab,accordion,placeholder,mask,zoom-image,modal,tooltip,drawer,qty,login-form,language,currency,variant,affix,sticky,input-file,equalHeight,subscribe,popconfirm,count-down,snap-scroll,signin-google|}\""
+    ]
+  },
+  "tsoft CURRENCY": {
+    "prefix": ["CURRENCY", "tcurrency", "currency"],
+    "body": ["CURRENCY"]
+  },
+  "tsoft CHILDREN": {
+    "prefix": ["CHILDREN", "tchildren", "children"],
+    "body": ["CHILDREN"]
+  },
+  "tsoft CHILDREN|@count": {
+    "prefix": ["CHILDREN|@count", "tchildrencount", "tcount"],
+    "body": ["CHILDREN|@count"]
+  },
+  "tsoft MEDIUM_WEBP_JPG": {
+    "prefix": ["MEDIUM_WEBP_JPG", "tmediumwebp", "mediumwebp"],
+    "body": ["MEDIUM_WEBP_JPG"]
+  },
+  "tsoft VARIANT_TYPE_ID": {
+    "prefix": ["VARIANT_TYPE_ID", "tvarianttypeid", "vti", "varianttypeid"],
+    "body": ["SMALL"]
+  },
+  "tsoft VARIANT_IDS": {
+    "prefix": ["VARIANT_IDS", "tvariantids", "variantids"],
+    "body": ["VARIANT_IDS"]
+  },
+  "tsoft TITLE": {
+    "prefix": ["ttitle", "TITLE"],
+    "body": ["TITLE"]
+  },
+  "tsoft SMALL": {
+    "prefix": ["SMALL", "tsmall", "small"],
+    "body": ["SMALL"]
+  },
+  "tsoft MEDIUM": {
+    "prefix": ["MEDIUM ", "tmedium", "medium"],
+    "body": ["MEDIUM"]
+  },
+  "tsoft BIG ": {
+    "prefix": ["BIG", "tbig", "big"],
+    "body": ["BIG"]
+  },
+  "tsoft P Product infos": {
+    "prefix": ["P", "tP", "tp", "$P"],
+    "body": [
+      "\\$P.${1|ID,IN_STOCK,STOCK,STOCK_INCREMENT,STOCK_UNIT,IMAGE_LIST,SUPPLIER_PRODUCT_CODE,IS_DISPLAY_PRODUCT,SHORT_DESCRIPTION,DOCUMENT_INFO,HAS_VARIANT,BARCODE,VARIANT_FEATURE1_LIST,VARIANT_FEATURE2_LIST,VARIANT_FEATURE1_TITLE,VARIANT_FEATURE2_TITLE,VARIANT_FEATURE1_SELECTED,VARIANT_FEATURE2_SELECTED,IS_PERSONALIZATION_ACTIVE,PERSONALIZATION_ID,NEGATIVE_STOCK,DELIVERY_DAY,DELIVERY_TIME,S1,SYMBOL_TAG1,SYMBOL_DATA1,DETAIL,VARIANT_ID,TARGET_CURRENCY,PRICE_SELL,PRICE_VISITOR,PRICE_BUY,PRICE_NOT_DISCOUNTED,VAT,DISCOUNT_PERCENT,TITLE,IS_NEW_PRODUCT,IS_ACTIVE,CATEGORY_ID,NUMERIC1,CATEGORY_ID_PATH,CATEGORY_IDS,PRICE_SELL,PRICE_VISITOR,HAS_IMAGE,DISPLAY_VAT,BRAND,BRAND_ID,BRAND_URL,BRAND_IMAGE,MODEL,MODEL_ID,CBM,ADDITIONAL_FIELD_1,ADDITIONAL_FIELD_2,ADDITIONAL_FIELD_3,STORE_ID,IS_DISCOUNT_ACTIVE,IS_DISPLAY_DISCOUNTED_ACTIVE,DISCOUNT_PERCENT_RAW,CARGO_FREE,CARGO_FREE_MEMBER,CARGO_FREE_VENDOR,CARGO_FREE_THIS,DELIVERY_TIME,REGISTRATION_DATE,MIN_SALE_COUNT,MAX_SALE_COUNT,IS_CARGO_FREE,MAX_ORDER_COUNT,CATEGORY_URL,CATEGORY_NAME,CATEGORY_PATH,FILTER_CATEGORY_ID,URL,MODEL_URL,VARIANT_NAME,VARIANT_FEATURE1_TITLE,VARIANT_FEATURE2_TITLE,SHOW_VENDOR,SHOW_PROMOTION,ACTIVE_ON_GROUPS,IS_MULTIPLE_DISCOUNT_ACTIVE,COMMENT_RANK,COMMENT_COUNT,SUBSCRIBE,SUBSCRIBE_FREQUENCY_LIST,SUBSCRIBE_DISCOUNT_RATE,VARIANT_CODE,SUB_PRODUCT_CODE,DEAL,DEAL_START_DATE,DEAL_END_DATE,PRICE_GUEST,IMAGE_COUNT,IMAGE_RATIO,PRICE_CREDIT_CART,PRICE_MONEY_ORDER,MONEY_ORDER_PERCENT,IS_MONEY_ORDER_ACTIVE,CURRENCY,PRICE_SELL_DEFAULT,PRICE_RAW,TARGET_CURRENCY_ORIGINAL,COMBINATION_ID,NEWEST_SORT,HAS_MAGNIFIER,SUPPLIER_ID,GENDER,MULTIPLE_DISCOUNT,CAN_ADD_CART_IN_LIST,WARRANTY_INFO,DELIVERY_INFO,WAREHOUSE,IS_VIDEO_ACTIVE,NOTES,TAGS,IS_ORDER_NOTE_ACTIVE,IS_CASH_POINT_ACTIVE,CASH_POINT,RELATED_PRODUCTS_IDS1,RELATED_PRODUCTS_IDS2,RELATED_PRODUCTS_IDS3,RELATED_PRODUCTS_IDS1_COUNT,RELATED_PRODUCTS_IDS2_COUNT,RELATED_PRODUCTS_IDS3_COUNT,IS_POPUP_PHOTO_ACTIVE,MIN_ORDER_COUNT,PAYMENT_OPTIONS,CREDIT_CARD_INSTALLMENTS,DISPLAY_GAIN,RANK_TOTAL,RANK1_COUNT,RANK2_COUNT,RANK3_COUNT,RANK4_COUNT,RANK5_COUNT,REVIEWS|}"
+    ]
+  },
+  "tsoft SUB": {
+    "prefix": ["SUB", "SUB", "tsub", "sub", "$SUB"],
+    "body": [
+      "\\$SUB.${1|ID,LIST_NUMBER,TYPE,TYPE_ID,TYPE_COLOR_CODE,CODE,WS_CODE,PRICE,IN_STOCK,STOCK,BARCODE,IMAGE.SMALL,IMAGE.MEDIUM,IMAGE.BIG,MONEY_ORDER_PERCENT,VAT,PRICE_NOT_DISCOUNTED,PRICE_WITH_VAT|}"
+    ]
+  },
+  "tsoft VARIANT_FEATURE1_LIST": {
+    "prefix": ["VARIANT_FEATURE1_LIST", "tvariant", "variant"],
+    "body": ["${1|VARIANT_FEATURE1_LIST,VARIANT_FEATURE2_LIST|}"]
+  },
+  "tsoft subfolder": {
+    "prefix": ["tsubfolder", "subfolder"],
+    "body": [
+      "/srv/service/content-v5/sub-folder/{${1:\\$PAGE_ID}/{${2:\\$BLOCK.PARENT_ID}}/${3:subfoldername}/?product={${4:\\$P.ID}}&variant={${5:\\$P.VARIANT_ID}}"
+    ]
+  },
+  "tsoft for": {
+    "prefix": ["tfor", "for"],
+    "body": ["{for \\$${1:i}=1 to \\$${2:P.STOCK}}", "\\$${1:i}", "{/for}"]
+  },
+  "tsoft vat money": {
+    "prefix": ["tvat", "vat"],
+    "body": [
+      "{vat price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|} vat=\\$P.${2:VAT}}"
+    ]
+  },
+  "tsoft format money": {
+    "prefix": ["tformat", "format"],
+    "body": ["{format price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|}}"]
+  },
+  "tsoft |string_format:'%.1f'": {
+    "prefix": ["|string_format:'%.1f'"],
+    "body": ["|string_format:'%.1f'"]
+  },
+  "tsoft |date_format:'Y,m,d,H,i,s'": {
+    "prefix": ["|date_format:'Y,m,d,H,i,s'"],
+    "body": ["|date_format:'Y,m,d,H,i,s'"]
+  },
+  "tsoft |strip_tags|escape:'html'": {
+    "prefix": ["|strip_tags|escape:'html'"],
+    "body": ["|strip_tags|escape:'html'"]
+  },
+  "tsoft strpos": {
+    "prefix": ["|strpos"],
+    "body": ["|strpos:'$1'"]
+  },
+  "tsoft default": {
+    "prefix": ["|default"],
+    "body": ["|default:'$1'"]
+  },
+  "tsoft replace": {
+    "prefix": ["|replace"],
+    "body": ["|replace:'$1':'$2'"]
+  },
+  "tsoft count": {
+    "prefix": ["|@count", "|count"],
+    "body": ["|@count"]
+  },
+  "tsoft modifiers": {
+    "prefix": ["|"],
+    "body": [
+      "|${1|escape,@count,abs,var_dump,strpos,date,substr,format,explode,in_array,array_reverse,json_encode,json_decode,strip_tags,replace,ucfirst,mb_substr,default|}"
+    ]
+  },
+  "tsoft exchange": {
+    "prefix": ["texchange", "exchange"],
+    "body": [
+      "{exchange price=\\$P.${1:PRICE_SELL} from=\\$P.TARGET_CURRENCY to='${2:USD}'}"
+    ]
+  },
+  "tsoft theme": {
+    "prefix": ["THEME_FOLDER", "tthemefolder", "folder"],
+    "body": ["THEME_FOLDER"]
+  },
+  "tsoft assets": {
+    "prefix": ["ASSETS", "tassets", "$ASSETS"],
+    "body": ["{\\$ASSETS}"]
+  },
+  "tsoft tabs": {
+    "prefix": ["TABS", "tabs", "ttabs"],
+    "body": ["TABS"]
+  },
+  "tsoft menus": {
+    "prefix": ["tmenu", "menu", "MENU"],
+    "body": ["${1|MENU1,MENU2,MENU3|}"]
+  },
+  "kkkk foreach iteration": {
+    "prefix": ["iteration", "titeration", "tforeach"],
+    "body": ["\\$smarty.foreach.${1:name}.${2|iteration,first,last|}"]
+  },
+  "related products": {
+    "prefix": [
+      "RELATED_PRODUCTS",
+      "relatedproduct",
+      "trelatedproducts",
+      "tcountrealatedproducts",
+      "trelatedproduct",
+      "trelatedproductcount"
+    ],
+    "body": [
+      "${1|RELATED_PRODUCTS_IDS1,RELATED_PRODUCTS_IDS1_COUNT,RELATED_PRODUCTS_IDS2,RELATED_PRODUCTS_IDS2_COUNT,RELATED_PRODUCTS_IDS3,RELATED_PRODUCTS_IDS3_COUNT|}"
+    ]
+  },
+  "symbols": {
+    "prefix": ["SYMBOL_", "symbol", "tsymbol", "sembol", "tsembol"],
+    "body": ["${1|SYMBOL_DATA1,SYMBOL_TAG1|}"]
+  },
+  "additional field": {
+    "prefix": [
+      "ADDITIONAL_FIELD",
+      "additional",
+      "tadditional",
+      "tadditionalfield"
+    ],
+    "body": ["${2|ADDITIONAL_FIELD_1,ADDITIONAL_FIELD_2,ADDITIONAL_FIELD_3|}"]
+  },
+  "numeric": {
+    "prefix": ["NUMERIC1", "numeric", "tnumeric", "sayısal", "tsayısal"],
+    "body": ["NUMERIC1"]
+  },
+  "counter": {
+    "prefix": ["COUNTER", "counter", "tcounter"],
+    "body": ["COUNTER"]
+  },
+  "debug server smarty": {
+    "prefix": ["debugserver", "tdebugserver", "tsmartydebug"],
+    "body": ["<pre>{\\$smarty.server|@debug_print_var}</pre>"],
+    "description": "debug server"
+  },
+  "explode method": {
+    "prefix": ["explode", "texplode"],
+    "body": [
+      "{assign var=\"${1:CATARRAY}\" value=\",\"|explode:${2:\\$P.CATEGORY_IDS}}"
+    ],
+    "description": "explode method"
+  },
+  "in_array method": {
+    "prefix": ["inarray", "tinarray"],
+    "body": ["{in_array('20', array('10','20','30'))}"],
+    "description": "inarray method"
+  },
+  "math smarty": {
+    "prefix": "mathsmarty",
+    "body": [
+      "{math assign=\"${1:SEPETTUTARI}\" equation=\"x*((100+v)/100)*((100-y)/100)\" x=\\$${2:P.PRICE_SELL} y=\\$${3:P.ADDITIONAL_FIELD_1} v=\\$${4:P.VAT}}"
+    ],
+    "description": "math smarty"
+  },
+  "tsoft wa/me": {
+    "prefix": ["wame", "apiwhatsapp", "twame", "tapiwhatsapp"],
+    "body": ["https://api.whatsapp.com/send?phone=9{\\$WHATSAPP_NO}&text="],
+    "description": "tsoft wa/me"
+  },
+  "json decode": {
+    "prefix": ["jsondecode", "tjsondecode", "dcode"],
+    "body": ["json_decode(${1:\\$P.VARIANT_DATA}, true)"],
+    "description": "json decode smarty"
+  },
+  "product id": {
+    "prefix": "pid",
+    "body": ["{\\$P.ID}"],
+    "description": "product id"
+  },
+  "block id": {
+    "prefix": "bid",
+    "body": ["{\\$BLOCK.ID}"],
+    "description": "block id"
+  },
+  "javascript:void(0)": {
+    "prefix": ["void", "tvoid", "jsvoid", "javascript:void(0)"],
+    "body": ["javascript:void(0)"],
+    "description": "javascript:void(0)"
+  },
+  "substr": {
+    "prefix": "|substr",
+    "body": ["|substr:${1:0}:${2:5}"],
+    "description": "substr"
+  },
+  "tosft smarty funciton url": {
+    "prefix": ["url function", "urlpage", "turl", "turlpage"],
+    "body": [
+      "{url type='${1|page,category,product,brand,model,blog,blog_category|}' id='${2:68}'}"
+    ],
+    "description": "homepage=>1\nProductList=>2\nproductDetail=>3\nMemberLogin=>5\nMemberRegister=>6\ncontanct=>13\nvendor_login=>21\nvendor_register=>22\ncart=>30\ncheckout=>91\nFavorites=>35\n"
+  },
+
+  "tsoft smarty function menu": {
+    "prefix": ["menu function"],
+    "body": [
+      "{menu key=\"${1|MENU_FOOTER,MENU_DESKTOP,MENU_SOCIAL,MENU_MOBILE|}\" assign=\"MENU_FOOTER\"}"
+    ]
+  },
+  "tsoft smarty function category": {
+    "prefix": ["category function"],
+    "body": ["{category id=\"{\\$TABLE_ID}\" assign=\"MYCATEGORY\"} "]
+  },
+
+  "tsoft smarty function product": {
+    "prefix": ["product function"],
+    "body": ["{product id=\"{\\$P.ID}\" assign=\"MYPRODUCT\"}"]
+  },
+
+
+	"tsoft effect-wrapper": {
+		"prefix": ["effect-wrapper"],
+		"body": [
+			"effect-wrapper"
 		],
-		"description": "debug server"
+		"description": "hover effect wrapper"
 	},
-	"explode method": {
-		"prefix": ["explode","texplode"],
+
+    "tsoft hover-effects": {
+		"prefix": ["hover-"],
 		"body": [
-			"{assign var=\"${1:CATARRAY}\" value=\",\"|explode:${2:\\$P.CATEGORY_IDS}}"
-		],
-		"description": "explode method"
-	},
-	"in_array method": {
-		"prefix": ["inarray", "tinarray"],
-		"body": [
-			"{in_array('20', array('10','20','30'))}"
-		],
-		"description": "inarray method"
-	},
-	"math smarty": {
-		"prefix": "mathsmarty",
-		"body": [
-			"{math assign=\"${1:SEPETTUTARI}\" equation=\"x*((100+v)/100)*((100-y)/100)\" x=\\$${2:P.PRICE_SELL} y=\\$${3:P.ADDITIONAL_FIELD_1} v=\\$${4:P.VAT}}"
-		],
-		"description": "math smarty"
-	},
-	"tsoft wa/me": {
-		"prefix": ["wame", "apiwhatsapp","twame","tapiwhatsapp"],
-		"body": [
-			"https://api.whatsapp.com/send?phone=9{\\$WHATSAPP_NO}&text="
-		],
-		"description": "tsoft wa/me"
-	},
-	"json decode": {
-		"prefix": ["jsondecode","tjsondecode", "dcode"],
-		"body": [
-			"json_decode(${1:\\$P.VARIANT_DATA}, true)"
-		],
-		"description": "json decode smarty"
-	},
-	"product id": {
-		"prefix": "pid",
-		"body": [
-			"{\\$P.ID}"
-		],
-		"description": "product id"
-	},
-	"block id": {
-		"prefix": "bid",
-		"body": [
-			"{\\$BLOCK.ID}"
-		],
-		"description": "block id"
-	},
-	"javascript:void(0)": {
-		"prefix": ["void","tvoid", "jsvoid", "javascript:void(0)"],
-		"body": [
-			"javascript:void(0)"
-		],
-		"description": "javascript:void(0)"
-	},
-	"substr": {
-		"prefix": "|substr",
-		"body": [
-			"|substr:${1:0}:${2:5}"
-		],
-		"description": "substr"
-		},
-	"urlpage": {
-		"prefix": ["url", "urlpage", "turl", "turlpage"],
-		"body": [
-			"{url type='page' id='${1:68}'}"
-		],
-		"description": "urlpage"
-		},
-		"predebug": {
-			"prefix": ["predebug","tpredebug"],
-			"body": [
-				"<pre>{${1:arr}|@debug_print_var}</pre>"
-			],
-			"description": "predebug"
-			},
-	"pre": {
-		"prefix": ["pre","tprevardamp","tpre","var_dump", "vardump"],
-		"body": [
-			"<pre>{\\$${1:arr}|@var_dump}</pre>"
-		],
-		"description": "pre debug"
-		},
-	"Datav5": {
-		"prefix": ["tdata", "teditorfiles", "data", "editorfiles"],
-		"body": [
-			"/Data/EditorFiles/v5images/"
-		],
-		"description": "EditorFiles"
-		},
-	"debug": {
-		"prefix": "debug",
-		"body": [
-			"{debug}"
-		],
-		"description": "debug for smarty"
-		},
-	"literal": {
-		"prefix": ["literal","tliteral"],
-		"body": [
-			"{literal}"
-		],
-		"description": "literal for smarty"
-		},
-	"/literal": {
-		"prefix": "/literal",
-		"body": [
-			"{/literal}"
-		],
-		"description": "literal close for smarty"
-		},
-		"Tsoft BLOCK": {
-			"prefix": ["BLOCK", "block", "tblock","bid", "tbid","tblockid", "blockid", "tparentid", "parentid", "pageid", "tpageid"],
-			"body": [
-				"BLOCK.${1|TITLE,ID,PAGE_ID,PARENT_ID|}"
-			],
-			"description": "block id"
-		},
-		"Tsoft SETTING": {
-			"prefix": ["SETTING","setting", "tsetting"],
-			"body": [
-				"SETTING.${1|DELAY,EFFECT,IMAGES,MARGIN,PERVIEW,IS_RESIZE,DISPLAY_TITLE,DISPLAY_THUMBNAIL,DISPLAY_NAVIGATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL,PAGINATION_TYPE|}"
-			],
-			"description": "block id"
-		},
-		"Tsoft IMAGE": {
-			"prefix": ["IMAGE","\\$IMAGE","image", "timage"],
-			"body": [
-				"IMAGE.${1|URL,TITLE,DATA1,DATA2,DATA3,CONTENT,IMG_BIG,IMG_SMALL,KEY,INDEX,OPERATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL|}"
-			],
-			"description": "block id"
-		},
-	"kkkk tsoft İade süreç ve süreç notları": {
-		"prefix": ["sreturnnotes", "returnnotes", "iadesüreç", "siaddesüreç"],
-		"body": [
-			"/srv/service/order-v4/order-return/${1:${\\$P.ID}}"
-		],
-		"description": "tsoft İade süreç ve süreç notları"
-	},
-	"tsoft searchAll": {
-		"prefix": ["ssearch", "tsearch", "search"],
-		"body": [
-			"/srv/service/product/searchAll/${1:test}"
-		],
-		"description": "tsoft search items"
-	},
-	"tsoft video ekleme": {
-		"prefix": ["svideo", "video"],
-		"body": [
-			"/srv/service/gallery/video-detail/${1:${\\$P.ID}}"
-		],
-		"description": "tsoft video ekleme"
-	},
-	"tsoft Hızlı Görünüm Servisi": {
-		"prefix": ["sfastlook", "fastlook","quicklook", "squicklook", "hızlıgör"],
-		"body": [
-			"/srv/service/product-detail/view/${1:606}"
-		],
-		"description": "tsoft Hızlı Görünüm Servisi"
-	},
-	"tsoft Klasör servisleri": {
-		"prefix": ["sfolders", "folder","klasör", "sklasör"],
-		"body": [
-			"/srv/service/content/get/${1:block_id}/${2:folder_name}"
-		],
-		"description": "tsoft Klasör servisleri"
-	},
-	"tsoft dil Servisi": {
-		"prefix": ["slanguage", "language","dil", "sdil"],
-		"body": [
-			"/srv/service/language/change/${1:tr}"
-		],
-		"description": "tsoft dil Servisi"
-	},
-	"tsoft para Servisi": {
-		"prefix": ["scurrency", "currency","para", "spara"],
-		"body": [
-			"/srv/shopping/shopping/set-currency/${1:tl}"
-		],
-		"description": "tsoft para Servisi"
-	},
-	"tsoft Ülke Servisi": {
-		"prefix": ["scountry", "country","ülke", "sülke"],
-		"body": [
-			"/srv/shopping/shopping/set-country/${1:TR}"
-		],
-		"description": "tsoft Ülke Servisi"
-	},
-	"tsoft Ürün Liste Servisi": {
-		"prefix": ["sproductlist", "productlist","ürünliste", "sürünliste"],
-		"body": [
-			"/srv/service/content/get-block/1003/category/${1:catID}"
-		],
-		"description": "tsoft Ürün Liste Servisi"
-	},
-	"tsoft Kategori servisi": {
-		"prefix": ["scatservice", "catservice","kategoriservisi", "skategoriservisi"],
-		"body": [
-			"/srv/service/category/get/${1:catID}"
-		],
-		"description": "tsoft Kategori servisi"
-	},
-	"tsoft Kategori ürünleri": {
-		"prefix": ["scatproduct", "catproduct","kategroriürünleri", "skategroriürünleri"],
-		"body": [
-			"/srv/service/product/filter/category/${1:catID}?pg=1"
-		],
-		"description": "tsoft Kategori ürünleri"
-	},
-	"tsoft Kategori ağacı çekme": {
-		"prefix": ["sgettree", "gettree","kategoriağacı"],
-		"body": [
-			"/srv/service/category/getTree/${1:catID}"
-		],
-		"description": "tsoft Kategori ağacı çekme"
-	},
-	"tsoft Herhangi bir içeriğin htmlini çekme": {
-		"prefix": ["sgetblock", "getblock","htmliçerik", "shtmliçerik"],
-		"body": [
-			"/srv/service/content/get-block/1018/content/${1:içerik_id}"
-		],
-		"description": "tsoft Herhangi bir içeriğin htmlini çekme"
-	},
-	"tsoft Taksit Servisi": {
-		"prefix": ["sinstallment", "installment","taksit", "staksit"],
-		"body": [
-			"/srv/service/product-detail/credit-card-installment-list/${1:${\\$P.ID}}/${2:${\\$P.VARIANT_ID}}"
-		],
-		"description": "tsoft Taksit Servisi"
-	},
-	"tsoft ödeme seçenekleri": {
-		"prefix": ["spaymentoptions", "paymentoptions","södemesecenekleri", "ödemesecenekleri"],
-		"body": [
-			"/srv/service/product-detail/payment-options/${1:${\\$P.ID}}/${2:${\\$P.VARIANT_ID}}"
-		],
-		"description": "tsoft ödeme seçenekleri"
-	},
-	"tsoft Ürün Bazlı kampanya servisi": {
-		"prefix": ["scampaignproduct", "campaignproduct","skampanyaürün", "kampanyaürün"],
-		"body": [
-			"/srv/campaign-v2/campaign/get-list-by-type/product/${1:${\\$P.ID}}"
-		],
-		"description": "tsoft Ürün Bazlı kampanya servisi"
-	},
-	"tsoft Sepet Bazlı kampanya servisi": {
-		"prefix": ["scampaigncart", "campaigncart","skampanyasepet", "kampanyasepet"],
-		"body": [
-			"/srv/campaign-v2/campaign/get-list-by-type/cart"
-		],
-		"description": "tsoft Sepet Bazlı kampanya servisi"
-	},
-	"tsoft kategori bazlı kampanya servisi": {
-		"prefix": ["scampaigncat", "campaigncategory","skampanyakategori", "kampanyakategori"],
-		"body": [
-			"/srv/campaign-v2/campaign/get-list-by-type/category/${1:id}"
-		],
-		"description": "tsoft kategori bazlı kampanya servisi"
-	},
-	"tsoft sepet basket cart": {
-		"prefix": ["scart", "cart","sbasket", "basket", "sepet", "ssepet"],
-		"body": [
-			"/srv/service/cart/load?link=sepet"
-		],
-		"description": "tsoft sepet basket cart"
-	},
-	"tsoft yorum servisi": {
-		"prefix": ["scomment", "comment","yorum"],
-		"body": [
-			"/srv/service/product-detail/comments/${1:${\\$P.ID}}"
-		],
-		"description": "tsoft yorum servisi"
-	},
-	"tsoft yorum puanı çekme": {
-		"prefix": ["commentpoint", "scommentpoint","yorumpuanı"],
-		"body": [
-			"/srv/service/product-detail/comment-average/${1:${\\$P.ID}}"
-		],
-		"description": "tsoft yorum puanı çekme"
-	},
-	"tsoft markalar, brands": {
-		"prefix": ["brand", "sbrand","markalar"],
-		"body": [
-			"/srv/service/filter/get/brands"
-		],
-		"description": "tsoft brands  markalar v4"
-	},
-	"tsoft related block": {
-		"prefix": ["srelatedblock", "ilgiliblok", "ilişkiliblok", "getBlockrelated","relatedblock"],
-		"body": [
-			"/srv/service/content/getBlock/1070/product/${1:${\\$P.ID}}"
-		],
-		"description": "tsoft related  getBlock v4"
-	},
-	"tsoft related": {
-		"prefix": ["related", "ilgili", "ilişkili", "srelated"],
-		"body": [
-			"/srv/service/product/get-related-products/${1:${\\$P.ID}}/1"
-		],
-		"description": "tsoft related v4"
-	},
-	"tsoft substitution": {
-		"prefix": ["substitution", "ikame", "ssubstitution"],
-		"body": [
-			"/srv/service/product/get-related-products/${1:${\\$P.ID}}/2"
-		],
-		"description": "tsoft substitution v4"
-	},
-	"tsoft accessory": {
-		"prefix": ["accessory","aksesuar","saccessory"],
-		"body": [
-			"/srv/service/product/get-related-products/${1:${\\$P.ID}}/3"
-		],
-		"description": "tsoft accessory v4"
-	},
-	"tsoft complement": {
-		"prefix": ["complement","tamamlayıcı","scomplement"],
-		"body": [
-			"/srv/service/product/get-related-products/${1:${\\$P.ID}}/4"
-		],
-		"description": "tsoft complement v4"
-	},
-	"tsoft scrollToElm": {
-		"prefix": ["scrollToElm", "tscrollToElm"],
-		"body": [
-			"scrollToElm('[href=\\'${1:#idToScroll}\\']', ${2:200});"	
+			"hover-${1|block,inline-block,flex,inline-flex,none,hidden,visible,transition-none,scale,scale-lg,grayscale,grayscale-reverse,blur,blur-reverse,opacity,opacity-reverse,to-up,to-down,to-left,to-right,shadow,bg-transparent,text-primary,bg-primary,border-primary|}"
 		]
 	},
-		"kkkk div": {
-			"prefix": "div",
-			"body": [
-				"<div>$0</div>"
-			],
-			"description": "<div>"
-			},
-		"div>class": {
-		"prefix": ["div.","."],
+
+    "tsoft hover-border-primary": {
+		"prefix": ["hover-border-primary"],
 		"body": [
-			"<div class=\"$1\">",
-				"\t$0",
-				"</div>"
-		],
-		"description": "<div class=\"\">"
-		},
-		"script": {
-			"prefix": "script",
-			"body": [
-				"<script>$1</script>"
-			],
-			"description": "<script>"
-		},
-		"style": {
-			"prefix": "style",
-			"body": [
-				"<style>$1</style>"
-			],
-			"description": "<style>"
-		},
-		"span": {
-			"prefix": "span",
-			"body": [
-				"<span>$1</span>"
-			],
-			"description": "<span>"
-		},
-		"span>class": {
-			"prefix": "span>class",
-			"body": [
-				"<span class=\"$1\">$2</span>"
-			],
-			"description": "<span>class>"
-		},
-		"i": {
-			"prefix": "i",
-			"body": [
-				"<i class=\"$1\">$2</i>"
-			],
-			"description": "<i>"
-		},
-		"ul>class": {
-			"prefix": "ul>class",
-			"body": [
-				"<ul class=\"$1\">$2</ul>"
-			],
-			"description": "<ul>"
-		},
-		"ul": {
-			"prefix": "ul",
-			"body": [
-				"<ul>$1</ul>"
-			],
-			"description": "<ul>"
-		},
-		"li": {
-			"prefix": "li",
-			"body": [
-				"<li class=\"$1\">$2</li>"
-			],
-			"description": "<li>"
-		},
-		"ul>li": {
-			"prefix": "ul>li",
-			"body": [
-				"<ul class=\"$1\">",
-				"\t<li>$2</li>",			
-				"</ul>"
-			],
-			"description": "<ul>li>"
-		},
-		"select": {
-			"prefix": "select",
-			"body": [
-				"<select class=\"$1\">$2</select>"
-			],
-			"description": "<select>"
-		},
-		"option": {
-			"prefix": "option",
-			"body": [
-				"<option class=\"$1\">$2</option>"
-			],
-			"description": "<option>"
-		},
-		"so": {
-			"prefix": "so",
-			"body": [
-				"<select class=\"$1\">",
-				"\t<option>${2:code}</option>",			
-				"</select>"
-			],
-			"description": "select>option"
-		},
-		"label": {
-			"prefix": "label",
-			"body": [
-				"<label class=\"$1\">$2</label>"
-			],
-			"description": "<label>"
-		},
-		"a": {
-			"prefix": "a",
-			"body": [
-				"<a href=\"$1\" class=\"$2\">${3:link}</a>"
-			],
-			"description": "<a>"
-		},
-		"p": {
-			"prefix": "p",
-			"body": [
-				"<p class=\"$1\">$2</p>"
-			],
-			"description": "<p>"
-		},
-		"h2": {
-			"prefix": "h2",
-			"body": [
-				"<h2 class=\"$1\">$2</h2>"
-			],
-			"description": "<h2>"
-		},
-		"img": {
-			"prefix": "img",
-			"body": [
-				"<img src=\"$1\" alt=\"$2\" width=\"$3\" height=\"$4\">"
-			],
-			"description": "<img>"
-		},
-		"br": {
-			"prefix": "br",
-			"body": [
-				"<br>"
-			],
-			"description": "<br>"
-		},
-		"button": {
-			"prefix": ["<button>","button","btn"],
-			"body": [
-				"<button class=\"$1\">${2:btn}</button>"
-			],
-			"description": "<button>"
-		},
-		"fieldset": {
-			"prefix": "fieldset",
-			"body": [
-				"<fieldset class=\"$1\"></fieldset>"
-			],
-			"description": "<fieldset>"
-		},
-		"input": {
-			"prefix": "input",
-			"body": [
-				"<input type=\"$1\" id=\"$2\" name=\"$3\" class=\"$4\" $5>"
-			],
-			"description": "<input>"
-		},
-		"textarea": {
-			"prefix": "textarea",
-			"body": [
-				"<textarea id=\"$1\" name=\"$2\" rows=\"$3\" cols=\"$4\">${5:textarea}</textarea>"
-			],
-			"description": "<textarea>"
-		},
-		"form": {
-			"prefix": "form",
-			"body": [
-				"<form id=\"${1:elemet}\" name=\"$2\" action=\"$3\" method=\"${4:post}\">",
-					"$5",
-				"</form>"
-			],
-			"description": "<form>"
-		},
-		"style=": {
-			"prefix": "style=\"\"",
-			"body": [
-				"style=\"$1\" "
-			],
-			"description": "style=\"\""
-		},
-		"alt=": {
-			"prefix": "alt=\"\"",
-			"body": [
-				"alt=\"$1\" "
-			],
-			"description": "alt=\"\""
-		},
-		"value=": {
-			"prefix": "value=\"\"",
-			"body": [
-				"value=\"$1\" "
-			],
-			"description": "value=\"\""
-		},
-		"class=": {
-			"prefix": "class=\"\"",
-			"body": [
-				"class=\"$1\" "
-			],
-			"description": "class=\"\""
-		},
-		"id=": {
-			"prefix": "id=\"\"",
-			"body": [
-				"id=\"$1\" "
-			],
-			"description": "id=\"\""
-		},
-		"href=": {
-			"prefix": "href=\"\"",
-			"body": [
-				"href=\"$1\" "
-			],
-			"description": "href=\"\""
-		},
-		"target=": {
-			"prefix": "target=\"\"",
-			"body": [
-				"target=\"$1\" "
-			],
-			"description": "target=\"\""
-		},
-		"title=": {
-			"prefix": "title=\"\"",
-			"body": [
-				"title=\"$1\" "
-			],
-			"description": "title=\"\""
-		},
-		"type=": {
-			"prefix": "type=\"\"",
-			"body": [
-				"type=\"$1\" "
-			],
-			"description": "type=\"\""
-		},
-		"width=": {
-			"prefix": "width=\"\"",
-			"body": [
-				"width=\"$1\" "
-			],
-			"description": "width=\"\""
-		},
-		"height=": {
-			"prefix": "height=\"\"",
-			"body": [
-				"height=\"$1\" "
-			],
-			"description": "height=\"\""
-		},
-		"for=": {
-			"prefix": "for=\"\"",
-			"body": [
-				"for=\"$1\" "
-			],
-			"description": "for=\"\""
-		},
-		"onclick=": {
-			"prefix": "onclick=\"\"",
-			"body": [
-				"onclick=\"$1\" "
-			],
-			"description": "onclick=\"\""
-		},
-		"src=": {
-			"prefix": "src=\"\"",
-			"body": [
-				"src=\"$1\" "
-			],
-			"description": "src=\"\""
-		},
-		"placeholder=": {
-			"prefix": "placeholder=\"\"",
-			"body": [
-				"placeholder=\"$1\" "
-			],
-			"description": "placeholder=\"\""
-		},
-		"name=": {
-			"prefix": "name=\"\"",
-			"body": [
-				"name=\"$1\" "
-			],
-			"description": "name=\"\""
-		},
-		"action=": {
-			"prefix": "action=\"\"",
-			"body": [
-				"action=\"$1\" "
-			],
-			"description": "action=\"\""
-		},
-		"method=": {
-			"prefix": "method=\"\"",
-			"body": [
-				"method=\"$1\" "
-			],
-			"description": "method=\"\""
-		},
-		"lang=": {
-			"prefix": "lang=\"\"",
-			"body": [
-				"lang=\"$1\" "
-			],
-			"description": "lang=\"\""
-		},
-		"selected": {
-			"prefix": "selected",
-			"body": [
-				"selected"
-			],
-			"description": "selected"
-		},
-		"required": {
-			"prefix": "required",
-			"body": [
-				"required"
-			],
-			"description": "required"
-		},
-		"get": {
-			"prefix": "get",
-			"body": [
-				"GET"
-			],
-			"description": "get"
-		},
-		"post": {
-			"prefix": "post",
-			"body": [
-				"POST"
-			],
-			"description": "post"
-		}
-	}
+			"hover-border-primary"
+		]
+	},
+    "tsoft hover-bg-primary": {
+		"prefix": ["hover-bg-primary"],
+		"body": [
+			"hover-bg-primary"
+		]
+	},
+    "tsoft hover-text-primary": {
+		"prefix": ["hover-text-primary"],
+		"body": [
+			"hover-text-primary"
+		]
+	},
+    "tsoft hover-bg-transparent": {
+		"prefix": ["hover-bg-transparent"],
+		"body": [
+			"hover-bg-transparent"
+		]
+	},
+    "tsoft hover-shadow": {
+		"prefix": ["hover-shadow"],
+		"body": [
+			"hover-shadow"
+		]
+	},
+    "tsoft hover-to-right": {
+		"prefix": ["hover-to-right"],
+		"body": [
+			"hover-to-right"
+		]
+	},
+    "tsoft hover-to-left": {
+		"prefix": ["hover-to-left"],
+		"body": [
+			"hover-to-left"
+		]
+	},
+    "tsoft hover-to-down": {
+		"prefix": ["hover-to-down"],
+		"body": [
+			"hover-to-down"
+		]
+	},
+    "tsoft hover-to-up": {
+		"prefix": ["hover-to-up"],
+		"body": [
+			"hover-to-up"
+		]
+	},
+    "tsoft hover-opacity-reverse": {
+		"prefix": ["hover-opacity-reverse"],
+		"body": [
+			"hover-opacity-reverse"
+		]
+	},
+    "tsoft hover-opacity": {
+		"prefix": ["hover-opacity"],
+		"body": [
+			"hover-opacity"
+		]
+	},
+    "tsoft hover-blur-reverse": {
+		"prefix": ["hover-blur-reverse"],
+		"body": [
+			"hover-blur-reverse"
+		]
+	},
+    "tsoft hover-blur": {
+		"prefix": ["hover-blur"],
+		"body": [
+			"hover-blur"
+		]
+	},
+    "tsoft hover-grayscale-reverse": {
+		"prefix": ["hover-grayscale-reverse"],
+		"body": [
+			"hover-grayscale-reverse"
+		]
+	},
+    "tsoft hover-grayscale": {
+		"prefix": ["hover-grayscale"],
+		"body": [
+			"hover-grayscale"
+		]
+	},
+    "tsoft hover-scale-lg": {
+		"prefix": ["hover-scale-lg"],
+		"body": [
+			"hover-scale-lg"
+		]
+	},
+    "tsoft hover-scale": {
+		"prefix": ["hover-scale"],
+		"body": [
+			"hover-scale"
+		]
+	},
+    "tsoft hover-ransition-none": {
+		"prefix": ["hover-ransition-none"],
+		"body": [
+			"hover-ransition-none"
+		]
+	},
+    "tsoft hover-visible": {
+		"prefix": ["hover-visible"],
+		"body": [
+			"hover-visible"
+		]
+	},
+    "tsoft hover-hidden": {
+		"prefix": ["hover-hidden"],
+		"body": [
+			"hover-hidden"
+		]
+	},
+    "tsoft hover-block": {
+		"prefix": ["hover-block"],
+		"body": [
+			"hover-block"
+		]
+	},
+    "tsoft hover-inline-block": {
+		"prefix": ["hover-inline-block"],
+		"body": [
+			"hover-inline-block"
+		]
+	},
+    "tsoft hover-flex": {
+		"prefix": ["hover-flex"],
+		"body": [
+			"hover-flex"
+		]
+	},
+    "tsoft hover-inline-flex": {
+		"prefix": ["hover-inline-flex"],
+		"body": [
+			"hover-inline-flex"
+		]
+	},
+    "tsoft hover-none": {
+		"prefix": ["hover-none"],
+		"body": [
+			"hover-none"
+		]
+	},
+
+
+
+
+
+
+
+  "predebug": {
+    "prefix": ["predebug", "tpredebug"],
+    "body": ["<pre>{${1:arr}|@debug_print_var}</pre>"],
+    "description": "predebug"
+  },
+  "pre": {
+    "prefix": ["pre", "tprevardamp", "tpre", "var_dump", "vardump"],
+    "body": ["<pre>{\\$${1:arr}|@var_dump}</pre>"],
+    "description": "pre debug"
+  },
+  "Datav5": {
+    "prefix": ["tdata", "teditorfiles", "data", "editorfiles"],
+    "body": ["/Data/EditorFiles/v5images/"],
+    "description": "EditorFiles"
+  },
+  "debug": {
+    "prefix": "debug",
+    "body": ["{debug}"],
+    "description": "debug for smarty"
+  },
+  "literal": {
+    "prefix": ["literal", "tliteral"],
+    "body": ["{literal}"],
+    "description": "literal for smarty"
+  },
+  "/literal": {
+    "prefix": "/literal",
+    "body": ["{/literal}"],
+    "description": "literal close for smarty"
+  },
+  "Tsoft BLOCK": {
+    "prefix": [
+      "BLOCK",
+      "block",
+      "tblock",
+      "bid",
+      "tbid",
+      "tblockid",
+      "blockid",
+      "tparentid",
+      "parentid",
+      "pageid",
+      "tpageid"
+    ],
+    "body": ["BLOCK.${1|TITLE,ID,PAGE_ID,PARENT_ID|}"],
+    "description": "block id"
+  },
+  "Tsoft SETTING": {
+    "prefix": ["SETTING", "setting", "tsetting"],
+    "body": [
+      "SETTING.${1|DELAY,EFFECT,IMAGES,MARGIN,PERVIEW,IS_RESIZE,DISPLAY_TITLE,DISPLAY_THUMBNAIL,DISPLAY_NAVIGATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL,PAGINATION_TYPE|}"
+    ],
+    "description": "block id"
+  },
+  "Tsoft IMAGE": {
+    "prefix": ["IMAGE", "\\$IMAGE", "image", "timage"],
+    "body": [
+      "IMAGE.${1|URL,TITLE,DATA1,DATA2,DATA3,CONTENT,IMG_BIG,IMG_SMALL,KEY,INDEX,OPERATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL|}"
+    ],
+    "description": "block id"
+  },
+  "kkkk tsoft İade süreç ve süreç notları": {
+    "prefix": ["sreturnnotes", "returnnotes", "iadesüreç", "siaddesüreç"],
+    "body": ["/srv/service/order-v4/order-return/${1:${\\$P.ID}}"],
+    "description": "tsoft İade süreç ve süreç notları"
+  },
+  "tsoft searchAll": {
+    "prefix": ["ssearch", "tsearch", "search"],
+    "body": ["/srv/service/product/searchAll/${1:test}"],
+    "description": "tsoft search items"
+  },
+  "tsoft video ekleme": {
+    "prefix": ["svideo", "video"],
+    "body": ["/srv/service/gallery/video-detail/${1:${\\$P.ID}}"],
+    "description": "tsoft video ekleme"
+  },
+  "tsoft Hızlı Görünüm Servisi": {
+    "prefix": ["sfastlook", "fastlook", "quicklook", "squicklook", "hızlıgör"],
+    "body": ["/srv/service/product-detail/view/${1:606}"],
+    "description": "tsoft Hızlı Görünüm Servisi"
+  },
+  "tsoft Klasör servisleri": {
+    "prefix": ["sfolders", "folder", "klasör", "sklasör"],
+    "body": ["/srv/service/content/get/${1:block_id}/${2:folder_name}"],
+    "description": "tsoft Klasör servisleri"
+  },
+  "tsoft dil Servisi": {
+    "prefix": ["slanguage", "language", "dil", "sdil"],
+    "body": ["/srv/service/language/change/${1:tr}"],
+    "description": "tsoft dil Servisi"
+  },
+  "tsoft para Servisi": {
+    "prefix": ["scurrency", "currency", "para", "spara"],
+    "body": ["/srv/shopping/shopping/set-currency/${1:tl}"],
+    "description": "tsoft para Servisi"
+  },
+  "tsoft Ülke Servisi": {
+    "prefix": ["scountry", "country", "ülke", "sülke"],
+    "body": ["/srv/shopping/shopping/set-country/${1:TR}"],
+    "description": "tsoft Ülke Servisi"
+  },
+  "tsoft Ürün Liste Servisi": {
+    "prefix": ["sproductlist", "productlist", "ürünliste", "sürünliste"],
+    "body": ["/srv/service/content/get-block/1003/category/${1:catID}"],
+    "description": "tsoft Ürün Liste Servisi"
+  },
+  "tsoft Kategori servisi": {
+    "prefix": [
+      "scatservice",
+      "catservice",
+      "kategoriservisi",
+      "skategoriservisi"
+    ],
+    "body": ["/srv/service/category/get/${1:catID}"],
+    "description": "tsoft Kategori servisi"
+  },
+  "tsoft Kategori ürünleri": {
+    "prefix": [
+      "scatproduct",
+      "catproduct",
+      "kategroriürünleri",
+      "skategroriürünleri"
+    ],
+    "body": ["/srv/service/product/filter/category/${1:catID}?pg=1"],
+    "description": "tsoft Kategori ürünleri"
+  },
+  "tsoft Kategori ağacı çekme": {
+    "prefix": ["sgettree", "gettree", "kategoriağacı"],
+    "body": ["/srv/service/category/getTree/${1:catID}"],
+    "description": "tsoft Kategori ağacı çekme"
+  },
+  "tsoft Herhangi bir içeriğin htmlini çekme": {
+    "prefix": ["sgetblock", "getblock", "htmliçerik", "shtmliçerik"],
+    "body": ["/srv/service/content/get-block/1018/content/${1:içerik_id}"],
+    "description": "tsoft Herhangi bir içeriğin htmlini çekme"
+  },
+  "tsoft Taksit Servisi": {
+    "prefix": ["sinstallment", "installment", "taksit", "staksit"],
+    "body": [
+      "/srv/service/product-detail/credit-card-installment-list/${1:${\\$P.ID}}/${2:${\\$P.VARIANT_ID}}"
+    ],
+    "description": "tsoft Taksit Servisi"
+  },
+  "tsoft ödeme seçenekleri": {
+    "prefix": [
+      "spaymentoptions",
+      "paymentoptions",
+      "södemesecenekleri",
+      "ödemesecenekleri"
+    ],
+    "body": [
+      "/srv/service/product-detail/payment-options/${1:${\\$P.ID}}/${2:${\\$P.VARIANT_ID}}"
+    ],
+    "description": "tsoft ödeme seçenekleri"
+  },
+  "tsoft Ürün Bazlı kampanya servisi": {
+    "prefix": [
+      "scampaignproduct",
+      "campaignproduct",
+      "skampanyaürün",
+      "kampanyaürün"
+    ],
+    "body": [
+      "/srv/campaign-v2/campaign/get-list-by-type/product/${1:${\\$P.ID}}"
+    ],
+    "description": "tsoft Ürün Bazlı kampanya servisi"
+  },
+  "tsoft Sepet Bazlı kampanya servisi": {
+    "prefix": [
+      "scampaigncart",
+      "campaigncart",
+      "skampanyasepet",
+      "kampanyasepet"
+    ],
+    "body": ["/srv/campaign-v2/campaign/get-list-by-type/cart"],
+    "description": "tsoft Sepet Bazlı kampanya servisi"
+  },
+  "tsoft kategori bazlı kampanya servisi": {
+    "prefix": [
+      "scampaigncat",
+      "campaigncategory",
+      "skampanyakategori",
+      "kampanyakategori"
+    ],
+    "body": ["/srv/campaign-v2/campaign/get-list-by-type/category/${1:id}"],
+    "description": "tsoft kategori bazlı kampanya servisi"
+  },
+  "tsoft sepet basket cart": {
+    "prefix": ["scart", "cart", "sbasket", "basket", "sepet", "ssepet"],
+    "body": ["/srv/service/cart/load?link=sepet"],
+    "description": "tsoft sepet basket cart"
+  },
+  "tsoft yorum servisi": {
+    "prefix": ["scomment", "comment", "yorum"],
+    "body": ["/srv/service/product-detail/comments/${1:${\\$P.ID}}"],
+    "description": "tsoft yorum servisi"
+  },
+  "tsoft yorum puanı çekme": {
+    "prefix": ["commentpoint", "scommentpoint", "yorumpuanı"],
+    "body": ["/srv/service/product-detail/comment-average/${1:${\\$P.ID}}"],
+    "description": "tsoft yorum puanı çekme"
+  },
+  "tsoft markalar, brands": {
+    "prefix": ["brand", "sbrand", "markalar"],
+    "body": ["/srv/service/filter/get/brands"],
+    "description": "tsoft brands  markalar v4"
+  },
+  "tsoft related block": {
+    "prefix": [
+      "srelatedblock",
+      "ilgiliblok",
+      "ilişkiliblok",
+      "getBlockrelated",
+      "relatedblock"
+    ],
+    "body": ["/srv/service/content/getBlock/1070/product/${1:${\\$P.ID}}"],
+    "description": "tsoft related  getBlock v4"
+  },
+  "tsoft related": {
+    "prefix": ["related", "ilgili", "ilişkili", "srelated"],
+    "body": ["/srv/service/product/get-related-products/${1:${\\$P.ID}}/1"],
+    "description": "tsoft related v4"
+  },
+  "tsoft substitution": {
+    "prefix": ["substitution", "ikame", "ssubstitution"],
+    "body": ["/srv/service/product/get-related-products/${1:${\\$P.ID}}/2"],
+    "description": "tsoft substitution v4"
+  },
+  "tsoft accessory": {
+    "prefix": ["accessory", "aksesuar", "saccessory"],
+    "body": ["/srv/service/product/get-related-products/${1:${\\$P.ID}}/3"],
+    "description": "tsoft accessory v4"
+  },
+  "tsoft complement": {
+    "prefix": ["complement", "tamamlayıcı", "scomplement"],
+    "body": ["/srv/service/product/get-related-products/${1:${\\$P.ID}}/4"],
+    "description": "tsoft complement v4"
+  },
+  "tsoft scrollToElm": {
+    "prefix": ["scrollToElm", "tscrollToElm"],
+    "body": ["scrollToElm('[href=\\'${1:#idToScroll}\\']', ${2:200});"]
+  },
+  "kkkk div": {
+    "prefix": "div",
+    "body": ["<div>$0</div>"],
+    "description": "<div>"
+  },
+  "div>class": {
+    "prefix": ["div.", "."],
+    "body": ["<div class=\"$1\">", "\t$0", "</div>"],
+    "description": "<div class=\"\">"
+  },
+  "script": {
+    "prefix": "script",
+    "body": ["<script>$1</script>"],
+    "description": "<script>"
+  },
+  "style": {
+    "prefix": "style",
+    "body": ["<style>$1</style>"],
+    "description": "<style>"
+  },
+  "span": {
+    "prefix": "span",
+    "body": ["<span>$1</span>"],
+    "description": "<span>"
+  },
+  "span>class": {
+    "prefix": "span>class",
+    "body": ["<span class=\"$1\">$2</span>"],
+    "description": "<span>class>"
+  },
+  "i": {
+    "prefix": "i",
+    "body": ["<i class=\"$1\">$2</i>"],
+    "description": "<i>"
+  },
+  "ul>class": {
+    "prefix": "ul>class",
+    "body": ["<ul class=\"$1\">$2</ul>"],
+    "description": "<ul>"
+  },
+  "ul": {
+    "prefix": "ul",
+    "body": ["<ul>$1</ul>"],
+    "description": "<ul>"
+  },
+  "li": {
+    "prefix": "li",
+    "body": ["<li class=\"$1\">$2</li>"],
+    "description": "<li>"
+  },
+  "ul>li": {
+    "prefix": "ul>li",
+    "body": ["<ul class=\"$1\">", "\t<li>$2</li>", "</ul>"],
+    "description": "<ul>li>"
+  },
+  "select": {
+    "prefix": "select",
+    "body": ["<select class=\"$1\">$2</select>"],
+    "description": "<select>"
+  },
+  "option": {
+    "prefix": "option",
+    "body": ["<option class=\"$1\">$2</option>"],
+    "description": "<option>"
+  },
+  "so": {
+    "prefix": "so",
+    "body": [
+      "<select class=\"$1\">",
+      "\t<option>${2:code}</option>",
+      "</select>"
+    ],
+    "description": "select>option"
+  },
+  "label": {
+    "prefix": "label",
+    "body": ["<label class=\"$1\">$2</label>"],
+    "description": "<label>"
+  },
+  "a": {
+    "prefix": "a",
+    "body": ["<a href=\"$1\" class=\"$2\">${3:link}</a>"],
+    "description": "<a>"
+  },
+  "p": {
+    "prefix": "p",
+    "body": ["<p class=\"$1\">$2</p>"],
+    "description": "<p>"
+  },
+  "h2": {
+    "prefix": "h2",
+    "body": ["<h2 class=\"$1\">$2</h2>"],
+    "description": "<h2>"
+  },
+  "img": {
+    "prefix": "img",
+    "body": ["<img src=\"$1\" alt=\"$2\" width=\"$3\" height=\"$4\">"],
+    "description": "<img>"
+  },
+  "br": {
+    "prefix": "br",
+    "body": ["<br>"],
+    "description": "<br>"
+  },
+  "button": {
+    "prefix": ["<button>", "button", "btn"],
+    "body": ["<button class=\"$1\">${2:btn}</button>"],
+    "description": "<button>"
+  },
+  "fieldset": {
+    "prefix": "fieldset",
+    "body": ["<fieldset class=\"$1\"></fieldset>"],
+    "description": "<fieldset>"
+  },
+  "input": {
+    "prefix": "input",
+    "body": ["<input type=\"$1\" id=\"$2\" name=\"$3\" class=\"$4\" $5>"],
+    "description": "<input>"
+  },
+  "textarea": {
+    "prefix": "textarea",
+    "body": [
+      "<textarea id=\"$1\" name=\"$2\" rows=\"$3\" cols=\"$4\">${5:textarea}</textarea>"
+    ],
+    "description": "<textarea>"
+  },
+  "form": {
+    "prefix": "form",
+    "body": [
+      "<form id=\"${1:elemet}\" name=\"$2\" action=\"$3\" method=\"${4:post}\">",
+      "$5",
+      "</form>"
+    ],
+    "description": "<form>"
+  },
+  "style=": {
+    "prefix": "style=\"\"",
+    "body": ["style=\"$1\" "],
+    "description": "style=\"\""
+  },
+  "alt=": {
+    "prefix": "alt=\"\"",
+    "body": ["alt=\"$1\" "],
+    "description": "alt=\"\""
+  },
+  "value=": {
+    "prefix": "value=\"\"",
+    "body": ["value=\"$1\" "],
+    "description": "value=\"\""
+  },
+  "class=": {
+    "prefix": "class=\"\"",
+    "body": ["class=\"$1\" "],
+    "description": "class=\"\""
+  },
+  "id=": {
+    "prefix": "id=\"\"",
+    "body": ["id=\"$1\" "],
+    "description": "id=\"\""
+  },
+  "href=": {
+    "prefix": "href=\"\"",
+    "body": ["href=\"$1\" "],
+    "description": "href=\"\""
+  },
+  "target=": {
+    "prefix": "target=\"\"",
+    "body": ["target=\"$1\" "],
+    "description": "target=\"\""
+  },
+  "title=": {
+    "prefix": "title=\"\"",
+    "body": ["title=\"$1\" "],
+    "description": "title=\"\""
+  },
+  "type=": {
+    "prefix": "type=\"\"",
+    "body": ["type=\"$1\" "],
+    "description": "type=\"\""
+  },
+  "width=": {
+    "prefix": "width=\"\"",
+    "body": ["width=\"$1\" "],
+    "description": "width=\"\""
+  },
+  "height=": {
+    "prefix": "height=\"\"",
+    "body": ["height=\"$1\" "],
+    "description": "height=\"\""
+  },
+  "for=": {
+    "prefix": "for=\"\"",
+    "body": ["for=\"$1\" "],
+    "description": "for=\"\""
+  },
+  "onclick=": {
+    "prefix": "onclick=\"\"",
+    "body": ["onclick=\"$1\" "],
+    "description": "onclick=\"\""
+  },
+  "src=": {
+    "prefix": "src=\"\"",
+    "body": ["src=\"$1\" "],
+    "description": "src=\"\""
+  },
+  "placeholder=": {
+    "prefix": "placeholder=\"\"",
+    "body": ["placeholder=\"$1\" "],
+    "description": "placeholder=\"\""
+  },
+  "name=": {
+    "prefix": "name=\"\"",
+    "body": ["name=\"$1\" "],
+    "description": "name=\"\""
+  },
+  "action=": {
+    "prefix": "action=\"\"",
+    "body": ["action=\"$1\" "],
+    "description": "action=\"\""
+  },
+  "method=": {
+    "prefix": "method=\"\"",
+    "body": ["method=\"$1\" "],
+    "description": "method=\"\""
+  },
+  "lang=": {
+    "prefix": "lang=\"\"",
+    "body": ["lang=\"$1\" "],
+    "description": "lang=\"\""
+  },
+  "selected": {
+    "prefix": "selected",
+    "body": ["selected"],
+    "description": "selected"
+  },
+  "required": {
+    "prefix": "required",
+    "body": ["required"],
+    "description": "required"
+  },
+  "get": {
+    "prefix": "get",
+    "body": ["GET"],
+    "description": "get"
+  },
+  "post": {
+    "prefix": "post",
+    "body": ["POST"],
+    "description": "post"
+  }
+}
