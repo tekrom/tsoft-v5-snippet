@@ -302,7 +302,7 @@
 	"Tsoft Click": {
 		"prefix": ["tclick", "click","tevent","tonclick","ton","tonfocus"],
 		"body": [
-			"T(`#${1:selector}`).on(`${2|click,change,input,focus,blur|}`, e => {",
+			"T(`#${1:selector}`).on(`${2|click,change,input,focus,blur|}`, function(e) {",
 			"\te.stopPropagation();",
 			"\te.preventDefault();",
 			"\tconst el = e.target;",
