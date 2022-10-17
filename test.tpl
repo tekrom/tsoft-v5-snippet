@@ -29,9 +29,13 @@ justify-content-evenly
 justify-content-flex-start
 justify-content-flex-end
 container
+hover-scale
 
-{$ASSETS}
+{product id="{$P.ID}" assign="MY_PRODUCT"}
 
+{category id="{$TABLE_ID}" assign="MY_CATEGORY"} 
+
+{menu key="MENU_FOOTER" assign="MENU_FOOTER"}
 
 scrollToElm('[href=\'#idToScroll\']', 200);
 

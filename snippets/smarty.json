@@ -527,12 +527,12 @@
   },
   "tsoft smarty function category": {
     "prefix": ["category function"],
-    "body": ["{category id=\"{\\$TABLE_ID}\" assign=\"MYCATEGORY\"} "]
+    "body": ["{category id=\"{\\$TABLE_ID}\" assign=\"CATEGORY\"} "]
   },
 
   "tsoft smarty function product": {
     "prefix": ["product function"],
-    "body": ["{product id=\"{\\$P.ID}\" assign=\"MYPRODUCT\"}"]
+    "body": ["{product id=\"{\\$P.ID}\" assign=\"PRODUCT\"}"]
   },
 
 

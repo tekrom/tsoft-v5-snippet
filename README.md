@@ -1099,6 +1099,28 @@ IMAGE.options
 ```html title="Örnek kullanım" 
 /srv/service/product/get-related-products/${$P.ID}/4
 ```
+#### `hover- ⇥` 
+```html title="Örnek kullanım" 
+block,inline-block,flex,inline-flex,none,hidden,visible,transition-none,scale,scale-lg,grayscale,grayscale-reverse,blur,blur-reverse,opacity,opacity-reverse,to-up,to-down,to-left,to-right,shadow,bg-transparent,text-primary,bg-primary,border-primary
+```
+#### `effect-w- ⇥` 
+```html title="Örnek kullanım" 
+effect-wrapper
+```
+#### `category f-w- ⇥` 
+```html title="Örnek kullanım" 
+{category id="{$TABLE_ID}" assign="MY_CATEGORY"} 
+```
+#### `product f-w- ⇥` 
+```html title="Örnek kullanım" 
+{product id="{$P.ID}" assign="MY_PRODUCT"}
+```
+#### `menu f-w- ⇥` 
+```html title="Örnek kullanım" 
+{menu key="MENU_FOOTER" assign="MENU_FOOTER"}
+```
+
+
 
   </p>
 
