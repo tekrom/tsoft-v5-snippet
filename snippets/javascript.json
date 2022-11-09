@@ -137,6 +137,16 @@
 		],
 		"description": "Log output to console"
 	},
+	"ON_PAGE_READY callback function": {
+		"prefix": ["tonpageready callback","ON_PAGE_READY function"],
+		"body": [
+            "ON_PAGE_READY.push(()=>{",    
+            "\t//alt şablonlardaki js işlemleri bu fonksiyon içine yazılmalıdır",           
+            "\t$1",
+            "})"
+		],
+		"description": "tsoft tloadSubFolder loads the other folders"
+	},
 	"tsoft cart.callbacks": {
 		"prefix": ["cart.callback", "cartcallback","tcartcallback"],
 		"body": [

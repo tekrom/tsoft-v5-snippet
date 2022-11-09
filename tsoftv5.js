@@ -151,7 +151,23 @@ loadSubFolder({
     }
 });
 
-loadsub
+ON_PAGE_READY.push(()=>{
+//alt şablonlardaki js işlemleri bu fonksiyon içine yazılmalıdır
+    
+})
+
+
+
+loadSubFolder({
+    pageId: 1,
+    blockParentId: 1000,
+    subFolder: 'subfoldername',
+    params: { oneparam: oneparam, twoparam: twoparam },
+    success:  function(loadRes){
+        T.modal({ html: loadRes, width:'480px' });
+        evalScripts(loadRes)
+    }
+});
 
 T.priceToFloat(strPrice);
 

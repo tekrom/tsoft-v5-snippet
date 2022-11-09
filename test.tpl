@@ -32,7 +32,11 @@ container
 hover-scale
 
 
-overflow-auto
+
+RELATED_PRODUCTS_IDS2|@count
+
+{subfolder pageId="3" blockId="1004" subfolder="personalization"}   
+
 
 {product id="{$P.ID}" assign="MY_PRODUCT"}
 

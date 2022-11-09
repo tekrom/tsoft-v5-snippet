@@ -31,6 +31,13 @@ or you can write <code> includeLanguages </code> in the setting input field and 
   <p>Here is Javascript code snippets for tsoftecommerce.com V5.
 
 
+  #### `ON_PAGE_READY ⇥`  
+```javascript title="Örnek kullanım" 
+ON_PAGE_READY.push(()=>{
+//alt şablonlardaki js işlemleri bu fonksiyon içine yazılmalıdır
+    
+})
+```
   #### `cl ⇥`  
 ```javascript title="Örnek kullanım" 
 console.log();

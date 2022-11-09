@@ -5,6 +5,120 @@
       "border-${1|round,rounded,circle,primary,secondary,white,black,success,info,warning,danger,light,dark,gray,1,2,3,4,5|}"
     ]
   },
+  "tsoft border-round": {
+		"prefix": ["border-round"],
+		"body": [
+			"border-round"
+		]
+	},
+    "tsoft border-rounded": {
+		"prefix": ["border-rounded"],
+		"body": [
+			"border-rounded"
+		]
+	},
+    "tsoft border-circle": {
+		"prefix": ["border-primary"],
+		"body": [
+			"border-primary"
+		]
+	},
+    "tsoft border-primary": {
+		"prefix": ["border-circle"],
+		"body": [
+			"border-circle"
+		]
+	},
+    "tsoft border-secondary": {
+		"prefix": ["border-secondary"],
+		"body": [
+			"border-secondary"
+		]
+	},
+    "tsoft border-white": {
+		"prefix": ["border-white"],
+		"body": [
+			"border-white"
+		]
+	},
+    "tsoft border-black": {
+		"prefix": ["border-black"],
+		"body": [
+			"border-black"
+		]
+	},
+    "tsoft border-success": {
+		"prefix": ["border-success"],
+		"body": [
+			"border-success"
+		]
+	},
+    "tsoft border-info": {
+		"prefix": ["border-info"],
+		"body": [
+			"border-info"
+		]
+	},
+    "tsoft border-warning": {
+		"prefix": ["border-warning"],
+		"body": [
+			"border-warning"
+		]
+	},
+    "tsoft border-danger": {
+		"prefix": ["border-danger"],
+		"body": [
+			"border-danger"
+		]
+	},
+    "tsoft border-light": {
+		"prefix": ["border-light"],
+		"body": [
+			"border-light"
+		]
+	},
+    "tsoft border-dark": {
+		"prefix": ["border-dark"],
+		"body": [
+			"border-dark"
+		]
+	},
+    "tsoft border-gray": {
+		"prefix": ["border-gray"],
+		"body": [
+			"border-gray"
+		]
+	},
+    "tsoft border-1": {
+		"prefix": ["border-1"],
+		"body": [
+			"border-1"
+		]
+	},
+    "tsoft border-2": {
+		"prefix": ["border-2"],
+		"body": [
+			"border-2"
+		]
+	},
+    "tsoft border-3": {
+		"prefix": ["border-3"],
+		"body": [
+			"border-3"
+		]
+	},
+    "tsoft border-4": {
+		"prefix": ["border-4"],
+		"body": [
+			"border-4"
+		]
+	},
+    "tsoft border-5": {
+		"prefix": ["border-5"],
+		"body": [
+			"border-5"
+		]
+	},
   "tsoft fw": {
     "prefix": ["fw-"],
     "body": ["fw-${1|light,regular,medium,semibold,bold,extrabold,black|}"]
@@ -133,27 +247,17 @@
     "prefix": ["container"],
     "body": ["${1|container,container-fluid|}"]
   },
-  "tsoft extra format": {
+  "tsoft extra format function": {
     "prefix": [
-      "extraformat",
-      "cartformat",
-      "basketformat",
-      "formatextra",
-      "formatcart",
-      "formatbasket"
+      "extraformat function"
     ],
     "body": [
       "{format price=(\\$P.${1:PRICE_SELL} - (\\$P.${1:PRICE_SELL} * \\$P.${2:NUMERIC1}/100))}"
     ]
   },
-  "tsoft extra vat": {
+  "tsoft extra vat function": {
     "prefix": [
-      "extravat",
-      "cartvat",
-      "basketvat",
-      "vatextra",
-      "vatcart",
-      "vatbasket"
+      "extravat function"
     ],
     "body": [
       "{vat price=(\\$P.${1:PRICE_SELL} - (\\$P.${1:PRICE_SELL} * \\$P.${2:NUMERIC1}/100)) vat=\\$P.VAT}"
@@ -215,16 +319,14 @@
   "tsoft FILTER_PROPERTY_LIST": {
     "prefix": [
       "FILTER_PROPERTY_LIST",
-      "tfilterpropertylist",
-      "filterpropertylist"
+      "tfilterpropertylist"
     ],
     "body": ["FILTER_PROPERTY_LIST"]
   },
   "tsoft IS_RECOMMENDATION_ACTIVE": {
     "prefix": [
       "IS_RECOMMENDATION_ACTIVE",
-      "tisrecommendactive",
-      "isrecoomendactive"
+      "tisrecommendactive"
     ],
     "body": ["IS_RECOMMENDATION_ACTIVE"]
   },
@@ -237,36 +339,28 @@
   "tsoft LAZY_LOAD_LOADING_IMAGE": {
     "prefix": [
       "LAZY_LOAD_LOADING_IMAGE",
-      "Tlazyloadimage",
-      "lazyloadimage",
-      "lazyimg"
+      "tlazyloadimage"
     ],
     "body": ["LAZY_LOAD_LOADING_IMAGE"]
   },
   "tsoft DISPLAY_FAVOURITE_BUTTON": {
     "prefix": [
       "DISPLAY_FAVOURITE_BUTTON",
-      "tdisplayfavoruritebutton",
-      "displayfavoruritebutton",
-      "favoritebutton"
+      "tdisplayfavoruritebutton"
     ],
     "body": ["DISPLAY_FAVOURITE_BUTTON"]
   },
   "tsoft DISPLAY_COMPARISON_BUTTON": {
     "prefix": [
       "DISPLAY_COMPARISON_BUTTON",
-      "tdisplaycomparison",
-      "displaycomparison",
-      "comparisonbtn"
+      "tdisplaycomparison"
     ],
     "body": ["DISPLAY_COMPARISON_BUTTON"]
   },
   "tsoft DISPLAY_CART_BUTTON": {
     "prefix": [
       "DISPLAY_CART_BUTTON",
-      "tdisplaycartbutton",
-      "displaycartbutton"
-    ],
+      "tdisplaycartbutton"    ],
     "body": ["DISPLAY_CART_BUTTON"]
   },
   "tsoft DISPLAY_LANGUAGES": {
@@ -343,8 +437,8 @@
     "prefix": ["VARIANT_FEATURE1_LIST", "tvariant", "variant"],
     "body": ["${1|VARIANT_FEATURE1_LIST,VARIANT_FEATURE2_LIST|}"]
   },
-  "tsoft subfolder": {
-    "prefix": ["tsubfolder", "subfolder"],
+  "tsoft ssubfolder": {
+    "prefix": ["tsubfolder", "ssubfolder"],
     "body": [
       "/srv/service/content-v5/sub-folder/{${1:\\$PAGE_ID}/{${2:\\$BLOCK.PARENT_ID}}/${3:subfoldername}/?product={${4:\\$P.ID}}&variant={${5:\\$P.VARIANT_ID}}"
     ]
@@ -353,14 +447,26 @@
     "prefix": ["tfor", "for"],
     "body": ["{for \\$${1:i}=1 to \\$${2:P.STOCK}}", "\\$${1:i}", "{/for}"]
   },
-  "tsoft vat money": {
-    "prefix": ["tvat", "vat"],
+  "tsoft subfolder path": {
+    "prefix": ["subfolder path"],
+    "body": [
+      "{\\$SUBFOLDER.${1|RELATED,VARIANT1,VARIANT2|}}"
+    ]
+  },
+  "tsoft subfolder function": {
+    "prefix": ["subfolder function"],
+    "body": [
+      "{subfolder pageId=\"3\" blockId=\"1004\" subfolder=\"personalization\"}"
+    ]
+  },
+  "tsoft vat money function": {
+    "prefix": ["vat function","tvat", "vat"],
     "body": [
       "{vat price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|} vat=\\$P.${2:VAT}}"
     ]
   },
   "tsoft format money": {
-    "prefix": ["tformat", "format"],
+    "prefix": ["format function","tformat", "format"],
     "body": ["{format price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|}}"]
   },
   "tsoft |string_format:'%.1f'": {
@@ -397,8 +503,8 @@
       "|${1|escape,@count,abs,var_dump,strpos,date,substr,format,explode,in_array,array_reverse,json_encode,json_decode,strip_tags,replace,ucfirst,mb_substr,default|}"
     ]
   },
-  "tsoft exchange": {
-    "prefix": ["texchange", "exchange"],
+  "tsoft exchange function": {
+    "prefix": ["exchange function", "texchange", "exchange"],
     "body": [
       "{exchange price=\\$P.${1:PRICE_SELL} from=\\$P.TARGET_CURRENCY to='${2:USD}'}"
     ]
@@ -423,17 +529,19 @@
     "prefix": ["iteration", "titeration", "tforeach"],
     "body": ["\\$smarty.foreach.${1:name}.${2|iteration,first,last|}"]
   },
+  "tsoft RELATED_PRODUCT_NUMBER": {
+    "prefix": ["RELATED_PRODUCT_NUMBER"],
+    "body": [
+      "RELATED_PRODUCT_NUMBER"
+    ]
+  },
   "related products": {
     "prefix": [
       "RELATED_PRODUCTS",
-      "relatedproduct",
-      "trelatedproducts",
-      "tcountrealatedproducts",
-      "trelatedproduct",
-      "trelatedproductcount"
+      "trelatedproduct"
     ],
     "body": [
-      "${1|RELATED_PRODUCTS_IDS1,RELATED_PRODUCTS_IDS1_COUNT,RELATED_PRODUCTS_IDS2,RELATED_PRODUCTS_IDS2_COUNT,RELATED_PRODUCTS_IDS3,RELATED_PRODUCTS_IDS3_COUNT|}"
+      "${1|RELATED_PRODUCTS_IDS1,RELATED_PRODUCTS_IDS1\\|@count,RELATED_PRODUCTS_IDS2,RELATED_PRODUCTS_IDS2\\|@count,RELATED_PRODUCTS_IDS3,RELATED_PRODUCTS_IDS3\\|@count|}"
     ]
   },
   "symbols": {
@@ -443,8 +551,6 @@
   "additional field": {
     "prefix": [
       "ADDITIONAL_FIELD",
-      "additional",
-      "tadditional",
       "tadditionalfield"
     ],
     "body": ["${2|ADDITIONAL_FIELD_1,ADDITIONAL_FIELD_2,ADDITIONAL_FIELD_3|}"]
@@ -518,7 +624,6 @@
     ],
     "description": "homepage=>1\nProductList=>2\nproductDetail=>3\nMemberLogin=>5\nMemberRegister=>6\ncontanct=>13\nvendor_login=>21\nvendor_register=>22\ncart=>30\ncheckout=>91\nFavorites=>35\n"
   },
-
   "tsoft smarty function menu": {
     "prefix": ["menu function"],
     "body": [
@@ -529,13 +634,24 @@
     "prefix": ["category function"],
     "body": ["{category id=\"{\\$TABLE_ID}\" assign=\"CATEGORY\"} "]
   },
-
   "tsoft smarty function product": {
     "prefix": ["product function"],
     "body": ["{product id=\"{\\$P.ID}\" assign=\"PRODUCT\"}"]
   },
 
-
+  "tsoft box-shadow": {
+    "prefix": ["box-shadow-"],
+    "body": [
+      "${1|box-shadow,box-shadow-1,box-shadow-2,box-shadow-3,box-shadow-4,box-shadow-5|}"
+    ]
+  },
+  
+"tsoft display font size": {
+    "prefix": ["display-"],
+    "body": [
+      "${1|display-1,display-2,display-3,display-4,display-5|}"
+    ]
+  },
 	"tsoft effect-wrapper": {
 		"prefix": ["effect-wrapper"],
 		"body": [
@@ -543,14 +659,12 @@
 		],
 		"description": "hover effect wrapper"
 	},
-
     "tsoft hover-effects": {
 		"prefix": ["hover-"],
 		"body": [
 			"hover-${1|block,inline-block,flex,inline-flex,none,hidden,visible,transition-none,scale,scale-lg,grayscale,grayscale-reverse,blur,blur-reverse,opacity,opacity-reverse,to-up,to-down,to-left,to-right,shadow,bg-transparent,text-primary,bg-primary,border-primary|}"
 		]
 	},
-
     "tsoft hover-border-primary": {
 		"prefix": ["hover-border-primary"],
 		"body": [
@@ -707,6 +821,114 @@
         "inset"
     ]
   },
+  "tsoft gap": {
+		"prefix": ["gap-"],
+		"body": [
+			"gap-${1|1,2,3,4,5|}"
+		]
+	},
+    "tsoft gap-1": {
+		"prefix": ["gap-1"],
+		"body": [
+			"gap-1"
+		]
+	},
+    "tsoft gap-2": {
+		"prefix": ["gap-2"],
+		"body": [
+			"gap-2"
+		]
+	},
+    "tsoft gap-3": {
+		"prefix": ["gap-3"],
+		"body": [
+			"gap-3"
+		]
+	},
+    "tsoft gap-4": {
+		"prefix": ["gap-4"],
+		"body": [
+			"gap-4"
+		]
+	},
+    "tsoft gap-5": {
+		"prefix": ["gap-5"],
+		"body": [
+			"gap-5"
+		]
+	},
+    "tsoft overlay": {
+		"prefix": ["overlay-"],
+		"body": [
+			"overlay-${1|primary,secondary,white,black,success,info,warning,danger,light,dark,gray|}"
+		]
+	},
+    "tsoft overlay-primary": {
+		"prefix": ["overlay-primary"],
+		"body": [
+			"overlay-primary"
+		]
+	},
+    "tsoft overlay-secondary": {
+		"prefix": ["overlay-secondary"],
+		"body": [
+			"overlay-secondary"
+		]
+	},
+    "tsoft overlay-white": {
+		"prefix": ["overlay-white"],
+		"body": [
+			"overlay-white"
+		]
+	},
+    "tsoft overlay-black": {
+		"prefix": ["overlay-black"],
+		"body": [
+			"overlay-black"
+		]
+	},
+    "tsoft overlay-success": {
+		"prefix": ["overlay-success"],
+		"body": [
+			"overlay-success"
+		]
+	},
+    "tsoft overlay-info": {
+		"prefix": ["overlay-info"],
+		"body": [
+			"overlay-info"
+		]
+	},
+    "tsoft overlay-warning": {
+		"prefix": ["overlay-warning"],
+		"body": [
+			"overlay-warning"
+		]
+	},
+    "tsoft overlay-danger": {
+		"prefix": ["overlay-danger"],
+		"body": [
+			"overlay-danger"
+		]
+	},
+    "tsoft overlay-light": {
+		"prefix": ["overlay-light"],
+		"body": [
+			"overlay-light"
+		]
+	},
+    "tsoft overlay-dark": {
+		"prefix": ["overlay-dark"],
+		"body": [
+			"overlay-dark"
+		]
+	},
+    "tsoft overlay-gray": {
+		"prefix": ["overlay-gray"],
+		"body": [
+			"overlay-gray"
+		]
+	},
 "tsoft top-0": {
     "prefix": "top-0",
     "body": [
@@ -797,7 +1019,6 @@
         "translate-middle-y"
     ]
   },
-
 "tsoft overflow-auto": {
     "prefix": "overflow-auto",
     "body": [
@@ -870,13 +1091,6 @@
         "overflow-y-scroll"
     ]
   },
-
-
-
-
-
-
-
   "predebug": {
     "prefix": ["predebug", "tpredebug"],
     "body": ["<pre>{${1:arr}|@debug_print_var}</pre>"],
@@ -888,7 +1102,7 @@
     "description": "pre debug"
   },
   "Datav5": {
-    "prefix": ["tdata", "teditorfiles", "data", "editorfiles"],
+    "prefix": ["tdata", "teditorfiles", "data"],
     "body": ["/Data/EditorFiles/v5images/"],
     "description": "EditorFiles"
   },
@@ -925,14 +1139,14 @@
     "description": "block id"
   },
   "Tsoft SETTING": {
-    "prefix": ["SETTING", "setting", "tsetting"],
+    "prefix": ["SETTING","tsetting"],
     "body": [
       "SETTING.${1|DELAY,EFFECT,IMAGES,MARGIN,PERVIEW,IS_RESIZE,DISPLAY_TITLE,DISPLAY_THUMBNAIL,DISPLAY_NAVIGATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL,PAGINATION_TYPE|}"
     ],
     "description": "block id"
   },
   "Tsoft IMAGE": {
-    "prefix": ["IMAGE", "\\$IMAGE", "image", "timage"],
+    "prefix": ["IMAGE", "\\$IMAGE", "timage"],
     "body": [
       "IMAGE.${1|URL,TITLE,DATA1,DATA2,DATA3,CONTENT,IMG_BIG,IMG_SMALL,KEY,INDEX,OPERATION,IMAGE_WIDTH_BIG,IMAGE_WIDTH_SMALL,IMAGE_HEIGHT_BIG,IMAGE_HEIGHT_SMALL|}"
     ],
@@ -1089,8 +1303,7 @@
       "srelatedblock",
       "ilgiliblok",
       "ilişkiliblok",
-      "getBlockrelated",
-      "relatedblock"
+      "getBlockrelated"
     ],
     "body": ["/srv/service/content/getBlock/1070/product/${1:${\\$P.ID}}"],
     "description": "tsoft related  getBlock v4"
