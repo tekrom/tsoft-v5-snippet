@@ -31,10 +31,6 @@ justify-content-flex-end
 container
 hover-scale
 
-
-
-RELATED_PRODUCTS_IDS2|@count
-
 {subfolder pageId="3" blockId="1004" subfolder="personalization"}   
 
 

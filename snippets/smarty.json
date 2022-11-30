@@ -188,11 +188,11 @@
     "body": ["flex-direction-column-reverse"]
   },
   "tsoft flex-direction-row": {
-    "prefix": ["f-row", "flex-direction-row"],
+    "prefix": ["row-f","f-row", "flex-direction-row"],
     "body": ["flex-direction-row"]
   },
   "tsoft flex-direction-row-reverse": {
-    "prefix": ["row-r", "flex-direction-row-reverse"],
+    "prefix": ["r-row","row-r", "flex-direction-row-reverse"],
     "body": ["flex-direction-row-reverse"]
   },
   "tsoft flex-wrap": {
