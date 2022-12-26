@@ -137,6 +137,15 @@
 		],
 		"description": "Log output to console"
 	},
+	"productLoaderCallback callback": {
+		"prefix": ["productLoaderCallback"],
+		"body": [
+            "productLoaderCallback.push((e)=>{",
+                "\tconsole.log(\"e\")",
+              "})"
+		],
+		"description": "productLoaderCallback"
+	},
 	"ON_PAGE_READY callback function": {
 		"prefix": ["tonpageready callback","ON_PAGE_READY function"],
 		"body": [
