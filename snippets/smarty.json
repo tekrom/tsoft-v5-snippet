@@ -219,6 +219,10 @@
     "prefix": ["a-start", "align-items-flex-start"],
     "body": ["align-items-flex-start"]
   },
+  "tsoft justify-all-center": {
+    "prefix": ["all-center"],
+    "body": ["justify-content-center align-items-center text-center"]
+  },
   "tsoft justify-content-center": {
     "prefix": ["j-center", "justify-content-center"],
     "body": ["justify-content-center"]
