@@ -642,6 +642,14 @@
     "prefix": ["product function"],
     "body": ["{product id=\"{\\$P.ID}\" assign=\"PRODUCT\"}"]
   },
+  "tsoft smarty function brand": {
+    "prefix": ["brand function"],
+    "body": ["{brand id=\"{\\$P.BRAND_ID}\" assign=\"BRAND\"}"]
+  },
+  "tsoft smarty function model": {
+    "prefix": ["model function"],
+    "body": ["{model id=\"{\\$P.MODEL_ID}\" assign=\"MODEL\"}"]
+  },
 
   "tsoft box-shadow": {
     "prefix": ["box-shadow-"],
