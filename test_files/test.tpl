@@ -31,6 +31,8 @@ justify-content-flex-end
 container
 hover-scale
 
+
+
 {subfolder pageId="3" blockId="1004" subfolder="personalization"}   
 
 
@@ -39,6 +41,8 @@ hover-scale
 {category id="{$TABLE_ID}" assign="MY_CATEGORY"} 
 
 {menu key="MENU_FOOTER" assign="MENU_FOOTER"}
+{brand id="{$P.BRAND_ID}" assign="BRAND"}
+{model id="{$P.MODEL_ID}" assign="MODEL"}
 
 scrollToElm('[href=\'#idToScroll\']', 200);
 
