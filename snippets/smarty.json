@@ -469,6 +469,12 @@
       "{vat price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|} vat=\\$P.${2:VAT}}"
     ]
   },
+  "tsoft vat money function integer": {
+    "prefix": ["vat function integer","tvat", "vat"],
+    "body": [
+      "{vat price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|} vat=\\$P.${2:VAT} integer=true}"
+    ]
+  },
   "tsoft format money": {
     "prefix": ["format function","tformat", "format"],
     "body": ["{format price=\\$P.${1|PRICE_SELL,PRICE_NOT_DISCOUNTED|}}"]
