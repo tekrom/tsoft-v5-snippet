@@ -1,8 +1,8 @@
 {
 	"name": "tsoftv5snippets",
 	"displayName": "T-Soft V5 Snippets",
-	"description": "tosft v5 snippets",
-	"version": "0.1.49",
+	"description": "tsoft v5 snippets for smarty, javascript and scss",
+	"version": "0.1.50",
 	"publisher": "tsoft-v5-snippet",
 	"license": "SEE LICENSE IN LICENSE or README.MD",
 	"homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
