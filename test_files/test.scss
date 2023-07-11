@@ -1,3 +1,8 @@
+@media (max-width:  ($mdScreen) ){
+  
+}
+
+
 *{
     color: transparentize($bgPrimary, 0.5);
     darken($bgPrimary, 10%)
@@ -9,6 +14,7 @@
     $bgPrimary
     $bgDanger
     $fontH1
+
     clamp(13px,1vw,20px)
     @import "setting.scss";
     @import "mixin.scss";

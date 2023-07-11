@@ -482,7 +482,7 @@
   "media min width": {
     "prefix": ["mediamin", "minmedia"],
     "body": [
-      "@media (min-width: \\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|}){",
+      "@media (min-width: (\\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|})){",
       "\t$2",
       "}"
     ],
@@ -491,7 +491,7 @@
   "media max": {
     "prefix": ["mediamax", "maxmedia"],
     "body": [
-      "@media (max-width: \\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|} - 1){",
+      "@media (max-width: (\\$${1|mdScreen,xxlScreen,xlScreen,lgScreen,smScreen|} - 1)){",
       "\t$2",
       "}"
     ],
