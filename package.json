@@ -1,8 +1,8 @@
 {
 	"name": "tsoftv5snippets",
-	"displayName": "Tsoft V5 snippets",
-	"description": "tosft V5 snippets",
-	"version": "0.1.47",
+	"displayName": "T-Soft V5 Snippets",
+	"description": "tosft v5 snippets",
+	"version": "0.1.49",
 	"publisher": "tsoft-v5-snippet",
 	"license": "SEE LICENSE IN LICENSE or README.MD",
 	"homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
