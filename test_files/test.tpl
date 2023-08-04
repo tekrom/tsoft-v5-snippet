@@ -32,7 +32,6 @@ container
 hover-scale
 
 
-
 {subfolder pageId="3" blockId="1004" subfolder="personalization"}   
 
 

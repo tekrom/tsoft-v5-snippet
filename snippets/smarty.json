@@ -947,6 +947,12 @@
 			"overlay-gray"
 		]
 	},
+"tsoft top-auto": {
+    "prefix": "top-auto",
+    "body": [
+        "top-auto"
+    ]
+  },
 "tsoft top-0": {
     "prefix": "top-0",
     "body": [
@@ -965,6 +971,12 @@
         "top-100"
     ]
   },
+"tsoft bottom-auto": {
+    "prefix": "bottom-auto",
+    "body": [
+        "bottom-auto"
+    ]
+  },
 "tsoft bottom-0": {
     "prefix": "bottom-0",
     "body": [
@@ -981,6 +993,12 @@
     "prefix": "bottom-100",
     "body": [
         "bottom-100"
+    ]
+  },
+"tsoft left-auto": {
+    "prefix": "left-auto",
+    "body": [
+        "left-auto"
     ]
   },
 "tsoft left-0": {
@@ -1005,6 +1023,12 @@
     "prefix": "right-0",
     "body": [
         "right-0"
+    ]
+  },
+"tsoft right-auto": {
+    "prefix": "right-auto",
+    "body": [
+        "right-auto"
     ]
   },
 "tsoft right-50": {
