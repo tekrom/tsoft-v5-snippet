@@ -1,327 +1,660 @@
 {
-  "clamp transparentize": {
+  "tsoft v5 transparentize": {
     "prefix": "transparentize",
     "body": ["transparentize(${1:\\$bgPrimary}, ${2:0.5})"],
     "description": "color and amount"
   },
-  "clamp darken": {
+  "tsoft v5 darken": {
     "prefix": "darken",
     "body": ["darken(${1:\\$bgPrimary}, ${2:10}%)"],
     "description": "color and percent"
   },
-  "clamp lighten": {
+  "tsoft v5 lighten": {
     "prefix": "lighten",
     "body": ["lighten(${1:\\$bgPrimary}, ${2:10}%)"],
     "description": "color and percent"
   },
-  "clamp gridColumns": {
+  "tsoft v5 gridColumns": {
     "prefix": "$gridColumns",
     "body": ["\\$gridColumns"],
     "description": "defaults"
   },
-  "clamp gridPadding": {
+  "tsoft v5 gridPadding": {
     "prefix": "$gridPadding",
     "body": ["\\$gridPadding"],
     "description": "defaults"
   },
-  "clamp mobileGridPadding": {
+  "tsoft v5 mobileGridPadding": {
     "prefix": "$mobileGridPadding",
     "body": ["\\$mobileGridPadding"],
     "description": "defaults"
   },
-  "clamp xxlScreen": {
+  "tsoft v5 xxlScreen": {
     "prefix": "$xxlScreen",
     "body": ["\\$xxlScreen"],
     "description": "defaults"
   },
-  "clamp xlScreen": {
+  "tsoft v5 xlScreen": {
     "prefix": "$xlScreen",
     "body": ["\\$xlScreen"],
     "description": "defaults"
   },
-  "clamp lgScreen": {
+  "tsoft v5 lgScreen": {
     "prefix": "$lgScreen",
     "body": ["\\$lgScreen"],
     "description": "defaults"
   },
-  "clamp mdScreen": {
+  "tsoft v5 mdScreen": {
     "prefix": "$mdScreen",
     "body": ["\\$mdScreen"],
     "description": "defaults"
   },
-  "clamp smScreen": {
+  "tsoft v5 smScreen": {
     "prefix": "$smScreen",
     "body": ["\\$smScreen"],
     "description": "defaults"
   },
-  "clamp bgBody": {
+  "--bg": {
+    "prefix": "--bg",
+    "body": [
+      "--bg-${1|primary,secondary,white,black,gray,light,dark-gray,success,info,warning,danger,body|}"
+    ],
+    "description": "var(--bg-defaults) "
+  },
+"--bg-overlay": {
+    "prefix": "--bg-overlay",
+    "body": [
+      "--bg-overlay-${1|primary,secondary,white,black,gray,light,dark-gray,success,info,warning,danger,body|}"
+    ],
+    "description": "var(--bg-overlay-defaults) "
+  },
+"--button": {
+    "prefix": "--button",
+    "body": [
+      "--button-${1|primary,secondary,white,black,gray,light,dark-gray,success,info,warning,danger|}"
+    ],
+    "description": "var(--button-defaults) "
+  },
+"--text": {
+    "prefix": "--text",
+    "body": [
+      "--text-${1|primary,secondary,white,black,gray,light,dark-gray,success,info,warning,danger,body,heading|}"
+    ],
+    "description": "var(--button-defaults) "
+  },
+"--border": {
+    "prefix": "--border",
+    "body": [
+      "--border-${1|primary,secondary,white,black,gray,light,dark-gray,success,info,warning,danger,radius|}"
+    ],
+    "description": "var(--button-defaults) "
+  },
+"--bg-primary": {
+    "prefix": "--bg-primary",
+    "body": ["--bg-primary"],
+    "description": "scss var variables"
+  },
+"--bg-secondary": {
+    "prefix": "--bg-secondary",
+    "body": ["--bg-secondary"],
+    "description": "scss var variables"
+  },
+"--bg-white": {
+    "prefix": "--bg-white",
+    "body": ["--bg-white"],
+    "description": "scss var variables"
+  },
+"--bg-black": {
+    "prefix": "--bg-black",
+    "body": ["--bg-black"],
+    "description": "scss var variables"
+  },
+"--bg-gray": {
+    "prefix": "--bg-gray",
+    "body": ["--bg-gray"],
+    "description": "scss var variables"
+  },
+"--bg-light": {
+    "prefix": "--bg-light",
+    "body": ["--bg-light"],
+    "description": "scss var variables"
+  },
+"--bg-dark-gray": {
+    "prefix": "--bg-dark-gray",
+    "body": ["--bg-dark-gray"],
+    "description": "scss var variables"
+  },
+"--bg-success": {
+    "prefix": "--bg-success",
+    "body": ["--bg-success"],
+    "description": "scss var variables"
+  },
+"--bg-info": {
+    "prefix": "--bg-info",
+    "body": ["--bg-info"],
+    "description": "scss var variables"
+  },
+"--bg-warning": {
+    "prefix": "--bg-warning",
+    "body": ["--bg-warning"],
+    "description": "scss var variables"
+  },
+"--bg-danger": {
+    "prefix": "--bg-danger",
+    "body": ["--bg-danger"],
+    "description": "scss var variables"
+  },
+"--bg-body": {
+    "prefix": "--bg-body",
+    "body": ["--bg-body"],
+    "description": "scss var variables"
+  },
+  "--bg-overlay-primary": {
+    "prefix": "--bg-overlay-primary",
+    "body": ["--bg-overlay-primary"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-secondary": {
+    "prefix": "--bg-overlay-secondary",
+    "body": ["--bg-overlay-secondary"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-white": {
+    "prefix": "--bg-overlay-white",
+    "body": ["--bg-overlay-white"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-black": {
+    "prefix": "--bg-overlay-black",
+    "body": ["--bg-overlay-black"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-gray": {
+    "prefix": "--bg-overlay-gray",
+    "body": ["--bg-overlay-gray"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-light": {
+    "prefix": "--bg-overlay-light",
+    "body": ["--bg-overlay-light"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-dark-gray": {
+    "prefix": "--bg-overlay-dark-gray",
+    "body": ["--bg-overlay-dark-gray"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-success": {
+    "prefix": "--bg-overlay-success",
+    "body": ["--bg-overlay-success"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-info": {
+    "prefix": "--bg-overlay-info",
+    "body": ["--bg-overlay-info"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-warning": {
+    "prefix": "--bg-overlay-warning",
+    "body": ["--bg-overlay-warning"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-danger": {
+    "prefix": "--bg-overlay-danger",
+    "body": ["--bg-overlay-danger"],
+    "description": "scss var variables"
+  },
+"--bg-overlay-body": {
+    "prefix": "--bg-overlay-body",
+    "body": ["--bg-overlay-body"],
+    "description": "scss var variables"
+  },
+  "--button-primary": {
+    "prefix": "--button-primary",
+    "body": ["--button-primary"],
+    "description": "scss var variables"
+  },
+"--button-secondary": {
+    "prefix": "--button-secondary",
+    "body": ["--button-secondary"],
+    "description": "scss var variables"
+  },
+"--button-white": {
+    "prefix": "--button-white",
+    "body": ["--button-white"],
+    "description": "scss var variables"
+  },
+"--button-black": {
+    "prefix": "--button-black",
+    "body": ["--button-black"],
+    "description": "scss var variables"
+  },
+"--button-gray": {
+    "prefix": "--button-gray",
+    "body": ["--button-gray"],
+    "description": "scss var variables"
+  },
+"--button-light": {
+    "prefix": "--button-light",
+    "body": ["--button-light"],
+    "description": "scss var variables"
+  },
+"--button-dark-gray": {
+    "prefix": "--button-dark-gray",
+    "body": ["--button-dark-gray"],
+    "description": "scss var variables"
+  },
+"--button-success": {
+    "prefix": "--button-success",
+    "body": ["--button-success"],
+    "description": "scss var variables"
+  },
+"--button-info": {
+    "prefix": "--button-info",
+    "body": ["--button-info"],
+    "description": "scss var variables"
+  },
+"--button-warning": {
+    "prefix": "--button-warning",
+    "body": ["--button-warning"],
+    "description": "scss var variables"
+  },
+"--button-danger": {
+    "prefix": "--button-danger",
+    "body": ["--button-danger"],
+    "description": "scss var variables"
+  },
+  "--text-primary": {
+    "prefix": "--text-primary",
+    "body": ["--text-primary"],
+    "description": "scss var variables"
+  },
+"--text-secondary": {
+    "prefix": "--text-secondary",
+    "body": ["--text-secondary"],
+    "description": "scss var variables"
+  },
+"--text-white": {
+    "prefix": "--text-white",
+    "body": ["--text-white"],
+    "description": "scss var variables"
+  },
+"--text-black": {
+    "prefix": "--text-black",
+    "body": ["--text-black"],
+    "description": "scss var variables"
+  },
+"--text-gray": {
+    "prefix": "--text-gray",
+    "body": ["--text-gray"],
+    "description": "scss var variables"
+  },
+"--text-light": {
+    "prefix": "--text-light",
+    "body": ["--text-light"],
+    "description": "scss var variables"
+  },
+"--text-dark-gray": {
+    "prefix": "--text-dark-gray",
+    "body": ["--text-dark-gray"],
+    "description": "scss var variables"
+  },
+"--text-success": {
+    "prefix": "--text-success",
+    "body": ["--text-success"],
+    "description": "scss var variables"
+  },
+"--text-info": {
+    "prefix": "--text-info",
+    "body": ["--text-info"],
+    "description": "scss var variables"
+  },
+"--text-warning": {
+    "prefix": "--text-warning",
+    "body": ["--text-warning"],
+    "description": "scss var variables"
+  },
+"--text-danger": {
+    "prefix": "--text-danger",
+    "body": ["--text-danger"],
+    "description": "scss var variables"
+  },
+"--text-body": {
+    "prefix": "--text-body",
+    "body": ["--text-body"],
+    "description": "scss var variables"
+  },
+"--text-heading": {
+    "prefix": "--text-heading",
+    "body": ["--text-heading"],
+    "description": "scss var variables"
+  },
+  "--border-primary": {
+    "prefix": "--border-primary",
+    "body": ["--border-primary"],
+    "description": "scss var variables"
+  },
+"--border-secondary": {
+    "prefix": "--border-secondary",
+    "body": ["--border-secondary"],
+    "description": "scss var variables"
+  },
+"--border-white": {
+    "prefix": "--border-white",
+    "body": ["--border-white"],
+    "description": "scss var variables"
+  },
+"--border-black": {
+    "prefix": "--border-black",
+    "body": ["--border-black"],
+    "description": "scss var variables"
+  },
+"--border-gray": {
+    "prefix": "--border-gray",
+    "body": ["--border-gray"],
+    "description": "scss var variables"
+  },
+"--border-light": {
+    "prefix": "--border-light",
+    "body": ["--border-light"],
+    "description": "scss var variables"
+  },
+"--border-dark-gray": {
+    "prefix": "--border-dark-gray",
+    "body": ["--border-dark-gray"],
+    "description": "scss var variables"
+  },
+"--border-success": {
+    "prefix": "--border-success",
+    "body": ["--border-success"],
+    "description": "scss var variables"
+  },
+"--border-info": {
+    "prefix": "--border-info",
+    "body": ["--border-info"],
+    "description": "scss var variables"
+  },
+"--border-warning": {
+    "prefix": "--border-warning",
+    "body": ["--border-warning"],
+    "description": "scss var variables"
+  },
+"--border-danger": {
+    "prefix": "--border-danger",
+    "body": ["--border-danger"],
+    "description": "scss var variables"
+  },
+"--border-radius": {
+    "prefix": "--border-radius",
+    "body": ["--border-radius"],
+    "description": "scss var variables"
+  },
+  "tsoft v5 bgBody": {
     "prefix": "$bgBody",
     "body": ["\\$bgBody"],
     "description": "defaults"
   },
-  "clamp bgPrimary": {
+  "tsoft v5 bgPrimary": {
     "prefix": "$bgPrimary",
     "body": ["\\$bgPrimary"],
     "description": "defaults"
   },
-  "clamp bgSecondary": {
+  "tsoft v5 bgSecondary": {
     "prefix": "$bgSecondary",
     "body": ["\\$bgSecondary"],
     "description": "defaults"
   },
-  "clamp bgWhite": {
+  "tsoft v5 bgWhite": {
     "prefix": "$bgWhite",
     "body": ["\\$bgWhite"],
     "description": "defaults"
   },
-  "clamp bgBlack": {
+  "tsoft v5 bgBlack": {
     "prefix": "$bgBlack",
     "body": ["\\$bgBlack"],
     "description": "defaults"
   },
-  "clamp bgGray": {
+  "tsoft v5 bgGray": {
     "prefix": "$bgGray",
     "body": ["\\$bgGray"],
     "description": "defaults"
   },
-  "clamp bgLight": {
+  "tsoft v5 bgLight": {
     "prefix": "$bgLight",
     "body": ["\\$bgLight"],
     "description": "defaults"
   },
-  "clamp bgDarkGray": {
+  "tsoft v5 bgDarkGray": {
     "prefix": "$bgDarkGray",
     "body": ["\\$bgDarkGray"],
     "description": "defaults"
   },
-  "clamp bgSuccess": {
+  "tsoft v5 bgSuccess": {
     "prefix": "$bgSuccess",
     "body": ["\\$bgSuccess"],
     "description": "defaults"
   },
-  "clamp bgInfo": {
+  "tsoft v5 bgInfo": {
     "prefix": "$bgInfo",
     "body": ["\\$bgInfo"],
     "description": "defaults"
   },
-  "clamp bgWarning": {
+  "tsoft v5 bgWarning": {
     "prefix": "$bgWarning",
     "body": ["\\$bgWarning"],
     "description": "defaults"
   },
-  "clamp bgDanger": {
+  "tsoft v5 bgDanger": {
     "prefix": "$bgDanger",
     "body": ["\\$bgDanger"],
     "description": "defaults"
   },
-  "clamp bg": {
+  "tsoft v5 bg": {
     "prefix": "$bg",
     "body": [
       "\\$bg${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Body|}"
     ],
     "description": "defaults"
   },
-  "clamp borderPrimary": {
+  "tsoft v5 borderPrimary": {
     "prefix": "$borderPrimary",
     "body": ["\\$borderPrimary"],
     "description": "defaults"
   },
-  "clamp borderSecondary": {
+  "tsoft v5 borderSecondary": {
     "prefix": "$borderSecondary",
     "body": ["\\$borderSecondary"],
     "description": "defaults"
   },
-  "clamp borderWhite": {
+  "tsoft v5 borderWhite": {
     "prefix": "$borderWhite",
     "body": ["\\$borderWhite"],
     "description": "defaults"
   },
-  "clamp borderBlack": {
+  "tsoft v5 borderBlack": {
     "prefix": "$borderBlack",
     "body": ["\\$borderBlack"],
     "description": "defaults"
   },
-  "clamp borderGray": {
+  "tsoft v5 borderGray": {
     "prefix": "$borderGray",
     "body": ["\\$borderGray"],
     "description": "defaults"
   },
-  "clamp borderLight": {
+  "tsoft v5 borderLight": {
     "prefix": "$borderLight",
     "body": ["\\$borderLight"],
     "description": "defaults"
   },
-  "clamp borderDarkGray": {
+  "tsoft v5 borderDarkGray": {
     "prefix": "$borderDarkGray",
     "body": ["\\$borderDarkGray"],
     "description": "defaults"
   },
-  "clamp borderSuccess": {
+  "tsoft v5 borderSuccess": {
     "prefix": "$borderSuccess",
     "body": ["\\$borderSuccess"],
     "description": "defaults"
   },
-  "clamp borderInfo": {
+  "tsoft v5 borderInfo": {
     "prefix": "$borderInfo",
     "body": ["\\$borderInfo"],
     "description": "defaults"
   },
-  "clamp borderWarning": {
+  "tsoft v5 borderWarning": {
     "prefix": "$borderWarning",
     "body": ["\\$borderWarning"],
     "description": "defaults"
   },
-  "clamp borderDanger": {
+  "tsoft v5 borderDanger": {
     "prefix": "$borderDanger",
     "body": ["\\$borderDanger"],
     "description": "defaults"
   },
-  "clamp borderRadius": {
+  "tsoft v5 borderRadius": {
     "prefix": "$borderRadius",
     "body": ["\\$borderRadius"],
     "description": "defaults"
   },
-  "clamp border": {
+  "tsoft v5 border": {
     "prefix": "$border",
     "body": [
       "\\$border${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger,Radius|}"
     ],
     "description": "defaults"
   },
-  "clamp buttonSecondary": {
+  "tsoft v5 buttonSecondary": {
     "prefix": "$buttonSecondary",
     "body": ["\\$buttonSecondary"],
     "description": "defaults"
   },
-  "clamp buttonPrimary": {
+  "tsoft v5 buttonPrimary": {
     "prefix": "$buttonPrimary",
     "body": ["\\$buttonPrimary"],
     "description": "defaults"
   },
-  "clamp buttonWhite": {
+  "tsoft v5 buttonWhite": {
     "prefix": "$buttonWhite",
     "body": ["\\$buttonWhite"],
     "description": "defaults"
   },
-  "clamp buttonBlack": {
+  "tsoft v5 buttonBlack": {
     "prefix": "$buttonBlack",
     "body": ["\\$buttonBlack"],
     "description": "defaults"
   },
-  "clamp buttonGray": {
+  "tsoft v5 buttonGray": {
     "prefix": "$buttonGray",
     "body": ["\\$buttonGray"],
     "description": "defaults"
   },
-  "clamp buttonLight": {
+  "tsoft v5 buttonLight": {
     "prefix": "$buttonLight",
     "body": ["\\$buttonLight"],
     "description": "defaults"
   },
-  "clamp buttonDarkGray": {
+  "tsoft v5 buttonDarkGray": {
     "prefix": "$buttonDarkGray",
     "body": ["\\$buttonDarkGray"],
     "description": "defaults"
   },
-  "clamp buttonSuccess": {
+  "tsoft v5 buttonSuccess": {
     "prefix": "$buttonSuccess",
     "body": ["\\$buttonSuccess"],
     "description": "defaults"
   },
-  "clamp buttonInfo": {
+  "tsoft v5 buttonInfo": {
     "prefix": "$buttonInfo",
     "body": ["\\$buttonInfo"],
     "description": "defaults"
   },
-  "clamp buttonWarning": {
+  "tsoft v5 buttonWarning": {
     "prefix": "$buttonWarning",
     "body": ["\\$buttonWarning"],
     "description": "defaults"
   },
-  "clamp buttonDanger": {
+  "tsoft v5 buttonDanger": {
     "prefix": "$buttonDanger",
     "body": ["\\$buttonDanger"],
     "description": "defaults"
   },
-  "clamp button": {
+  "tsoft v5 button": {
     "prefix": ["$button", "btn"],
     "body": [
       "\\$button${1|Primary,Secondary,White,Black,Gray,Light,DarkGray,Success,Info,Warning,Danger|}"
     ],
     "description": "defaults"
   },
-  "clamp font": {
+  "tsoft v5 font": {
     "prefix": "$font",
     "body": ["\\$font${1|H1,H2,H3,Text,Master|}"],
     "description": "defaults"
   },
-  "clamp textPrimary": {
+  "tsoft v5 textPrimary": {
     "prefix": "$textPrimary",
     "body": ["\\$textPrimary"],
     "description": "defaults"
   },
-  "clamp textSecondary": {
+  "tsoft v5 textSecondary": {
     "prefix": "$textSecondary",
     "body": ["\\$textSecondary"],
     "description": "defaults"
   },
-  "clamp textWhite": {
+  "tsoft v5 textWhite": {
     "prefix": "$textWhite",
     "body": ["\\$textWhite"],
     "description": "defaults"
   },
-  "clamp textBlack": {
+  "tsoft v5 textBlack": {
     "prefix": "$textBlack",
     "body": ["\\$textBlack"],
     "description": "defaults"
   },
-  "clamp textGray": {
+  "tsoft v5 textGray": {
     "prefix": "$textGray",
     "body": ["\\$textGray"],
     "description": "defaults"
   },
-  "clamp textLight": {
+  "tsoft v5 textLight": {
     "prefix": "$textLight",
     "body": ["\\$textLight"],
     "description": "defaults"
   },
-  "clamp textDarkGray": {
+  "tsoft v5 textDarkGray": {
     "prefix": "$textDarkGray",
     "body": ["\\$textDarkGray"],
     "description": "defaults"
   },
-  "clamp textSuccess": {
+  "tsoft v5 textSuccess": {
     "prefix": "$textSuccess",
     "body": ["\\$textSuccess"],
     "description": "defaults"
   },
-  "clamp textInfo": {
+  "tsoft v5 textInfo": {
     "prefix": "$textInfo",
     "body": ["\\$textInfo"],
     "description": "defaults"
   },
-  "clamp textWarning": {
+  "tsoft v5 textWarning": {
     "prefix": "$textWarning",
     "body": ["\\$textWarning"],
     "description": "defaults"
   },
-  "clamp textDanger": {
+  "tsoft v5 textDanger": {
     "prefix": "$textDanger",
     "body": ["\\$textDanger"],
     "description": "defaults"
   },
-
-  "clamp textColor": {
+  "tsoft v5 textColor": {
     "prefix": "$textColor",
     "body": ["\\$textColor"],
     "description": "defaults"
   },
-  "clamp headingColor": {
+  "tsoft v5 headingColor": {
     "prefix": "$headingColor",
     "body": ["\\$headingColor"],
     "description": "defaults"
   },
-
   "clamptext": {
     "prefix": ["$text", "text"],
     "body": [
