@@ -119,9 +119,9 @@
     "body": ["--bg-light"],
     "description": "scss var variables"
   },
-"--bg-dark-gray": {
-    "prefix": "--bg-dark-gray",
-    "body": ["--bg-dark-gray"],
+"--bg-dark": {
+    "prefix": "--bg-dark",
+    "body": ["--bg-dark"],
     "description": "scss var variables"
   },
 "--bg-success": {
@@ -179,9 +179,9 @@
     "body": ["--bg-overlay-light"],
     "description": "scss var variables"
   },
-"--bg-overlay-dark-gray": {
-    "prefix": "--bg-overlay-dark-gray",
-    "body": ["--bg-overlay-dark-gray"],
+"--bg-overlay-dark": {
+    "prefix": "--bg-overlay-dark",
+    "body": ["--bg-overlay-dark"],
     "description": "scss var variables"
   },
 "--bg-overlay-success": {
@@ -239,9 +239,9 @@
     "body": ["--button-light"],
     "description": "scss var variables"
   },
-"--button-dark-gray": {
-    "prefix": "--button-dark-gray",
-    "body": ["--button-dark-gray"],
+"--button-dark": {
+    "prefix": "--button-dark",
+    "body": ["--button-dark"],
     "description": "scss var variables"
   },
 "--button-success": {
@@ -294,9 +294,9 @@
     "body": ["--text-light"],
     "description": "scss var variables"
   },
-"--text-dark-gray": {
-    "prefix": "--text-dark-gray",
-    "body": ["--text-dark-gray"],
+"--text-dark": {
+    "prefix": "--text-dark",
+    "body": ["--text-dark"],
     "description": "scss var variables"
   },
 "--text-success": {
@@ -359,9 +359,9 @@
     "body": ["--border-light"],
     "description": "scss var variables"
   },
-"--border-dark-gray": {
-    "prefix": "--border-dark-gray",
-    "body": ["--border-dark-gray"],
+"--border-dark": {
+    "prefix": "--border-dark",
+    "body": ["--border-dark"],
     "description": "scss var variables"
   },
 "--border-success": {
