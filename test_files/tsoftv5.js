@@ -9,6 +9,8 @@ selector.addEventListener("click",e=>{
 });
 
 
+
+
 document.addEventListener("DOMContentLoaded",e=>{
     console.log(e)
 });

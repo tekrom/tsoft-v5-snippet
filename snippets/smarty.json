@@ -1,4 +1,28 @@
 {
+  "tsoft font-text": {
+		"prefix": ["font-text"],
+		"body": [
+			"font-text"
+		]
+	},
+  "tsoft font-h1": {
+		"prefix": ["font-h1"],
+		"body": [
+			"font-h1"
+		]
+	},
+  "tsoft font-h2": {
+		"prefix": ["font-h2"],
+		"body": [
+			"font-h2"
+		]
+	},
+  "tsoft font-h3": {
+		"prefix": ["font-h3"],
+		"body": [
+			"font-h3"
+		]
+	},
   "kkk tsoft border": {
     "prefix": ["border-"],
     "body": [
