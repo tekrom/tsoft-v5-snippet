@@ -1,4 +1,10 @@
 {
+  "tsoft cursor-pointer": {
+		"prefix": ["cursor-pointer"],
+		"body": [
+			"cursor-pointer"
+		]
+	},
   "tsoft font-text": {
 		"prefix": ["font-text"],
 		"body": [
