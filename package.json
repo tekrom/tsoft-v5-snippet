@@ -5,8 +5,8 @@
 	"version": "0.1.55",
 	"publisher": "tsoft-v5-snippet",
 	"license": "SEE LICENSE IN LICENSE or README.MD",
-	"homepage": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
-	"repository": "https://github.com/gitorhub/tsoft-v5-snippet/blob/main/README.md",
+	"homepage": "https://github.com/tekrom/tsoft-v5-snippet/blob/main/README.md",
+	"repository": "https://github.com/tekrom/tsoft-v5-snippet/blob/main/README.md",
 	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^0.10.1"
@@ -34,5 +34,4 @@
 			}
 		]
 	}
-
 }

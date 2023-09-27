@@ -1,3 +1,6 @@
 
 .DS_Store
 .vsix6
+node_modules
+test
+/*.vsix

@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Language="en-US" Id="tsoft-v5-snippet" Version="0.0.1" Publisher="tsoft-v5-snippet"/>
-    <DisplayName>Tsoft V5 Snippets (huseyindasci)</DisplayName>
-    <Description xml:space="preserve">Tsoft v5 javascript, scss, smarty</Description>
+    <DisplayName>T-Soft V5 Snippets (tsoft)</DisplayName>
+    <Description xml:space="preserve">T-Soft v5 javascript, scss, smarty</Description>
     <Tags>vscode</Tags>
     <Categories>Snippets</Categories>
     <GalleryFlags>Public</GalleryFlags>

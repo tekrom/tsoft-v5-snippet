@@ -1,0 +1,73 @@
+@media (max-width:  ($mdScreen) ){
+  
+}
+
+
+*{
+    color: transparentize($bgPrimary, 0.5);
+    darken($bgPrimary, 10%)
+    lighten($bgPrimary, 10%)
+    $gridColumns
+    $gridColumns
+    $smScreen
+    $lgScreen
+    $bgPrimary
+    $bgDanger
+    $fontH1
+
+    clamp(13px,1vw,20px)
+    @import "setting.scss";
+    @import "mixin.scss";
+    @include scrollbar(5, 5, $bgPrimary);
+    clamp(13px,1vw,20px)
+    @include line-clamp(2);
+   @include justify-content-evenly;
+   @include justify-content-center;
+   @include justify-content-flex-start;
+  @include justify-content-flex-end;
+  @include justify-content-between;
+  @include justify-content-around;
+  @include align-items-center;
+  @include align-items-flex-start;
+  @include align-items-flex-end;
+  @include flex-direction-row;
+  @include flex-direction-column;
+  @include flex-wrap;
+  @include d-flex;
+  @include d-inline-flex;
+  @include d-flex;
+  @include align-items-center;
+  @include justify-content-center;
+
+  
+  
+  
+
+  mask:url(#{$assets}/image_path);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  -webkit-mask:url(#{$assets}/image_path);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+  background-color:$bgPrimary;
+
+  @include BLOCK {
+  }
+    box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);
+text-shadow: 1px 1px 2px $bgBlack, 0 0 1em $bgBlack, 0 0 0.2em $bgBlack;
+@include line-clamp(2);
+display: -webkit-box !important;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+@media (min-width: $mdScreen){
+}
+@media (max-width: $mdScreen - 1){
+}
+@keyframes mymove {
+from {top: 0px;}
+to {top: 200px;}
+}
+}
